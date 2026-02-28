@@ -1,0 +1,525 @@
+/* ===== REAL FIGURES PAGE SPECIFIC STYLES ===== */
+/* Eleanor Hartwell - Real Historical Figures */
+/* Font styles matching home2.css - Cinzel headings, Cormorant Garamond body */
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    position: relative;
+    min-height: 40vh;
+    background: linear-gradient(135deg, var(--header-bg), #1e2b36);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.page-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><circle cx="20" cy="30" r="5" stroke="white" fill="none"/><circle cx="50" cy="30" r="5" stroke="white" fill="none"/><circle cx="80" cy="30" r="5" stroke="white" fill="none"/><path d="M20,50 L40,70 L60,50 L80,70" stroke="white" fill="none" stroke-width="2"/></svg>');
+    background-size: 200px;
+    opacity: 0.3;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 1.5rem;
+}
+
+.page-header h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.page-tagline {
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--accent-primary);
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    animation: fadeInUp 1.2s ease-out 0.1s both;
+}
+
+.breadcrumbs {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Cormorant Garamond', serif;
+    animation: fadeInUp 1.2s ease-out 0.2s both;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    color: var(--accent-primary);
+}
+
+.breadcrumbs .current {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* ===== FIGURES INTRO SECTION ===== */
+.figures-intro {
+    padding: 4rem 0;
+    background-color: var(--bg-primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.era-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.filter-btn.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+/* ===== FIGURES GRID SECTIONS ===== */
+.figures-grid-section {
+    padding: 3rem 0;
+    background-color: var(--bg-primary);
+}
+
+.figures-grid-section:nth-child(even) {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
+}
+
+.era-title {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.era-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-primary), transparent);
+}
+
+.figures-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* ===== FIGURE CARD ===== */
+.figure-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px var(--shadow-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.figure-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px var(--shadow-hover);
+}
+
+.figure-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary));
+    transition: height 0.4s;
+    z-index: 2;
+}
+
+.figure-card:hover:before {
+    height: 100%;
+}
+
+.figure-image {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.figure-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s;
+}
+
+.figure-card:hover .figure-image img {
+    transform: scale(1.1);
+}
+
+.figure-content {
+    padding: 1.8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.figure-content h3 {
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+
+.figure-dates {
+    font-size: 1rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.figure-role {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.8rem;
+}
+
+.figure-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    flex: 1;
+}
+
+.figure-appears {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+.figure-appears span {
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.figure-appears a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: gap 0.3s;
+    font-family: 'Cormorant Garamond', serif;
+    background: var(--bg-secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+}
+
+.figure-appears a i {
+    font-size: 0.8rem;
+}
+
+.figure-appears a:hover {
+    gap: 1rem;
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===== ERA-SPECIFIC STYLING ===== */
+#saxon-figures .figure-card:before {
+    background: linear-gradient(to bottom, #b85c3a, #9e4b2f);
+}
+
+#saxon-figures .figure-appears a {
+    color: #b85c3a;
+    border: 1px solid #b85c3a;
+}
+
+#saxon-figures .figure-appears a:hover {
+    background: #b85c3a;
+    color: white;
+}
+
+#tudor-figures .figure-card:before {
+    background: linear-gradient(to bottom, #b85c3a, #9e4b2f);
+}
+
+#tudor-figures .figure-appears a {
+    color: #b85c3a;
+    border: 1px solid #b85c3a;
+}
+
+#tudor-figures .figure-appears a:hover {
+    background: #b85c3a;
+    color: white;
+}
+
+#roman-figures .figure-card:before {
+    background: linear-gradient(to bottom, #b85c3a, #9e4b2f);
+}
+
+#roman-figures .figure-appears a {
+    color: #b85c3a;
+    border: 1px solid #b85c3a;
+}
+
+#roman-figures .figure-appears a:hover {
+    background: #b85c3a;
+    color: white;
+}
+
+/* ===== FIGURES CTA SECTION ===== */
+.figures-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.8;
+}
+
+.cta-content .btn-primary {
+    background: white;
+    color: var(--accent-primary);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.cta-content .btn-primary:hover {
+    background: var(--text-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px var(--shadow-hover);
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 1200px) {
+    .page-header h1 { font-size: 3.5rem; }
+    .era-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 1024px) {
+    .page-header { min-height: 35vh; }
+    .page-header h1 { font-size: 3rem; }
+    
+    .figures-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro-content p { font-size: 1.1rem; }
+    
+    .figure-content { padding: 1.5rem; }
+    .figure-content h3 { font-size: 1.5rem; }
+    .figure-role { font-size: 1rem; }
+    .figure-description { font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+    .page-header { min-height: 30vh; }
+    .page-header h1 { font-size: 2.5rem; }
+    .page-tagline { font-size: 1.1rem; }
+    
+    .era-filters {
+        flex-direction: column;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filter-btn { width: 100%; }
+    
+    .era-title { font-size: 2rem; }
+    
+    .figures-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cta-content h2 { font-size: 2rem; }
+    .cta-content p { font-size: 1.1rem; }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 { font-size: 2rem; }
+    .page-tagline { font-size: 1rem; }
+    
+    .intro-content p { font-size: 1rem; }
+    
+    .era-title { font-size: 1.8rem; }
+    
+    .figure-content h3 { font-size: 1.4rem; }
+    .figure-dates { font-size: 0.9rem; }
+    .figure-role { font-size: 0.95rem; }
+    
+    .cta-content h2 { font-size: 1.8rem; }
+    .cta-content p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 { font-size: 1.8rem; }
+    .era-title { font-size: 1.6rem; }
+    .figure-content h3 { font-size: 1.3rem; }
+    .cta-content h2 { font-size: 1.6rem; }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== DARK MODE ADJUSTMENTS ===== */
+[data-theme="dark"] .figure-card {
+    background: #2d2d2d;
+}
+
+[data-theme="dark"] .figure-appears a {
+    background: #3d3d3d;
+    border-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .filter-btn {
+    border-color: #404040;
+}
+
+[data-theme="dark"] .filter-btn:hover {
+    border-color: var(--accent-primary);
+}

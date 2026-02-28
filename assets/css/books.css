@@ -1,0 +1,603 @@
+/* ===== BOOKS PAGE SPECIFIC STYLES ===== */
+/* Eleanor Hartwell - All Series Overview Page */
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    position: relative;
+    min-height: 40vh;
+    background: linear-gradient(135deg, var(--header-bg), #1e2b36);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.page-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M20,30 L80,30 L70,70 L50,80 L30,70 L20,30" stroke="white" fill="none" stroke-width="2"/></svg>');
+    background-size: 200px;
+    opacity: 0.3;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 1.5rem;
+}
+
+.page-header h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.page-tagline {
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--accent-primary);
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    animation: fadeInUp 1.2s ease-out 0.1s both;
+}
+
+.breadcrumbs {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Cormorant Garamond', serif;
+    animation: fadeInUp 1.2s ease-out 0.2s both;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    color: var(--accent-primary);
+}
+
+.breadcrumbs .current {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* ===== SERIES INTRO SECTION ===== */
+.series-intro {
+    padding: 4rem 0;
+    background-color: var(--bg-primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.series-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    font-family: 'Cinzel', serif;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+}
+
+/* ===== SERIES CARDS ===== */
+.series-card {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.series-card:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+.series-card:nth-child(odd) {
+    background-color: var(--bg-primary);
+}
+
+.series-card:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-primary) 0%, transparent 70%);
+    opacity: 0.03;
+    z-index: 0;
+}
+
+.series-card-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.series-card-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px var(--shadow-hover);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.series-card-image:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.series-card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.series-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-primary);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.series-card-content {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.series-card-content h2 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.series-era {
+    font-size: 1.1rem;
+    color: var(--accent-primary);
+    margin-bottom: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.series-era i {
+    font-size: 1rem;
+}
+
+.series-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.series-book-list {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-primary);
+}
+
+.series-book-list h4 {
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.series-book-list ul {
+    list-style: none;
+}
+
+.series-book-list li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.series-book-list li i {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+}
+
+.series-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.series-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+
+.series-meta i {
+    color: var(--accent-primary);
+}
+
+.series-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px var(--shadow-hover);
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 2px solid var(--accent-primary);
+    color: var(--accent-primary);
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+
+.btn-outline:hover {
+    background: var(--accent-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Series-specific accent colors */
+.series-1 .series-badge,
+.series-1 .series-era i,
+.series-1 .series-book-list li i,
+.series-1 .series-meta i {
+    color: #b85c3a;
+}
+
+.series-1 .series-book-list {
+    border-left-color: #b85c3a;
+}
+
+.series-2 .series-badge,
+.series-2 .series-era i,
+.series-2 .series-book-list li i,
+.series-2 .series-meta i {
+    color: #b85c3a;
+}
+
+.series-2 .series-book-list {
+    border-left-color: #b85c3a;
+}
+
+.series-3 .series-badge,
+.series-3 .series-era i,
+.series-3 .series-book-list li i,
+.series-3 .series-meta i {
+    color: #b85c3a;
+}
+
+.series-3 .series-book-list {
+    border-left-color: #b85c3a;
+}
+
+/* ===== STANDALONE BOOKS ===== */
+.standalone-books {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+    margin: 1rem auto;
+}
+
+.standalone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.standalone-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.standalone-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-hover);
+}
+
+.standalone-card img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.standalone-card h3 {
+    font-size: 1.3rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.standalone-year {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+
+.standalone-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: gap 0.3s;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.btn-link:hover {
+    gap: 1rem;
+}
+
+/* ===== READING GUIDE CTA ===== */
+.reading-guide-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.8;
+}
+
+.cta-content .btn-primary {
+    background: white;
+    color: var(--accent-primary);
+    border: none;
+}
+
+.cta-content .btn-primary:hover {
+    background: var(--text-primary);
+    color: white;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 1024px) {
+    .page-header h1 { font-size: 3rem; }
+    .series-card-grid { 
+        grid-template-columns: 250px 1fr;
+        gap: 2rem;
+    }
+    .series-card-content h2 { font-size: 2rem; }
+}
+
+@media (max-width: 992px) {
+    .series-card-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .series-card-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .standalone-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header { min-height: 30vh; }
+    .page-header h1 { font-size: 2.5rem; }
+    .page-tagline { font-size: 1.1rem; }
+    
+    .series-stats { gap: 2rem; }
+    .stat-number { font-size: 2.2rem; }
+    
+    .series-meta { flex-direction: column; gap: 0.5rem; }
+    .series-actions { flex-direction: column; }
+    .series-actions .btn-primary,
+    .series-actions .btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .standalone-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    
+    .cta-content h2 { font-size: 2rem; }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 { font-size: 2rem; }
+    .series-card-content h2 { font-size: 1.8rem; }
+    .section-title { font-size: 2rem; }
+    .cta-content h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 { font-size: 1.8rem; }
+    .page-tagline { font-size: 1rem; }
+    .series-card-content h2 { font-size: 1.6rem; }
+    .section-title { font-size: 1.8rem; }
+    .cta-content h2 { font-size: 1.6rem; }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== DARK MODE ADJUSTMENTS ===== */
+[data-theme="dark"] .series-book-list {
+    background: #2d2d2d;
+}
+
+[data-theme="dark"] .standalone-card {
+    background: #2d2d2d;
+}
