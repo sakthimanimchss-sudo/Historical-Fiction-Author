@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Historical Dialogue - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/article-3.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="../index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="../home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="../books.html">All Series</a></li>
+                                    <li><a href="../series/series-1.html">Series 1</a></li>
+                                    <li><a href="../series/series-2.html">Series 2</a></li>
+                                    <li><a href="../series/series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="../research.html">Overview</a></li>
+                                    <li><a href="../research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="../research/timelines.html">Timelines</a></li>
+                                    <li><a href="../research/maps.html">Maps</a></li>
+                                    <li><a href="../research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="article-3.html" class="active"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../awards.html">Awards</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="../member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="../home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="../series/series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="../series/series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="../series/series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="../research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="../research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="../research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="../research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="article-3.html" class="active"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="../awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="../membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="../member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - ARTICLE 3 ===== -->
+    <main>
+        <!-- Article Header -->
+        <section class="article-header">
+            <div class="container">
+                <div class="article-header-content">
+                    <div class="article-category-badge">Writing Craft</div>
+                    <h1>The Art of Historical Dialogue</h1>
+                    <div class="article-byline">
+                        <span class="article-author">By Eleanor Hartwell</span>
+                        <span class="article-date"><i class="far fa-calendar"></i> December 2024</span>
+                        <span class="article-read-time"><i class="far fa-clock"></i> 10 min read</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Image -->
+        <section class="article-featured-image">
+            <div class="container">
+                <figure class="featured-figure">
+                    <img src="../assets/images/articles/historical-dialogue.jpg" alt="Writers at Work - Historical Dialogue" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'%3E%3Crect width=\'1200\' height=\'600\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'350\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'36\'%3EHistorical Dialogue%3C/text%3E%3C/svg%3E'">
+                    <figcaption>Finding the authentic voice of the past without losing the modern reader. Photo: British Library.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <section class="article-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <!-- Sidebar -->
+                    <aside class="article-sidebar">
+                        <div class="sidebar-section">
+                            <h4>Table of Contents</h4>
+                            <ul class="toc-list">
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#authenticity">The Authenticity Trap</a></li>
+                                <li><a href="#cadence">Cadence and Rhythm</a></li>
+                                <li><a href="#vocabulary">Choosing Vocabulary</a></li>
+                                <li><a href="#class">Class and Education</a></li>
+                                <li><a href="#examples">Examples from Roman Britain</a></li>
+                                <li><a href="#exercises">Practical Exercises</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Share This Article</h4>
+                            <div class="share-buttons">
+                                <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="share-btn email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Writing Resources</h4>
+                            <ul class="related-list">
+                                <li><a href="#"><i class="fas fa-file-pdf"></i> Dialogue Checklist (PDF)</a></li>
+                                <li><a href="#"><i class="fas fa-headphones"></i> Audio Examples</a></li>
+                                <li><a href="#"><i class="fas fa-video"></i> Masterclass Recording</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Related Articles</h4>
+                            <ul class="related-list">
+                                <li><a href="article-8.html">From Footnote to Narrative</a></li>
+                                <li><a href="../blog/writing-process.html">My Writing Process</a></li>
+                                <li><a href="../research/real-figures.html">Real Historical Figures</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <button class="save-article-btn" id="saveArticleBtn">
+                                <i class="far fa-bookmark"></i> Save Article
+                            </button>
+                        </div>
+                    </aside>
+
+                    <!-- Main Article Text -->
+                    <div class="article-text">
+                        <section id="introduction">
+                            <p class="article-intro">"Hark, good sir, I prithee, dost thou know the way to yonder tavern?" If I read that line in a historical novel, I would close the book. Good historical dialogue should transport readers to another time without making them feel like they need a translator. It's one of the most delicate balances a writer must strike.</p>
+                            
+                            <p>In this article, I'll share the techniques I've developed over a decade of writing historical fiction—from the Viking Age to Tudor England to Roman Britain. Whether you're a fellow writer or simply curious about the craft, these insights will help you understand what makes characters from the past sound authentic without sacrificing readability.</p>
+                        </section>
+
+                        <section id="authenticity">
+                            <h2>The Authenticity Trap</h2>
+                            
+                            <p>The biggest mistake new historical fiction writers make is assuming that authentic dialogue means using archaic language. They fill their pages with "thee," "thou," "prithee," and "forsooth"—words that might appear in a Shakespeare play but would sound stilted and artificial in a novel.</p>
+                            
+                            <p>The truth is, we don't actually know how people spoke in the past. We have written records, letters, and documents, but these are formal, edited texts—not transcripts of casual conversation. A letter from a Roman soldier on Hadrian's Wall might give us his vocabulary and grammar, but it can't tell us his tone of voice, his pacing, or his idioms.</p>
+                            
+                            <blockquote>
+                                <p>"The goal of historical dialogue is not to reproduce how people actually spoke—that's impossible. The goal is to create the illusion of authenticity while maintaining clarity and emotional resonance for the modern reader."</p>
+                                <footer>— Hilary Mantel, from "The Guardian" interview</footer>
+                            </blockquote>
+                            
+                            <p>The solution is to aim for what I call "period-flavored modern English." Use a light touch with archaic terms, focus on sentence structure and rhythm, and let context do the heavy lifting.</p>
+                        </section>
+
+                        <section id="cadence">
+                            <h2>Cadence and Rhythm</h2>
+                            
+                            <p>The most effective tool for creating historical feel isn't vocabulary—it's sentence structure. Different eras had different patterns of speech, influenced by the Bible, by formal education, by the rhythms of oral culture.</p>
+                            
+                            <h3>The Biblical Cadence</h3>
+                            <p>For medieval and early modern characters, I often draw on the rhythms of the King James Bible and the Book of Common Prayer. These texts shaped English speech for centuries. Listen to the parallelism, the balanced clauses, the formal but flowing structure:</p>
+                            
+                            <div class="dialogue-example">
+                                <p class="example-label">Authentic Period Cadence:</p>
+                                <p class="example-text">"I have walked these roads for forty years, and never have I seen such a harvest. The Lord provides, my son, even when we doubt His grace."</p>
+                            </div>
+                            
+                            <div class="dialogue-example modern">
+                                <p class="example-label">Modern Equivalent:</p>
+                                <p class="example-text">"I've been walking these roads for forty years and I've never seen a harvest like this. God provides, even when we doubt him."</p>
+                            </div>
+                            
+                            <h3>Roman Period Rhythm</h3>
+                            <p>For my Roman Eagle series, I studied Latin rhetoric and the speeches in Tacitus. Roman speech was more direct, more military in its precision, but still formal by modern standards. The key is shorter clauses and more imperative structures.</p>
+                            
+                            <div class="dialogue-example">
+                                <p class="example-label">Roman Officer (c. 117 AD):</p>
+                                <p class="example-text">"The Ninth Legion did not simply vanish. Legions do not vanish. They are destroyed, or they desert, or they are recalled. Find me the truth, and find it quickly."</p>
+                            </div>
+                        </section>
+
+                        <section id="vocabulary">
+                            <h2>Choosing Vocabulary</h2>
+                            
+                            <p>Vocabulary requires the lightest touch. A few well-chosen period words can establish setting; too many will confuse and alienate readers.</p>
+                            
+                            <h3>The 5% Rule</h3>
+                            <p>I aim for no more than 5% of the dialogue to consist of period-specific vocabulary. That's one unfamiliar word per twenty familiar ones. The rest should be modern English—but modern English chosen for its timeless quality.</p>
+                            
+                            <h3>Words to Avoid</h3>
+                            <ul>
+                                <li><strong>Modern slang and idioms:</strong> A Viking shouldn't say something "sucks" or is "awesome" in the modern sense.</li>
+                                <li><strong>Anachronistic concepts:</strong> No one in Roman Britain had a "medieval" mindset or talked about the "feudal system."</li>
+                                <li><strong>Overly technical jargon:</strong> Use period-appropriate terms for objects, but explain them through context.</li>
+                            </ul>
+                            
+                            <h3>Words to Use Sparingly</h3>
+                            <ul>
+                                <li><strong>Titles and forms of address:</strong> "My lord," "sire," "dominus"—but vary them to avoid repetition.</li>
+                                <li><strong>Period exclamations:</strong> "By the gods!" "Christ's wounds!"—used once per chapter at most.</li>
+                                <li><strong>Archaic pronouns:</strong> "Thee," "thou," "thy" can work for specific characters (Quakers, the deeply religious), but not for everyone.</li>
+                            </ul>
+                            
+                            <figure class="inline-figure">
+                                <img src="../assets/images/articles/vocabulary-chart.jpg" alt="Vocabulary Usage Chart" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'300\' viewBox=\'0 0 600 300\'%3E%3Crect width=\'600\' height=\'300\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'150\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'20\'%3EVocabulary Balance%3C/text%3E%3C/svg%3E'">
+                                <figcaption>The ideal balance: 95% modern English with period flavor, 5% period-specific terms.</figcaption>
+                            </figure>
+                        </section>
+
+                        <section id="class">
+                            <h2>Class, Education, and Regional Speech</h2>
+                            
+                            <p>In any historical period, people spoke differently depending on their class, education, and region. A Roman legionary from Gaul would have different Latin than a senator from Rome. A Tudor noblewoman would speak differently than a merchant's wife.</p>
+                            
+                            <h3>Indicating Class Through Grammar</h3>
+                            <p>Rather than using dialect or misspellings (which can feel condescending), indicate class through sentence complexity and vocabulary range. Educated characters use more subordinate clauses, more varied vocabulary. Less educated characters speak in simpler, more direct sentences.</p>
+                            
+                            <div class="comparison-box">
+                                <div class="comparison-item">
+                                    <h4>Roman Senator</h4>
+                                    <p>"The province requires a governor of experience and judgment, not some boy whose only qualification is his family name. I have served in Britannia; I know its tribes, its weather, its legions."</p>
+                                </div>
+                                <div class="comparison-item">
+                                    <h4>Roman Legionary</h4>
+                                    <p>"The new legate's a boy. Never fought north of the wall. The lads won't follow him."</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Regional Flavor</h3>
+                            <p>Be extremely careful with regional dialect. A little goes a long way. A few word choices ("aye" for yes, "nowt" for nothing) can suggest Northern English speech without rendering the dialogue impenetrable.</p>
+                        </section>
+
+                        <section id="examples">
+                            <h2>Examples from Roman Britain</h2>
+                            
+                            <p>Let me show you how these principles work in practice, using examples from my Roman Eagle series.</p>
+                            
+                            <h3>Example 1: Officer to Soldier</h3>
+                            <div class="dialogue-block">
+                                <p class="speaker">Lucius (Centurion):</p>
+                                <p class="speech">"You've served how many years, Decimus? Twelve? And still you jump at shadows. The tribes beyond the wall are no different from the Gauls my father fought—loud, brave, and undisciplined. Stand your ground."</p>
+                                <p class="speaker">Decimus (Legionary):</p>
+                                <p class="speech">"The Gauls didn't have the dark, sir. They didn't have the mist. Out here, a man can't see what's coming."</p>
+                            </div>
+                            
+                            <p class="analysis">Notice: No attempt at "authentic" Latin grammar. Instead, the military hierarchy comes through in the centurion's condescending tone and the soldier's informal "sir." The word choices are modern but the concerns are period.</p>
+                            
+                            <h3>Example 2: British Chieftain</h3>
+                            <div class="dialogue-block">
+                                <p class="speaker">Bran (Tribal Leader):</p>
+                                <p class="speech">"The Romans build walls because they are afraid. They think stone will hold us back. But we have always been here. We will still be here when their walls crumble and their eagles are forgotten."</p>
+                            </div>
+                            
+                            <p class="analysis">The poetry and rhythm suggest oral tradition. The vocabulary is simple but the structure is formal—appropriate for a leader addressing his people.</p>
+                            
+                            <h3>Example 3: Informal Conversation</h3>
+                            <div class="dialogue-block">
+                                <p class="speaker">Marcus:</p>
+                                <p class="speech">"Did you see his face when the legate mentioned the Ninth?"</p>
+                                <p class="speaker">Gaius:</p>
+                                <p class="speech">"Like he'd seen a ghost. Everyone knows they're gone. Why can't they just say it?"</p>
+                                <p class="speaker">Marcus:</p>
+                                <p class="speech">"Because saying it makes it true. And truth is bad for morale."</p>
+                            </div>
+                            
+                            <p class="analysis">This could be modern soldiers talking. That's intentional. The universality of human experience connects readers to the characters, while the context (the lost Ninth Legion) keeps it firmly historical.</p>
+                        </section>
+
+                        <section id="exercises">
+                            <h2>Practical Exercises</h2>
+                            
+                            <p>Ready to practice? Here are three exercises to develop your historical dialogue skills:</p>
+                            
+                            <div class="exercise-card">
+                                <h4>Exercise 1: Translate Modern to Period</h4>
+                                <p>Take this modern conversation and rewrite it for a Viking Age setting, using the principles above:</p>
+                                <p class="exercise-text">"Hey, are you coming to the tavern tonight?" "Can't. I'm on guard duty." "That's too bad. We'll drink your share."</p>
+                                <details>
+                                    <summary>See Suggested Version</summary>
+                                    <p>"Will you join us at the hall tonight?" "I cannot. The watch claims me." "A pity. We'll drink your portion."</p>
+                                </details>
+                            </div>
+                            
+                            <div class="exercise-card">
+                                <h4>Exercise 2: Class Distinction</h4>
+                                <p>Write the same basic conversation between a Tudor nobleman and his servant. Make their speech reflect their different stations.</p>
+                                <details>
+                                    <summary>See Suggested Version</summary>
+                                    <p><strong>Nobleman:</strong> "Has the post arrived from London?"<br>
+                                    <strong>Servant:</strong> "Not yet, my lord. The roads are bad."<br>
+                                    <strong>Nobleman:</strong> "The roads are always bad. Send a boy to the crossroads to watch."<br>
+                                    <strong>Servant:</strong> "Right away, my lord."</p>
+                                </details>
+                            </div>
+                            
+                            <div class="exercise-card">
+                                <h4>Exercise 3: Period Flavor</h4>
+                                <p>Add period flavor to this neutral dialogue by adjusting vocabulary and rhythm, not by adding archaic words:</p>
+                                <p class="exercise-text">"I don't trust him. He's been asking too many questions." "What kind of questions?" "About the gold. Where it came from. Who else knows."</p>
+                                <details>
+                                    <summary>See Suggested Version</summary>
+                                    <p>"I mislike his questions. Too many, and too pointed." "Asking what?" "The gold. Its source. Who shares the knowledge."</p>
+                                </details>
+                            </div>
+                            
+                            <p class="conclusion">Remember: the goal is not to make your readers work to understand what's being said. It's to immerse them in another time while keeping the story moving. When you get it right, readers won't notice the dialogue at all—they'll simply hear the voices of the past.</p>
+                        </section>
+
+                        <!-- Author Bio -->
+                        <div class="author-bio">
+                            <img src="../assets/images/author/eleanor-thumb.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'30\' y=\'65\' fill=\'white\' font-family=\'Cinzel\' font-size=\'20\'%3EEH%3C/text%3E%3C/svg%3E'">
+                            <div class="author-info">
+                                <h4>About Eleanor Hartwell</h4>
+                                <p>Eleanor has taught creative writing at Oxford University's Continuing Education department and leads workshops on historical fiction at literary festivals across the UK. Her Roman Eagle series is often cited for its authentic-feeling dialogue.</p>
+                            </div>
+                        </div>
+
+                        <!-- Article Footer -->
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span class="tag-label">Topics:</span>
+                                <a href="../articles.html?topic=writing" class="article-tag">Writing Craft</a>
+                                <a href="../articles.html?topic=roman" class="article-tag">Roman Britain</a>
+                                <a href="../articles.html?topic=technique" class="article-tag">Dialogue</a>
+                            </div>
+                            
+                            <div class="article-actions">
+                                <button class="action-btn like-btn"><i class="far fa-heart"></i> 456</button>
+                                <button class="action-btn comment-btn"><i class="far fa-comment"></i> 32</button>
+                                <button class="action-btn share-btn"><i class="far fa-share-square"></i> Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <div class="container">
+                <h2 class="section-title">Writer's Discussion</h2>
+                
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <h3>Share Your Dialogue Challenges</h3>
+                    <div class="form-group">
+                        <label for="comment-name">Name *</label>
+                        <input type="text" id="comment-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-email">Email * (not published)</label>
+                        <input type="email" id="comment-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Your Question or Tip *</label>
+                        <textarea id="comment-text" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Post Comment</button>
+                </form>
+
+                <!-- Comments List -->
+                <div class="comments-list">
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar5.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3ES%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Sarah Chen</span>
+                                <span class="comment-date">December 15, 2024</span>
+                            </div>
+                            <p class="comment-text">This is incredibly helpful! I'm working on a novel set in 14th century France and struggling with how to make my peasants sound different from my nobles without resorting to stereotypes. The class distinction examples really clarified things for me.</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 24</button>
+                            </div>
+                            
+                            <!-- Author Reply -->
+                            <div class="comment reply">
+                                <div class="comment-avatar">
+                                    <img src="../assets/images/author/eleanor-thumb.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EEH%3C/text%3E%3C/svg%3E'">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Eleanor Hartwell <span class="author-badge">Author</span></span>
+                                        <span class="comment-date">December 15, 2024</span>
+                                    </div>
+                                    <p class="comment-text">So glad it helped, Sarah! For 14th century France, you might also look at the structure of French at the time—it was more formal, more Latinate. But the same principle applies: simpler grammar for peasants, more complex for nobles. Good luck with your novel!</p>
+                                    <div class="comment-actions">
+                                        <button class="comment-like"><i class="far fa-heart"></i> 12</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar6.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%233f6f3f\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EM%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Michael O'Connor</span>
+                                <span class="comment-date">December 12, 2024</span>
+                            </div>
+                            <p class="comment-text">The 5% rule is genius! I've been guilty of overloading my dialogue with period terms. Going back to edit with this in mind will save my manuscript.</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 18</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar7.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%234a6b8a\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3ER%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Rachel Williams</span>
+                                <span class="comment-date">December 10, 2024</span>
+                            </div>
+                            <p class="comment-text">Do you have any recommended resources for authentic Roman speech patterns? I'm writing a novel set in Pompeii and want to get the cadence right.</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 15</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Comments -->
+                <div class="load-more-comments">
+                    <button class="btn-outline">Load More Comments</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Articles -->
+        <section class="related-articles">
+            <div class="container">
+                <h2 class="section-title">More on Writing Craft</h2>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <img src="../assets/images/articles/article8-thumb.jpg" alt="From Footnote to Narrative" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%234a4a4a\'/%3E%3Ctext x=\'20\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3EFrom Footnote%3C/text%3E%3C/svg%3E'">
+                        <h4>From Footnote to Narrative</h4>
+                        <a href="article-8.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="related-card">
+                        <img src="../assets/images/blog/writing-process-thumb.jpg" alt="Writing Process" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'20\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3EWriting Process%3C/text%3E%3C/svg%3E'">
+                        <h4>My Writing Process</h4>
+                        <a href="../blog/writing-process.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="related-card">
+                        <img src="../assets/images/research/figures-thumb.jpg" alt="Real Figures" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'30\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3EReal Figures%3C/text%3E%3C/svg%3E'">
+                        <h4>Real Historical Figures</h4>
+                        <a href="../research/real-figures.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== CONSOLIDATED FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Author Logo + Bio -->
+            <div class="footer-col footer-col-main">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <i class="fas fa-scroll"></i> Eleanor Hartwell
+                    </a>
+                </div>
+                <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                    <a href="#" aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+                </div>
+                <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="../about.html">About Eleanor</a></li>
+                    <li><a href="../books.html">Books & Series</a></li>
+                    <li><a href="../research.html">Historical Research</a></li>
+                    <li><a href="../articles.html">Articles</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../awards.html">Awards</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Research Resources -->
+            <div class="footer-col">
+                <h4>Research Deep Dives</h4>
+                <ul>
+                    <li><a href="../research/real-figures.html">Real Figures</a></li>
+                    <li><a href="../research/timelines.html">Timelines</a></li>
+                    <li><a href="../research/maps.html">Historical Maps</a></li>
+                    <li><a href="../research/historical-events.html">Key Events</a></li>
+                    <li><a href="../research/sources.html">Primary Sources</a></li>
+                    <li><a href="../newsletter.html">Newsletter Archive</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Reader Resources -->
+            <div class="footer-col">
+                <h4>Reader Resources</h4>
+                <ul>
+                    <li><a href="../membership.html">Reader's Club</a></li>
+                    <li><a href="../member-login.html">Member Login</a></li>
+                    <li><a href="../contact.html">Contact & Events</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../reading-guides.html">Reading Guides</a></li>
+                    <li><a href="../book-club-kits.html">Book Club Kits</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5: Policies & Badges -->
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                    <li><a href="../terms.html">Terms of Use</a></li>
+                    <li><a href="../cookies.html">Cookie Policy</a></li>
+                    <li><a href="../accessibility.html">Accessibility</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <div class="footer-badges">
+                    <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                    <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a href="../index.html">Eleanor Hartwell</a></p>
+                <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/article.js"></script>
+</body>
+</html>

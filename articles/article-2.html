@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding Tudor Handwriting: A Researcher's Guide - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/article-2.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="../index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="../home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="../books.html">All Series</a></li>
+                                    <li><a href="../series-1.html">Series 1</a></li>
+                                    <li><a href="../series-2.html">Series 2</a></li>
+                                    <li><a href="../series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="../research.html">Overview</a></li>
+                                    <li><a href="../research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="../research/timelines.html">Timelines</a></li>
+                                    <li><a href="../research/maps.html">Maps</a></li>
+                                    <li><a href="../research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="article-2.html" class="active"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../awards.html">Awards</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="../member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="../home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="../series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="../series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="../series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="../research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="../research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="../research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="../research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="article-2.html" class="active"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="../awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="../membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="../member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - ARTICLE 2 ===== -->
+    <main>
+        <!-- Article Header -->
+        <section class="article-header">
+            <div class="container">
+                <div class="article-header-content">
+                    <div class="article-category-badge">Research Methods</div>
+                    <h1>Decoding Tudor Handwriting: A Researcher's Guide</h1>
+                    <div class="article-byline">
+                        <span class="article-author">By Eleanor Hartwell</span>
+                        <span class="article-date"><i class="far fa-calendar"></i> January 2025</span>
+                        <span class="article-read-time"><i class="far fa-clock"></i> 20 min read</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Image -->
+        <section class="article-featured-image">
+            <div class="container">
+                <figure class="featured-figure">
+                    <img src="../assets/images/articles/tudor-handwriting.jpg" alt="Tudor Manuscript Sample" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'%3E%3Crect width=\'1200\' height=\'600\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'350\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'36\'%3ETudor Manuscript%3C/text%3E%3C/svg%3E'">
+                    <figcaption>A page from the Lisle Letters, c. 1530, showing typical Tudor secretary hand. Photo: The National Archives, UK.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <section class="article-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <!-- Sidebar -->
+                    <aside class="article-sidebar">
+                        <div class="sidebar-section">
+                            <h4>Table of Contents</h4>
+                            <ul class="toc-list">
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#scripts">Tudor Scripts</a></li>
+                                <li><a href="#abbreviations">Common Abbreviations</a></li>
+                                <li><a href="#letters">Deciphering Letters</a></li>
+                                <li><a href="#numbers">Dates & Numbers</a></li>
+                                <li><a href="#resources">Online Resources</a></li>
+                                <li><a href="#practice">Practice Exercises</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Share This Article</h4>
+                            <div class="share-buttons">
+                                <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="share-btn email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Download Resources</h4>
+                            <ul class="related-list">
+                                <li><a href="#"><i class="fas fa-file-pdf"></i> Tudor Handwriting Cheat Sheet (PDF)</a></li>
+                                <li><a href="#"><i class="fas fa-file-image"></i> Alphabet Reference Chart</a></li>
+                                <li><a href="#"><i class="fas fa-file-alt"></i> Transcription Template</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Related Articles</h4>
+                            <ul class="related-list">
+                                <li><a href="article-4.html">The Spanish Armada: Two Sides of the Story</a></li>
+                                <li><a href="article-9.html">The Lisle Letters: A Tudor Family Revealed</a></li>
+                                <li><a href="../research/sources.html">Primary Sources</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <button class="save-article-btn" id="saveArticleBtn">
+                                <i class="far fa-bookmark"></i> Save Article
+                            </button>
+                        </div>
+                    </aside>
+
+                    <!-- Main Article Text -->
+                    <div class="article-text">
+                        <section id="introduction">
+                            <p class="article-intro">One of the greatest challenges facing any Tudor historian—whether academic or novelist—is the handwriting. The elegant but often baffling script of the 16th century, with its unfamiliar letterforms, rampant abbreviations, and inconsistent spelling, can feel like a foreign language. Yet learning to read these documents opens a direct window into the minds of people who lived five centuries ago.</p>
+                            
+                            <p>In this guide, I'll share the techniques I've developed over years of working in archives, from the National Archives at Kew to the British Library. Whether you're a fellow writer, a student, or simply a history enthusiast, these skills will help you unlock the secrets of Tudor manuscripts.</p>
+                        </section>
+
+                        <section id="scripts">
+                            <h2>Understanding Tudor Scripts</h2>
+                            
+                            <p>The 16th century saw a fascinating transition in English handwriting. Several different scripts were in use, often depending on the writer's education, social status, and the purpose of the document.</p>
+                            
+                            <h3>Secretary Hand</h3>
+                            <p>The most common script for everyday writing—letters, business records, legal documents—was secretary hand. Characterized by its angular forms, looped ascenders, and distinctive letter shapes, it can look almost like a different alphabet to modern eyes. Secretary hand evolved from medieval business scripts and was taught in grammar schools and writing masters' shops.</p>
+                            
+                            <div class="script-example">
+                                <img src="../assets/images/articles/secretary-hand.jpg" alt="Secretary Hand Example" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'200\' viewBox=\'0 0 600 200\'%3E%3Crect width=\'600\' height=\'200\' fill=\'%23553838\'/%3E%3Ctext x=\'150\' y=\'100\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ESecretary Hand Example%3C/text%3E%3C/svg%3E'">
+                                <p class="example-caption">Example of secretary hand from a letter of Thomas Cromwell, c. 1535.</p>
+                            </div>
+                            
+                            <h3>Italic Hand</h3>
+                            <p>Introduced from Italy during the Renaissance, italic hand was considered more elegant and modern. It was favored by scholars, aristocrats, and those with humanist educations. Queen Elizabeth I wrote a beautiful italic hand. Italic is much closer to modern handwriting and is generally easier for beginners to read.</p>
+                            
+                            <h3>Court Hand</h3>
+                            <p>Used in legal records and official documents, court hand was a specialized script full of abbreviations and unique forms. It persisted in legal contexts long after it had disappeared elsewhere, and remains one of the most challenging scripts for modern researchers.</p>
+                            
+                            <p>Most documents mix these scripts. A letter might be written in secretary hand but have an italic signature. Legal documents often combine court hand for standard phrases with secretary for the main text.</p>
+                        </section>
+
+                        <section id="abbreviations">
+                            <h2>Common Abbreviations and Contractions</h2>
+                            
+                            <p>Tudor writers were obsessed with saving space and time. Abbreviations are everywhere in manuscripts, and learning to recognize them is essential.</p>
+                            
+                            <h3>Common Abbreviation Marks</h3>
+                            <ul>
+                                <li><strong>The macron (¯) over a letter:</strong> Indicates a missing 'm' or 'n'. "cōmon" = "common", "wˉ" = "with"</li>
+                                <li><strong>The 9-shaped symbol:</strong> Often represents "us" or "es". "hu9" = "huius" (Latin), "th9" = "thus"</li>
+                                <li><strong>The superscript line through 'p':</strong> "p̄" = "per", "par", or "pro" depending on context</li>
+                                <li><strong>The 'q' with a line:</strong> "q̄" = "que" (Latin for "and")</li>
+                                <li><strong>The ampersand (&):</strong> Used for "and" just as today, but often with elaborate flourishes</li>
+                            </ul>
+                            
+                            <h3>Common Word Abbreviations</h3>
+                            <div class="abbreviation-table">
+                                <div class="table-row">
+                                    <span class="abbr">wch</span>
+                                    <span class="meaning">which</span>
+                                </div>
+                                <div class="table-row">
+                                    <span class="abbr">yt</span>
+                                    <span class="meaning">that</span>
+                                </div>
+                                <div class="table-row">
+                                    <span class="abbr">ye</span>
+                                    <span class="meaning">the (from the Old English thorn character, pronounced "the")</span>
+                                </div>
+                                <div class="table-row">
+                                    <span class="abbr">yoͬ</span>
+                                    <span class="meaning">your</span>
+                                </div>
+                                <div class="table-row">
+                                    <span class="abbr">sd</span>
+                                    <span class="meaning">said</span>
+                                </div>
+                                <div class="table-row">
+                                    <span class="abbr">Lres</span>
+                                    <span class="meaning">letters</span>
+                                </div>
+                                <div class="table-row">
+                                    <span class="abbr">Ma tie</span>
+                                    <span class="meaning">majesty</span>
+                                </div>
+                            </div>
+                            
+                            <blockquote>
+                                <p>"The key to reading abbreviations is context. The same symbol can mean different things in different words. Always read the whole sentence first, then go back to puzzle out the abbreviated words."</p>
+                                <footer>— Dr. Heather Wolfe, Folger Shakespeare Library</footer>
+                            </blockquote>
+                        </section>
+
+                        <section id="letters">
+                            <h2>Deciphering Individual Letters</h2>
+                            
+                            <p>Secretary hand uses several letterforms that are very different from modern writing. Here are the most problematic letters to watch for:</p>
+                            
+                            <div class="letter-grid">
+                                <div class="letter-item">
+                                    <h4>Letter 'c'</h4>
+                                    <p>Often looks like a modern 'r' or a backward 'c'. Sometimes written with a loop.</p>
+                                </div>
+                                <div class="letter-item">
+                                    <h4>Letter 'e'</h4>
+                                    <p>Usually a looped shape, often open at the top, sometimes looking like a figure 8.</p>
+                                </div>
+                                <div class="letter-item">
+                                    <h4>Letter 'h'</h4>
+                                    <p>The ascender often loops dramatically to the left, and the base can look like an 'n'.</p>
+                                </div>
+                                <div class="letter-item">
+                                    <h4>Letter 'r'</h4>
+                                    <p>Often looks like a modern 'v' or a 'u' with a hook. The 'r' in "your" is particularly tricky.</p>
+                                </div>
+                                <div class="letter-item">
+                                    <h4>Letter 's'</h4>
+                                    <p>Two forms: the long 's' (ſ) that looks like a modern 'f' without the crossbar, and the round 's' at the end of words.</p>
+                                </div>
+                                <div class="letter-item">
+                                    <h4>Letter 'v' and 'u'</h4>
+                                    <p>Often used interchangeably. "vpon" = "upon", "vnder" = "under".</p>
+                                </div>
+                            </div>
+                            
+                            <figure class="inline-figure">
+                                <img src="../assets/images/articles/tudor-alphabet.jpg" alt="Tudor Alphabet Chart" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%238b5a2b\'/%3E%3Ctext x=\'150\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ETudor Alphabet Chart%3C/text%3E%3C/svg%3E'">
+                                <figcaption>A comparison chart of secretary hand letters with their modern equivalents.</figcaption>
+                            </figure>
+                        </section>
+
+                        <section id="numbers">
+                            <h2>Dates, Numbers, and Numerals</h2>
+                            
+                            <p>Tudor documents use several systems for writing numbers. Dates are particularly important—and often confusing.</p>
+                            
+                            <h3>Arabic vs. Roman Numerals</h3>
+                            <p>Both systems were in use. Arabic numerals (1,2,3) appear more frequently in commercial and everyday documents, while Roman numerals (I, II, III) were preferred for formal dates, regnal years, and legal documents.</p>
+                            
+                            <h3>Regnal Years</h3>
+                            <p>Legal documents often date by the year of the monarch's reign rather than the calendar year. "In the 28th year of the reign of our sovereign lord Henry VIII" means 1536-37 (depending on the exact date). Converting these requires a regnal year table.</p>
+                            
+                            <h3>The Double Dating Problem</h3>
+                            <p>Until 1752, the English new year began on March 25th (Lady Day). A document dated "February 1535" might actually be what we would now call February 1536. This is why you'll often see dates written as "1535/36" in modern scholarship.</p>
+                        </section>
+
+                        <section id="resources">
+                            <h2>Online Resources and Tools</h2>
+                            
+                            <p>You don't have to learn alone. Several excellent online resources can help you practice and reference:</p>
+                            
+                            <ul>
+                                <li><strong>The National Archives' Palaeography Tutorial:</strong> A free online course with graded exercises using real documents.</li>
+                                <li><strong>Folger Shakespeare Library's Early Modern Manuscripts Online:</strong> Thousands of transcribed documents with images.</li>
+                                <li><strong>British Library's Digitised Manuscripts:</strong> High-resolution images of major collections.</li>
+                                <li><strong>Scottish Handwriting.com:</strong> Excellent tutorials though focused on Scottish records.</li>
+                                <li><strong>Latin Palaeography Network:</strong> For documents in Latin, which many Tudor records still used.</li>
+                            </ul>
+                        </section>
+
+                        <section id="practice">
+                            <h2>Practice Exercises</h2>
+                            
+                            <p>The only way to improve is to practice regularly. Here are three exercises to start with:</p>
+                            
+                            <h3>Exercise 1: Compare and Contrast</h3>
+                            <p>Find a document that has both a printed transcription and an image. Cover the transcription and try to read a line at a time, then check your work. The Lisle Letters and State Papers are good sources for this.</p>
+                            
+                            <h3>Exercise 2: Transcribe a Letter</h3>
+                            <p>Choose a short, clear document—perhaps a single page of a letter. Work through it systematically, creating a line-by-line transcription. Don't worry about expanding abbreviations at first; just record what you see.</p>
+                            
+                            <h3>Exercise 3: Create an Alphabet Chart</h3>
+                            <p>From a document you're working on, create your own personal alphabet chart. Note how each letter is formed, and pay attention to variations—the same writer might form 'e' several different ways even on the same page.</p>
+                            
+                            <div class="practice-box">
+                                <h4>Sample Document for Practice</h4>
+                                <img src="../assets/images/articles/practice-sample.jpg" alt="Practice Document" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'300\' viewBox=\'0 0 500 300\'%3E%3Crect width=\'500\' height=\'300\' fill=\'%23553838\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EPractice Document%3C/text%3E%3C/svg%3E'">
+                                <p>Try transcribing this short passage from a letter of Thomas Cromwell. (Scroll down for the answer.)</p>
+                                <details>
+                                    <summary>View Transcription</summary>
+                                    <p>"Right honorable my singuler good lord, after my most hertie recommendations, pleas it your lordshipp to be advertised that I have received your letters..."</p>
+                                </details>
+                            </div>
+                        </section>
+
+                        <!-- Author Bio -->
+                        <div class="author-bio">
+                            <img src="../assets/images/author/eleanor-thumb.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'30\' y=\'65\' fill=\'white\' font-family=\'Cinzel\' font-size=\'20\'%3EEH%3C/text%3E%3C/svg%3E'">
+                            <div class="author-info">
+                                <h4>About Eleanor Hartwell</h4>
+                                <p>Eleanor spent countless hours in the National Archives researching her Tudor Intrigue series. She now teaches palaeography workshops for aspiring historical fiction writers and has developed her own system for quickly deciphering secretary hand.</p>
+                            </div>
+                        </div>
+
+                        <!-- Article Footer -->
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span class="tag-label">Topics:</span>
+                                <a href="../articles.html?topic=research" class="article-tag">Research Methods</a>
+                                <a href="../articles.html?topic=tudor" class="article-tag">Tudor Era</a>
+                                <a href="../articles.html?topic=sources" class="article-tag">Primary Sources</a>
+                            </div>
+                            
+                            <div class="article-actions">
+                                <button class="action-btn like-btn"><i class="far fa-heart"></i> 312</button>
+                                <button class="action-btn comment-btn"><i class="far fa-comment"></i> 24</button>
+                                <button class="action-btn share-btn"><i class="far fa-share-square"></i> Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <div class="container">
+                <h2 class="section-title">Comments & Questions</h2>
+                
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <h3>Ask a Question or Share Your Experience</h3>
+                    <div class="form-group">
+                        <label for="comment-name">Name *</label>
+                        <input type="text" id="comment-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-email">Email * (not published)</label>
+                        <input type="email" id="comment-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Your Question/Comment *</label>
+                        <textarea id="comment-text" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Post Comment</button>
+                </form>
+
+                <!-- Comments List -->
+                <div class="comments-list">
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar3.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%23553838\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EM%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Margaret Wilson</span>
+                                <span class="comment-date">January 28, 2025</span>
+                            </div>
+                            <p class="comment-text">This is incredibly helpful! I've been struggling with a will from 1542 and the abbreviation "p̄" keeps appearing. From your article, I gather it could be "per", "par", or "pro" - how do I know which one?</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 15</button>
+                            </div>
+                            
+                            <!-- Author Reply -->
+                            <div class="comment reply">
+                                <div class="comment-avatar">
+                                    <img src="../assets/images/author/eleanor-thumb.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EEH%3C/text%3E%3C/svg%3E'">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Eleanor Hartwell <span class="author-badge">Author</span></span>
+                                        <span class="comment-date">January 28, 2025</span>
+                                    </div>
+                                    <p class="comment-text">Great question, Margaret! In wills, "p̄" most often expands to "per" when referring to persons ("per my will"), but can be "pro" in Latin phrases. If you share the full phrase, I might be able to help more specifically!</p>
+                                    <div class="comment-actions">
+                                        <button class="comment-like"><i class="far fa-heart"></i> 8</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar4.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EJ%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">James Thornton</span>
+                                <span class="comment-date">January 25, 2025</span>
+                            </div>
+                            <p class="comment-text">Thank you for the resource list! The National Archives tutorial has been a game-changer for my family history research. Do you know of any resources specifically for Scottish documents from this period?</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 12</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Comments -->
+                <div class="load-more-comments">
+                    <button class="btn-outline">Load More Comments</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Articles -->
+        <section class="related-articles">
+            <div class="container">
+                <h2 class="section-title">Further Reading</h2>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <img src="../assets/images/articles/article9-thumb.jpg" alt="Lisle Letters" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%238b5a2b\'/%3E%3Ctext x=\'30\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3ELisle Letters%3C/text%3E%3C/svg%3E'">
+                        <h4>The Lisle Letters: A Tudor Family Revealed</h4>
+                        <a href="article-9.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="related-card">
+                        <img src="../assets/images/articles/article4-thumb.jpg" alt="Spanish Armada" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23553838\'/%3E%3Ctext x=\'30\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3EArmada%3C/text%3E%3Csvg%3E'">
+                        <h4>The Spanish Armada: Two Sides of the Story</h4>
+                        <a href="article-4.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="related-card">
+                        <img src="../assets/images/articles/sources-thumb.jpg" alt="Primary Sources" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'30\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3ESources%3C/text%3E%3C/svg%3E'">
+                        <h4>Primary Sources for Tudor Research</h4>
+                        <a href="../research/sources.html" class="read-more">Explore Sources <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/article.js"></script>
+</body>
+</html>

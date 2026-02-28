@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Ship Technology: Beyond the Longship - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/article-1.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="../index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="../home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="../books.html">All Series</a></li>
+                                    <li><a href="../series-1.html">Series 1</a></li>
+                                    <li><a href="../series-2.html">Series 2</a></li>
+                                    <li><a href="../series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="../research.html">Overview</a></li>
+                                    <li><a href="../research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="../research/timelines.html">Timelines</a></li>
+                                    <li><a href="../research/maps.html">Maps</a></li>
+                                    <li><a href="../research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="article-1.html" class="active"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../awards.html">Awards</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="../member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="../home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="../series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="../series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="../series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="../research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="../research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="../research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="../research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="article-1.html" class="active"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="../awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="../membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="../member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - ARTICLE 1 ===== -->
+    <main>
+        <!-- Article Header -->
+        <section class="article-header">
+            <div class="container">
+                <div class="article-header-content">
+                    <div class="article-category-badge">Historical Analysis</div>
+                    <h1>Viking Ship Technology: Beyond the Longship</h1>
+                    <div class="article-byline">
+                        <span class="article-author">By Eleanor Hartwell</span>
+                        <span class="article-date"><i class="far fa-calendar"></i> February 2025</span>
+                        <span class="article-read-time"><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Image -->
+        <section class="article-featured-image">
+            <div class="container">
+                <figure class="featured-figure">
+                    <img src="../assets/images/articles/article1-large.jpg" alt="Viking Ship Reconstruction" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'%3E%3Crect width=\'1200\' height=\'600\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'400\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'36\'%3EViking Ship Reconstruction%3C/text%3E%3C/svg%3E'">
+                    <figcaption>The reconstructed Sea Stallion, a Viking longship, sailing in the Roskilde Fjord, Denmark. Photo: Viking Ship Museum.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <section class="article-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <!-- Sidebar -->
+                    <aside class="article-sidebar">
+                        <div class="sidebar-section">
+                            <h4>Table of Contents</h4>
+                            <ul class="toc-list">
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#longship-design">The Longship Design</a></li>
+                                <li><a href="#knarr-cargo">The Knarr: Cargo Vessels</a></li>
+                                <li><a href="#construction">Construction Techniques</a></li>
+                                <li><a href="#navigation">Navigation & Seafaring</a></li>
+                                <li><a href="#legacy">Legacy & Influence</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Share This Article</h4>
+                            <div class="share-buttons">
+                                <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="share-btn email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Related Articles</h4>
+                            <ul class="related-list">
+                                <li><a href="article-7.html">Reading the Runes: An Introduction to Viking Epigraphy</a></li>
+                                <li><a href="article-5.html">In Conversation: Dr. Sarah Reynolds on Viking Archaeology</a></li>
+                                <li><a href="../research/maps.html">Viking Trade Routes Map</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <button class="save-article-btn" id="saveArticleBtn">
+                                <i class="far fa-bookmark"></i> Save Article
+                            </button>
+                        </div>
+                    </aside>
+
+                    <!-- Main Article Text -->
+                    <div class="article-text">
+                        <section id="introduction">
+                            <p class="article-intro">When we think of Viking ships, the image that springs to mind is almost invariably the longship—a sleek, dragon-prowed vessel slicing through northern waters, filled with fearsome warriors. But the Viking Age shipbuilding tradition was far more sophisticated and diverse than this single image suggests. From ocean-going cargo vessels to coastal fishing boats, the Norse peoples developed a range of watercraft that made possible not only their famous raids but also their extensive trade networks and overseas settlements.</p>
+                            
+                            <p>In this article, we'll explore the full spectrum of Viking ship technology, examining how these vessels were designed, built, and used. We'll look at the archaeological evidence from ship burials and harbor excavations, and consider what these remarkable craft tell us about Viking society.</p>
+                        </section>
+
+                        <section id="longship-design">
+                            <h2>The Longship: Designed for Speed and Surprise</h2>
+                            
+                            <p>The iconic longship—or <em>langskip</em> in Old Norse—was a specialized vessel designed for one primary purpose: rapid transportation of warriors. These ships were characterized by their extraordinary length-to-beam ratio, some reaching over 30 meters in length while being only 2.5 meters wide. This slender profile, combined with a shallow draft, allowed longships to navigate both open seas and shallow rivers, giving Viking raiders the ability to strike deep inland.</p>
+                            
+                            <p>The most complete example we have is the Gokstad ship, discovered in a Norwegian burial mound in 1880. Dendrochronology dates its construction to around 890 AD. Analysis of the ship reveals sophisticated design features:</p>
+                            
+                            <ul>
+                                <li><strong>Clinker construction:</strong> Overlapping planks (strakes) riveted together, providing both strength and flexibility</li>
+                                <li><strong>Symmetrical bow and stern:</strong> Allowing the ship to reverse direction quickly without turning around</li>
+                                <li><strong>Single square sail:</strong> Made of wool, supplemented by oars when winds were unfavorable</li>
+                                <li><strong>Side rudder:</strong> Mounted on the starboard side (the origin of the term "starboard")</li>
+                            </ul>
+                            
+                            <p>Recent reconstructions, such as the Sea Stallion built by the Viking Ship Museum in Roskilde, have demonstrated that these ships could achieve speeds of up to 20 knots under sail—remarkable performance by any standard.</p>
+                            
+                            <figure class="inline-figure">
+                                <img src="../assets/images/articles/gokstad-ship.jpg" alt="Gokstad Ship Reconstruction" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'150\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3EGokstad Ship%3C/text%3E%3C/svg%3E'">
+                                <figcaption>The Gokstad ship on display at the Viking Ship Museum in Oslo, Norway.</figcaption>
+                            </figure>
+                        </section>
+
+                        <section id="knarr-cargo">
+                            <h2>The Knarr: Workhorse of Viking Trade</h2>
+                            
+                            <p>While longships capture the imagination, the <em>knarr</em> (or knörr) was arguably more important to Viking civilization. These cargo vessels were built very differently—broader, deeper, and more robust, designed to carry goods rather than warriors. A typical knarr might be 15 meters long but 5 meters wide, with a cargo capacity of 20-30 tons.</p>
+                            
+                            <p>The most famous example is the Skuldelev 1 ship, recovered from the Roskilde Fjord in Denmark. Analysis shows it was built in Norway around 1030 AD from pine timber. Unlike the longship's emphasis on speed, the knarr prioritized stability and capacity. Key features included:</p>
+                            
+                            <ul>
+                                <li><strong>Higher freeboard:</strong> Taller sides to keep cargo dry in rough seas</li>
+                                <li><strong>Full deck:</strong> Covering both bow and stern, with an open hold amidships</li>
+                                <li><strong>Reduced oar ports:</strong> Primarily sail-powered, with oars only for maneuvering in harbors</li>
+                                <li><strong>Stronger keel:</strong> Designed to withstand the stresses of heavy loading</li>
+                            </ul>
+                            
+                            <p>These vessels were the backbone of Viking trade, carrying goods across the North Atlantic to Iceland, Greenland, and even North America. They transported timber, wool, walrus ivory, and other commodities, making possible the Norse settlements in remote locations.</p>
+                        </section>
+
+                        <section id="construction">
+                            <h2>Construction Techniques: The Clinker Method</h2>
+                            
+                            <p>What united all Viking ship types was their method of construction: clinker building. This technique, still used in traditional boatbuilding today, involved several sophisticated steps:</p>
+                            
+                            <h3>Timber Selection</h3>
+                            <p>Norse shipbuilders were expert foresters, selecting specific trees for specific purposes. Oak was preferred for keels and planking due to its strength and resistance to rot. Pine was used for masts and spars. Curved trees were sought for ribs and stems, following the natural grain to maintain strength.</p>
+                            
+                            <h3>Plank Splitting</h3>
+                            <p>Rather than sawing planks, which would cut across the grain and weaken the wood, Viking builders split logs radially using wedges. This produced planks that followed the natural grain, resulting in greater strength and flexibility—essential for a hull that needed to twist and flex with the waves.</p>
+                            
+                            <h3>Assembly</h3>
+                            <p>The keel was laid first, then planks were added one by one, overlapping and riveted together with iron nails. The gaps were sealed with wool or animal hair soaked in pine tar—a technique so effective that reconstructed ships remain remarkably watertight.</p>
+                            
+                            <h3>Tools</h3>
+                            <p>Viking shipbuilders worked with surprisingly simple tools: axes, adzes, knives, and drills. The quality of their work speaks to extraordinary skill rather than sophisticated technology.</p>
+                            
+                            <blockquote>
+                                <p>"The Vikings built their ships not with blueprints, but with inherited knowledge passed down through generations. Every ship was unique, adapted to its intended use and the materials available."</p>
+                                <footer>— Dr. Jan Bill, Viking Ship Museum, Oslo</footer>
+                            </blockquote>
+                        </section>
+
+                        <section id="navigation">
+                            <h2>Navigation and Seafaring</h2>
+                            
+                            <p>How did the Vikings navigate across the open ocean without compasses or charts? This question has fascinated historians and archaeologists for decades. The evidence suggests a combination of practical knowledge and simple but effective tools:</p>
+                            
+                            <h3>Landmarks and Bird Observations</h3>
+                            <p>Coastal navigation relied on familiar landmarks. Once out of sight of land, Vikings may have released birds—if the bird returned, land was likely in that direction. They also observed whale migrations and cloud formations that indicated land beyond the horizon.</p>
+                            
+                            <h3>The Sunstone</h3>
+                            <p>Icelandic sagas mention a "sólarsteinn" (sunstone) used to locate the sun on overcast days. Recent research has suggested that cordierite or calcite crystals could function as polarizing filters, allowing navigators to find the sun's position even through clouds. Experimental archaeology has confirmed this is plausible, though no definitive archaeological examples have been found.</p>
+                            
+                            <h3>Dead Reckoning</h3>
+                            <p>Skilled navigators maintained their position by calculating speed, time, and direction—a technique called dead reckoning. Speed was estimated by throwing a log overboard and timing how long it took to pass the ship's length. Direction was maintained by reference to the sun and stars when visible.</p>
+                            
+                            <p>The sagas describe remarkable voyages—from Norway to Greenland, a distance of over 1,500 nautical miles across the North Atlantic. That Viking navigators could accomplish this with such simple tools testifies to their extraordinary seamanship.</p>
+                        </section>
+
+                        <section id="legacy">
+                            <h2>Legacy and Influence</h2>
+                            
+                            <p>The Viking shipbuilding tradition did not disappear with the end of the Viking Age. Its influence can be seen in later medieval ship design throughout Northern Europe. The clinker technique continued to be used for centuries, and many traditional fishing boats in Scandinavia retain features that would be familiar to a Viking shipbuilder.</p>
+                            
+                            <p>In recent decades, experimental archaeology has brought Viking ships back to life. Reconstructions like the Sea Stallion and the Gaia have sailed thousands of miles, demonstrating the remarkable seaworthiness of these ancient designs. These voyages have transformed our understanding of Viking capabilities, showing that their ships were not just raiding vessels but sophisticated ocean-going craft.</p>
+                            
+                            <p>For historical fiction writers like myself, understanding these ships is essential. They were not merely transportation but central to Viking identity—sources of pride, objects of beauty, and symbols of a culture that spanned continents. When I write scenes set aboard these vessels, I try to convey both the practical realities and the profound connection the Norse people felt with their ships.</p>
+                        </section>
+
+                        <!-- Author Bio -->
+                        <div class="author-bio">
+                            <img src="../assets/images/author/eleanor-thumb.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'30\' y=\'65\' fill=\'white\' font-family=\'Cinzel\' font-size=\'20\'%3EEH%3C/text%3E%3C/svg%3E'">
+                            <div class="author-info">
+                                <h4>About Eleanor Hartwell</h4>
+                                <p>Eleanor is the award-winning author of The Saxon Chronicles, The Tudor Intrigue, and The Roman Eagle series. She holds a degree in History from Oxford and spends her time researching, writing, and occasionally sailing reconstructed Viking ships.</p>
+                            </div>
+                        </div>
+
+                        <!-- Article Footer -->
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span class="tag-label">Topics:</span>
+                                <a href="../articles.html?topic=viking" class="article-tag">Viking Age</a>
+                                <a href="../articles.html?topic=history" class="article-tag">Historical Analysis</a>
+                                <a href="../articles.html?topic=maritime" class="article-tag">Maritime History</a>
+                            </div>
+                            
+                            <div class="article-actions">
+                                <button class="action-btn like-btn"><i class="far fa-heart"></i> 247</button>
+                                <button class="action-btn comment-btn"><i class="far fa-comment"></i> 18</button>
+                                <button class="action-btn share-btn"><i class="far fa-share-square"></i> Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <div class="container">
+                <h2 class="section-title">Comments</h2>
+                
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <div class="form-group">
+                        <label for="comment-name">Name *</label>
+                        <input type="text" id="comment-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-email">Email * (not published)</label>
+                        <input type="email" id="comment-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Comment *</label>
+                        <textarea id="comment-text" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Post Comment</button>
+                </form>
+
+                <!-- Comments List -->
+                <div class="comments-list">
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar1.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3ER%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Robert Thompson</span>
+                                <span class="comment-date">February 28, 2025</span>
+                            </div>
+                            <p class="comment-text">Fascinating article! I had no idea there was such variety in Viking ship design. The section on the knarr was particularly enlightening. Do you know if any examples of Viking cargo have been found preserved in the wrecks?</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 12</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../assets/images/comments/avatar2.jpg" alt="User Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EE%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Erika Johansen</span>
+                                <span class="comment-date">February 27, 2025</span>
+                            </div>
+                            <p class="comment-text">The section on navigation reminded me of the Faroe Islands, where there's still a tradition of using bird observations for navigation. My grandfather used to talk about how the old fishermen would watch the gannets to find fishing grounds. It's amazing how these traditions persist.</p>
+                            <div class="comment-actions">
+                                <button class="comment-reply">Reply</button>
+                                <button class="comment-like"><i class="far fa-heart"></i> 8</button>
+                            </div>
+                            
+                            <!-- Nested Reply -->
+                            <div class="comment reply">
+                                <div class="comment-avatar">
+                                    <img src="../assets/images/author/eleanor-thumb.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Ccircle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'15\' y=\'35\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EEH%3C/text%3E%3C/svg%3E'">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Eleanor Hartwell <span class="author-badge">Author</span></span>
+                                        <span class="comment-date">February 27, 2025</span>
+                                    </div>
+                                    <p class="comment-text">Thanks for sharing that, Erika! Yes, the continuity of these traditional navigation methods is remarkable. The Faroese boat-building tradition also preserves many Viking-era techniques. I'll have to write a follow-up article on that topic!</p>
+                                    <div class="comment-actions">
+                                        <button class="comment-like"><i class="far fa-heart"></i> 5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Comments -->
+                <div class="load-more-comments">
+                    <button class="btn-outline">Load More Comments</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Articles -->
+        <section class="related-articles">
+            <div class="container">
+                <h2 class="section-title">You Might Also Enjoy</h2>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <img src="../assets/images/articles/article7-thumb.jpg" alt="Runic Inscriptions" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%232f4f4f\'/%3E%3Ctext x=\'30\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3ERunic%3C/text%3E%3C/svg%3E'">
+                        <h4>Reading the Runes: An Introduction to Viking Epigraphy</h4>
+                        <a href="article-7.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="related-card">
+                        <img src="../assets/images/articles/article5-thumb.jpg" alt="Viking Archaeology" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%234a3729\'/%3E%3Ctext x=\'20\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3EArchaeology%3C/text%3E%3C/svg%3E'">
+                        <h4>In Conversation: Dr. Sarah Reynolds on Viking Archaeology</h4>
+                        <a href="article-5.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="related-card">
+                        <img src="../assets/images/maps/viking-routes-thumb.jpg" alt="Viking Trade Routes" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'20\' y=\'75\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'14\'%3ETrade Routes%3C/text%3E%3C/svg%3E'">
+                        <h4>Viking Trade Routes Map</h4>
+                        <a href="../research/maps.html" class="read-more">View Map <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/article-1.js"></script>
+</body>
+</html>
