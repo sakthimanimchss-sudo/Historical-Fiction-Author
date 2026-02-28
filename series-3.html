@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roman Eagle - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/series.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <!-- Logo (header) -->
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-scroll"></i>
+                Eleanor Hartwell
+            </a>
+            <span>Historical Fiction Author</span>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <!-- COMBINED: Book Series + Historical Research -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="books.html">All Series</a></li>
+                                <li><a href="series-1.html">Series 1</a></li>
+                                <li><a href="series-2.html">Series 2</a></li>
+                                <li><a href="series-3.html">Series 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-search"></i> Research</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="research.html">Overview</a></li>
+                                <li><a href="research/real-figures.html">Real Figures</a></li>
+                                <li><a href="research/timelines.html">Timelines</a></li>
+                                <li><a href="research/maps.html">Maps</a></li>
+                                <li><a href="research/sources.html">Sources</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- COMBINED: Articles + Blog -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+        <div class="desktop-actions">
+            <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                <i class="fas fa-globe"></i>
+            </button>
+            <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+    <div class="mobile-nav-wrapper" id="mobileNav">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                        <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                        <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                        <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                        <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                        <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                        <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                        <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                <!-- Mobile action items - Three buttons in same line -->
+                <li class="mobile-action-item">
+                    <div class="mobile-theme-rtl">
+                        <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- ===== MAIN CONTENT - SERIES 3: THE ROMAN EAGLE ===== -->
+    <main>
+        <!-- Series Header -->
+        <section class="series-header" style="background: linear-gradient(135deg, #2f4f2f, #1e3f1e);">
+            <div class="container">
+                <div class="series-header-content">
+                    <h1>The Roman Eagle</h1>
+                    <p class="series-tagline">A legion's struggle at the edge of the empire</p>
+                    <div class="series-meta">
+                        <span><i class="fas fa-book"></i> 2 Books</span>
+                        <span><i class="fas fa-clock"></i> Roman Britain, 117 AD</span>
+                        <span><i class="fas fa-star"></i> 4.9 (950+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series Overview -->
+        <section class="series-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-image">
+                        <img src="../assets/images/covers/series3-collection.jpg" alt="The Roman Eagle Collection" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'600\' viewBox=\'0 0 500 600\'%3E%3Crect width=\'500\' height=\'600\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'150\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ERoman Eagle%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <div class="overview-content">
+                        <h2>About the Series</h2>
+                        <p class="intro">At the edge of the empire, a Roman legion faces its greatest challenge—and its greatest glory.</p>
+                        <p>The year is 117 AD. Hadrian has just become emperor, and the northern frontier of Britannia is in chaos. The Ninth Legion has vanished, and rumors of rebellion sweep through the province. Into this turmoil steps Lucius Valerius Aquila, a young standard-bearer of the Twentieth Legion, tasked with discovering what happened to his comrades and restoring Roman honor.</p>
+                        <p>But the truth he uncovers is far more dangerous than he imagined—a conspiracy that reaches the highest levels of power, and a enemy that fights not with swords but with secrets. From the walled cities of Roman Britain to the wild lands beyond Hadrian's future wall, Lucius must choose between duty to Rome and loyalty to the men who follow him.</p>
+                        <p>This two-book series combines gripping military action with political intrigue, bringing the Roman occupation of Britain to vivid life through meticulous research and compelling characters.</p>
+                        
+                        <div class="series-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-trophy"></i>
+                                <span>Winner, Classical Fiction Award 2023</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-newspaper"></i>
+                                <span>"Breathes new life into Roman Britain" - History Today</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-university"></i>
+                                <span>Recommended by The Classical Association</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books in Series -->
+        <section class="books-in-series">
+            <div class="container">
+                <h2 class="section-title">Books in the Series</h2>
+                <div class="books-grid">
+                    <!-- Book 1 -->
+                    <div class="book-item">
+                        <div class="book-number">I</div>
+                        <div class="book-cover">
+                            <img src="../assets/images/covers/series3-book1.jpg" alt="The Lost Legion" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'300\' viewBox=\'0 0 200 300\'%3E%3Crect width=\'200\' height=\'300\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'50\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'16\'%3EBook 1%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="book-details">
+                            <h3>The Lost Legion</h3>
+                            <p class="book-year">2021</p>
+                            <p class="book-description">When the Ninth Legion vanishes in the mists of Caledonia, standard-bearer Lucius is sent north to discover their fate. What he finds will challenge everything he believes about Rome, honor, and the men he's sworn to serve.</p>
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (580 reviews)</span>
+                            </div>
+                            <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="book-item">
+                        <div class="book-number">II</div>
+                        <div class="book-cover">
+                            <img src="../assets/images/covers/series3-book2.jpg" alt="Hadrian's Wall" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'300\' viewBox=\'0 0 200 300\'%3E%3Crect width=\'200\' height=\'300\' fill=\'%233f6f3f\'/%3E%3Ctext x=\'50\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'16\'%3EBook 2%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="book-details">
+                            <h3>Hadrian's Wall</h3>
+                            <p class="book-year">2023</p>
+                            <p class="book-description">Years later, Lucius has risen through the ranks, but the past haunts him. When the emperor himself arrives in Britannia with plans for a great wall, old enemies resurface and a new conspiracy threatens to destroy everything Lucius has built.</p>
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (520 reviews)</span>
+                            </div>
+                            <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historical Context -->
+        <section class="historical-context">
+            <div class="container">
+                <div class="context-grid">
+                    <div class="context-content">
+                        <h2>The Real History</h2>
+                        <p class="intro">The Roman Eagle is grounded in the fascinating and mysterious history of Roman Britain.</p>
+                        <p>The series draws on archaeological evidence, Roman military records, and the writings of Tacitus and Cassius Dio. Key historical elements include:</p>
+                        <ul class="context-list">
+                            <li><i class="fas fa-shield-alt"></i> <strong>The Lost Ninth Legion:</strong> One of history's great mysteries—what really happened to Hispana?</li>
+                            <li><i class="fas fa-emperor"></i> <strong>Emperor Hadrian:</strong> The soldier-emperor who consolidated Rome's frontiers</li>
+                            <li><i class="fas fa-mountain"></i> <strong>Hadrian's Wall:</strong> The iconic frontier, its construction and purpose</li>
+                            <li><i class="fas fa-users"></i> <strong>Romano-British Society:</strong> The complex interactions between Roman and native cultures</li>
+                            <li><i class="fas fa-tribe"></i> <strong>Northern Tribes:</strong> The Brigantes, Selgovae, and other peoples beyond the frontier</li>
+                        </ul>
+                        <a href="../research/maps.html" class="btn-outline">Explore Roman Britain Map <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="context-image">
+                        <img src="../assets/images/maps/roman-britain.jpg" alt="Roman Britain Map" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'400\' viewBox=\'0 0 500 400\'%3E%3Crect width=\'500\' height=\'400\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'150\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'20\'%3ERoman Britain%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reading Order -->
+        <section class="reading-order" style="background: linear-gradient(135deg, #2f4f2f, #1e3f1e);">
+            <div class="container">
+                <div class="order-content">
+                    <i class="fas fa-book-open"></i>
+                    <h2>Reading Order</h2>
+                    <p>The Roman Eagle series follows Lucius's journey chronologically, though each book can be read as a standalone.</p>
+                    <div class="order-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <span class="step-title">The Lost Legion</span>
+                        </div>
+                        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-title">Hadrian's Wall</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/series.js"></script>
+</body>
+</html>

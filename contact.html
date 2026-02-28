@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="books.html">All Series</a></li>
+                                    <li><a href="series-1.html">Series 1</a></li>
+                                    <li><a href="series-2.html">Series 2</a></li>
+                                    <li><a href="series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="research.html">Overview</a></li>
+                                    <li><a href="research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="research/timelines.html">Timelines</a></li>
+                                    <li><a href="research/maps.html">Maps</a></li>
+                                    <li><a href="research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - CONTACT ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p class="page-tagline">I'd love to hear from you</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Contact</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Intro -->
+        <section class="contact-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <p>Whether you have a question about my books, want to invite me to an event, or just want to share your thoughts on historical fiction, I'd love to hear from you. Please use the form below or find me on social media.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Grid -->
+        <section class="contact-grid-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Send a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name *</label>
+                                    <input type="text" id="first-name" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name *</label>
+                                    <input type="text" id="last-name" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="event">Event Invitation</option>
+                                    <option value="interview">Interview Request</option>
+                                    <option value="rights">Rights/Permissions</option>
+                                    <option value="speaking">Speaking Engagement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to my newsletter</label>
+                            </div>
+                            
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I agree to the <a href="privacy.html">Privacy Policy</a> *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary btn-large">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-wrapper">
+                        <h2>Other Ways to Connect</h2>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:contact@eleanorhartwell.com">contact@eleanorhartwell.com</a></p>
+                                <p class="response-time">Response within 3-5 business days</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Phone (Agent)</h3>
+                                <p>+44 (0)20 7946 0123</p>
+                                <p class="response-time">For urgent inquiries only</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Mailing Address</h3>
+                                <p>Eleanor Hartwell<br>
+                                c/o The Rights House<br>
+                                P.O. Box 70177<br>
+                                London, WC1A 2QB<br>
+                                United Kingdom</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Follow Me</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                                <a href="#" aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section - Simple Iframe Google Map -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Find Me at Events</h2>
+                
+                <!-- Simple Google Maps Iframe (No API Key Required) -->
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&center=52.5,-1.5&zoom=6"
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 12px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="UK Events Map">
+                    </iframe>
+                    
+                    <!-- Map Controls -->
+                    <div class="map-controls">
+                        <button class="map-control-btn" onclick="document.querySelector('.map-wrapper iframe').src='https://www.google.com/maps/embed/v1/view?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&center=52.5,-1.5&zoom=6'">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <button class="map-control-btn" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Oxford+Literary+Festival', '_blank')">
+                            <i class="fas fa-external-link-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Event Locations Cards with Direct Links -->
+                <div class="event-locations">
+                    <div class="location-card" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Bodleian+Library+Oxford', '_blank')">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <h4>Oxford Literary Festival</h4>
+                            <p class="event-date">March 15-20, 2025</p>
+                            <p class="event-venue">Bodleian Library, Oxford</p>
+                            <span class="directions-link">
+                                <i class="fas fa-directions"></i> Click for Directions
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Olympia+London', '_blank')">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <h4>London Book Fair</h4>
+                            <p class="event-date">April 8-10, 2025</p>
+                            <p class="event-venue">Olympia London</p>
+                            <span class="directions-link">
+                                <i class="fas fa-directions"></i> Click for Directions
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Edinburgh+College+of+Art', '_blank')">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <h4>Edinburgh International Book Festival</h4>
+                            <p class="event-date">August 12-18, 2025</p>
+                            <p class="event-venue">Edinburgh College of Art</p>
+                            <span class="directions-link">
+                                <i class="fas fa-directions"></i> Click for Directions
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Quick Links -->
+        <section class="contact-faq">
+            <div class="container">
+                <h2 class="section-title">Quick Answers</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Book Club Questions?</h3>
+                        <p>Visit our <a href="book-club-kits.html">Book Club Kits</a> page for discussion guides.</p>
+                    </div>
+                    <div class="faq-item">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Rights & Permissions?</h3>
+                        <p>Contact my agent at <a href="mailto:rights@therightshouse.com">rights@therightshouse.com</a></p>
+                    </div>
+                    <div class="faq-item">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Media Inquiries?</h3>
+                        <p>Please use the contact form and select "Interview Request"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

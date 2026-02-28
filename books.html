@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Book Series - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/books.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <!-- Logo (header) -->
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-scroll"></i>
+                Eleanor Hartwell
+            </a>
+            <span>Historical Fiction Author</span>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <!-- COMBINED: Book Series + Historical Research -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="books.html">All Series</a></li>
+                                <li><a href="series-1.html">Series 1</a></li>
+                                <li><a href="series-2.html">Series 2</a></li>
+                                <li><a href="series-3.html">Series 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-search"></i> Research</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="research.html">Overview</a></li>
+                                <li><a href="research/real-figures.html">Real Figures</a></li>
+                                <li><a href="research/timelines.html">Timelines</a></li>
+                                <li><a href="research/maps.html">Maps</a></li>
+                                <li><a href="research/sources.html">Sources</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- COMBINED: Articles + Blog -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+        <div class="desktop-actions">
+            <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                <i class="fas fa-globe"></i>
+            </button>
+            <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+    <div class="mobile-nav-wrapper" id="mobileNav">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                        <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                        <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                        <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                        <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                        <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                        <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                        <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                <!-- Mobile action items - Three buttons in same line -->
+                <li class="mobile-action-item">
+                    <div class="mobile-theme-rtl">
+                        <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>All Book Series</h1>
+                <p class="page-tagline">Explore my complete collection of historical fiction</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Books</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series Filter / Introduction -->
+        <section class="series-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <p>From the blood-soaked battlefields of Viking England to the dangerous corridors of the Tudor court and the windswept frontiers of Roman Britain, my novels transport you to the past with meticulous research and compelling characters. Each series stands alone, offering a complete journey into a different era.</p>
+                </div>
+                <div class="series-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Total Books</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Series</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Copies Sold</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Awards</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 1: The Saxon Chronicles -->
+        <section class="series-card series-1">
+            <div class="container">
+                <div class="series-card-grid">
+                    <div class="series-card-image">
+                        <img src="assets/images/covers/series1-collection.jpg" alt="The Saxon Chronicles" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'500\' viewBox=\'0 0 400 500\'%3E%3Crect width=\'400\' height=\'500\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'100\' y=\'250\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ESaxon Series%3C/text%3E%3C/svg%3E'">
+                        <div class="series-badge">Bestseller</div>
+                    </div>
+                    <div class="series-card-content">
+                        <h2>The Saxon Chronicles</h2>
+                        <p class="series-era"><i class="fas fa-clock"></i> 9th Century England</p>
+                        <p class="series-description">Set against the backdrop of Viking invasions and the birth of England, this epic series follows the journey of a young Saxon nobleman caught between loyalty to his people and an unexpected destiny. Meticulously researched and emotionally gripping, The Saxon Chronicles brings the Dark Ages to vivid life.</p>
+                        
+                        <div class="series-book-list">
+                            <h4>Books in this series:</h4>
+                            <ul>
+                                <li><i class="fas fa-book"></i> <strong>Book I:</strong> The Last Kingdom (2015)</li>
+                                <li><i class="fas fa-book"></i> <strong>Book II:</strong> The Pale Horseman (2017)</li>
+                                <li><i class="fas fa-book"></i> <strong>Book III:</strong> Lords of the North (2019)</li>
+                                <li><i class="fas fa-book"></i> <strong>Book IV:</strong> Sword of Kings (2022)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="series-meta">
+                            <span><i class="fas fa-star"></i> 4.8 (2,500+ reviews)</span>
+                            <span><i class="fas fa-trophy"></i> Winner, Historical Novel Prize 2021</span>
+                        </div>
+                        
+                        <div class="series-actions">
+                            <a href="series/series-1.html" class="btn btn-primary">Explore Series <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-outline">Read Sample <i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 2: The Tudor Intrigue -->
+        <section class="series-card series-2">
+            <div class="container">
+                <div class="series-card-grid">
+                    <div class="series-card-image">
+                        <img src="assets/images/covers/series2-collection.jpg" alt="The Tudor Intrigue" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'500\' viewBox=\'0 0 400 500\'%3E%3Crect width=\'400\' height=\'500\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'100\' y=\'250\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ETudor Series%3C/text%3E%3C/svg%3E'">
+                        <div class="series-badge">TV Adaptation</div>
+                    </div>
+                    <div class="series-card-content">
+                        <h2>The Tudor Intrigue</h2>
+                        <p class="series-era"><i class="fas fa-clock"></i> 16th Century England</p>
+                        <p class="series-description">Step into the dangerous world of Tudor politics, where love and betrayal walk hand in hand. This gripping series follows a young courtier navigating the treacherous waters of Henry VIII's court, where one wrong move could mean the difference between favor and the block.</p>
+                        
+                        <div class="series-book-list">
+                            <h4>Books in this series:</h4>
+                            <ul>
+                                <li><i class="fas fa-book"></i> <strong>Book I:</strong> The King's Court (2018)</li>
+                                <li><i class="fas fa-book"></i> <strong>Book II:</strong> The Boleyn Legacy (2020)</li>
+                                <li><i class="fas fa-book"></i> <strong>Book III:</strong> The Seymour Shadow (2023)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="series-meta">
+                            <span><i class="fas fa-star"></i> 4.7 (1,800+ reviews)</span>
+                            <span><i class="fas fa-trophy"></i> Finalist, British Book Awards 2022</span>
+                        </div>
+                        
+                        <div class="series-actions">
+                            <a href="series/series-2.html" class="btn btn-primary">Explore Series <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-outline">Read Sample <i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 3: The Roman Eagle -->
+        <section class="series-card series-3">
+            <div class="container">
+                <div class="series-card-grid">
+                    <div class="series-card-image">
+                        <img src="assets/images/covers/series3-collection.jpg" alt="The Roman Eagle" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'500\' viewBox=\'0 0 400 500\'%3E%3Crect width=\'400\' height=\'500\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'100\' y=\'250\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ERoman Series%3C/text%3E%3C/svg%3E'">
+                        <div class="series-badge">Award Winner</div>
+                    </div>
+                    <div class="series-card-content">
+                        <h2>The Roman Eagle</h2>
+                        <p class="series-era"><i class="fas fa-clock"></i> Roman Britain, 117 AD</p>
+                        <p class="series-description">At the edge of the empire, a Roman legion faces its greatest challenge. When a standard bearer discovers a conspiracy that threatens not just his unit but the entire province of Britannia, he must choose between duty to Rome and loyalty to the land he's come to call home.</p>
+                        
+                        <div class="series-book-list">
+                            <h4>Books in this series:</h4>
+                            <ul>
+                                <li><i class="fas fa-book"></i> <strong>Book I:</strong> The Lost Legion (2021)</li>
+                                <li><i class="fas fa-book"></i> <strong>Book II:</strong> Hadrian's Wall (2023)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="series-meta">
+                            <span><i class="fas fa-star"></i> 4.9 (950+ reviews)</span>
+                            <span><i class="fas fa-trophy"></i> Winner, Classical Fiction Award 2023</span>
+                        </div>
+                        
+                        <div class="series-actions">
+                            <a href="series/series-3.html" class="btn btn-primary">Explore Series <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-outline">Read Sample <i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standalone Books / Anthologies -->
+        <section class="standalone-books">
+            <div class="container">
+                <h2 class="section-title">Short Stories & Anthologies</h2>
+                <div class="standalone-grid">
+                    <div class="standalone-card">
+                        <img src="assets/images/covers/standalone1.jpg" alt="Tales from the Dark Ages" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'200\' viewBox=\'0 0 150 200\'%3E%3Crect width=\'150\' height=\'200\' fill=\'%234a3729\'/%3E%3Ctext x=\'25\' y=\'100\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'12\'%3EAnthology%3C/text%3E%3C/svg%3E'">
+                        <h3>Tales from the Dark Ages</h3>
+                        <p class="standalone-year">2020</p>
+                        <p>A collection of short stories set in the world of The Saxon Chronicles.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="standalone-card">
+                        <img src="assets/images/covers/standalone2.jpg" alt="Tudor Christmas" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'200\' viewBox=\'0 0 150 200\'%3E%3Crect width=\'150\' height=\'200\' fill=\'%23553838\'/%3E%3Ctext x=\'25\' y=\'100\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'12\'%3ETudor Tale%3C/text%3E%3C/svg%3E'">
+                        <h3>A Tudor Christmas</h3>
+                        <p class="standalone-year">2021</p>
+                        <p>A holiday novella featuring characters from The Tudor Intrigue.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="standalone-card">
+                        <img src="assets/images/covers/standalone3.jpg" alt="Roman Britain Stories" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'200\' viewBox=\'0 0 150 200\'%3E%3Crect width=\'150\' height=\'200\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'25\' y=\'100\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'12\'%3ERoman Tales%3C/text%3E%3C/svg%3E'">
+                        <h3>Frontier Stories</h3>
+                        <p class="standalone-year">2024</p>
+                        <p>Three short stories from the edge of the Roman Empire.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reading Guide CTA -->
+        <section class="reading-guide-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <i class="fas fa-book-reader"></i>
+                    <h2>Not sure where to start?</h2>
+                    <p>Download my free reading guide with suggested reading orders, character lists, and historical context for all series.</p>
+                    <a href="#" class="btn btn-primary">Get Free Reading Guide <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/books.js"></script>
+</body>
+</html>

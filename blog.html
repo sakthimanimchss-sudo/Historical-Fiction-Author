@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="books.html">All Series</a></li>
+                                    <li><a href="series-1.html">Series 1</a></li>
+                                    <li><a href="series-2.html">Series 2</a></li>
+                                    <li><a href="series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="research.html">Overview</a></li>
+                                    <li><a href="research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="research/timelines.html">Timelines</a></li>
+                                    <li><a href="research/maps.html">Maps</a></li>
+                                    <li><a href="research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - BLOG ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>From the Author's Desk</h1>
+                <p class="page-tagline">Thoughts on history, writing, and the stories behind the stories</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Blog</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="container">
+                <div class="categories-wrapper">
+                    <button class="category-btn active" data-category="all">All Posts</button>
+                    <button class="category-btn" data-category="writing">Writing Life</button>
+                    <button class="category-btn" data-category="research">Research Stories</button>
+                    <button class="category-btn" data-category="history">History Deep Dive</button>
+                    <button class="category-btn" data-category="events">Events & News</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <div class="featured-grid">
+                    <div class="featured-image">
+                        <img src="assets/images/blog/featured-post.jpg" alt="Featured Blog Post" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'200\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3EFeatured Post%3C/text%3E%3C/svg%3E'">
+                        <div class="featured-tag">Featured</div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="post-meta">
+                            <span class="post-category">Writing Life</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> March 15, 2025</span>
+                        </div>
+                        <h2>Finding the Voices of the Past: My Approach to Character Dialogue</h2>
+                        <p class="post-excerpt">How do we make historical characters sound authentic without overwhelming readers with archaic language? In this post, I share my approach to crafting dialogue that feels true to the period while remaining accessible and engaging.</p>
+                        <div class="post-footer">
+                            <a href="blog-post-1.html" class="btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="post-stats">
+                                <span><i class="far fa-comment"></i> 24 Comments</span>
+                                <span><i class="far fa-heart"></i> 156 Likes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-grid-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card" data-category="research">
+                        <div class="card-image">
+                            <img src="assets/images/blog/post1.jpg" alt="Research in the Archives" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'100\' y=\'125\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EResearch Post%3C/text%3E%3C/svg%3E'">
+                            <span class="card-category">Research Stories</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>A Day in the British Library</h3>
+                            <p class="post-meta"><i class="far fa-calendar"></i> March 10, 2025</p>
+                            <p class="post-excerpt">Behind the scenes at one of the world's great libraries, hunting for manuscript clues about Tudor court life.</p>
+                            <a href="blog-post-2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card" data-category="history">
+                        <div class="card-image">
+                            <img src="assets/images/blog/post2.jpg" alt="Viking History" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'120\' y=\'125\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EViking History%3C/text%3E%3C/svg%3E'">
+                            <span class="card-category">History Deep Dive</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>The Real Women of the Viking Age</h3>
+                            <p class="post-meta"><i class="far fa-calendar"></i> March 5, 2025</p>
+                            <p class="post-excerpt">Beyond the shieldmaidens: what archaeological evidence tells us about the lives of Norse women.</p>
+                            <a href="blog-post-3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card" data-category="writing">
+                        <div class="card-image">
+                            <img src="assets/images/blog/post3.jpg" alt="Writing Process" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%234a3729\'/%3E%3Ctext x=\'120\' y=\'125\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EWriting Tips%3C/text%3E%3C/svg%3E'">
+                            <span class="card-category">Writing Life</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>From Research to First Draft: My Process</h3>
+                            <p class="post-meta"><i class="far fa-calendar"></i> February 28, 2025</p>
+                            <p class="post-excerpt">How I organize years of research and finally begin writing the first chapter of a new novel.</p>
+                            <a href="blog-post-4.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 4 -->
+                    <article class="blog-card" data-category="events">
+                        <div class="card-image">
+                            <img src="assets/images/blog/post4.jpg" alt="Book Launch Event" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'120\' y=\'125\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EEvents%3C/text%3E%3C/svg%3E'">
+                            <span class="card-category">Events & News</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Oxford Literary Festival: Recap</h3>
+                            <p class="post-meta"><i class="far fa-calendar"></i> February 20, 2025</p>
+                            <p class="post-excerpt">Highlights from my talk on "Writing the Tudors" and the wonderful readers I met.</p>
+                            <a href="blog-post-5.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 5 -->
+                    <article class="blog-card" data-category="research">
+                        <div class="card-image">
+                            <img src="assets/images/blog/post5.jpg" alt="Hadrian's Wall" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'100\' y=\'125\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EHadrian&apos;s Wall%3C/text%3E%3C/svg%3E'">
+                            <span class="card-category">Research Stories</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Walking Hadrian's Wall: A Research Journey</h3>
+                            <p class="post-meta"><i class="far fa-calendar"></i> February 15, 2025</p>
+                            <p class="post-excerpt">Tracing the footsteps of Roman legionaries along the most iconic frontier in Britain.</p>
+                            <a href="blog-post-6.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 6 -->
+                    <article class="blog-card" data-category="history">
+                        <div class="card-image">
+                            <img src="assets/images/blog/post6.jpg" alt="Anne Boleyn" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%23553838\'/%3E%3Ctext x=\'120\' y=\'125\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EAnne Boleyn%3C/text%3E%3C/svg%3E'">
+                            <span class="card-category">History Deep Dive</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Anne Boleyn: Separating Fact from Fiction</h3>
+                            <p class="post-meta"><i class="far fa-calendar"></i> February 10, 2025</p>
+                            <p class="post-excerpt">What the primary sources really tell us about Henry VIII's most famous queen.</p>
+                            <a href="blog-post-7.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h2>Never Miss a Post</h2>
+                    <p>Subscribe to receive new blog posts directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                    <p class="privacy-note">I respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="pagination-section">
+            <div class="container">
+                <div class="pagination">
+                    <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link">4</a>
+                    <a href="#" class="page-link">5</a>
+                    <a href="#" class="page-link">Next <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>

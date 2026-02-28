@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Eleanor Hartwell - Historical Fiction Author</title>
+    
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <!-- Logo (header) -->
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-scroll"></i>
+                Eleanor Hartwell
+            </a>
+            <span>Historical Fiction Author</span>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <!-- COMBINED: Book Series + Historical Research -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="books.html">All Series</a></li>
+                                <li><a href="series-1.html">Series 1</a></li>
+                                <li><a href="series-2.html">Series 2</a></li>
+                                <li><a href="series-3.html">Series 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-search"></i> Research</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="research.html">Overview</a></li>
+                                <li><a href="research/real-figures.html">Real Figures</a></li>
+                                <li><a href="research/timelines.html">Timelines</a></li>
+                                <li><a href="research/maps.html">Maps</a></li>
+                                <li><a href="research/sources.html">Sources</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- COMBINED: Articles + Blog -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+        <div class="desktop-actions">
+            <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                <i class="fas fa-globe"></i>
+            </button>
+            <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+    <div class="mobile-nav-wrapper" id="mobileNav">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                        <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                        <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                        <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                        <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                        <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                        <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                        <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                <!-- Mobile action items - Three buttons in same line -->
+                <li class="mobile-action-item">
+                    <div class="mobile-theme-rtl">
+                        <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!-- ===== MAIN CONTENT - ABOUT PAGE ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>About Eleanor Hartwell</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">About</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Author Bio Section -->
+        <section class="author-bio">
+            <div class="container">
+                <div class="bio-grid">
+                    <div class="bio-image">
+                        <img src="assets/images/author/eleanor-hartwell.jpg" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'600\' viewBox=\'0 0 500 600\'%3E%3Crect width=\'500\' height=\'600\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'150\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3EEleanor Hartwell%3C/text%3E%3C/svg%3E'">
+                        <div class="image-caption">
+                            <i class="fas fa-camera"></i> Eleanor at the Bodleian Library, Oxford
+                        </div>
+                    </div>
+                    <div class="bio-content">
+                        <h2>The Woman Behind the Stories</h2>
+                        <p class="intro">Eleanor Hartwell is an award-winning historical fiction author whose work has been praised for its meticulous research, vivid storytelling, and emotional depth.</p>
+                        
+                        <p>Born in York, England, Eleanor grew up surrounded by history—from the medieval city walls to the majestic York Minster. Her childhood was filled with stories of Vikings, kings, and common people whose lives shaped the world we know today. This early immersion in history sparked a lifelong passion that would eventually become her career.</p>
+                        
+                        <p>After earning a degree in History from the University of Oxford and a Master's in Creative Writing from the University of East Anglia, Eleanor spent several years working as a historical researcher and editor before publishing her debut novel, <em>The Last Kingdom</em>, in 2015. The book's success launched The Saxon Chronicles series and established her as a distinctive voice in historical fiction.</p>
+                        
+                        <p>Today, Eleanor divides her time between writing, research, and connecting with readers. She is a Fellow of the Royal Historical Society and serves on the advisory board of the Historical Writers' Association.</p>
+                        
+                        <div class="bio-signature">
+                            <img src="assets/images/author/signature.png" alt="Eleanor Hartwell Signature" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'80\' viewBox=\'0 0 200 80\'%3E%3Ctext x=\'20\' y=\'50\' fill=\'%23b85c3a\' font-family=\'Cinzel\' font-size=\'32\'%3EEleanor%3C/text%3E%3C/svg%3E'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">A Life in History</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1980</div>
+                        <div class="timeline-content">
+                            <h3>Born in York, England</h3>
+                            <p>Grew up surrounded by Roman walls, Viking history, and medieval architecture.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1998-2001</div>
+                        <div class="timeline-content">
+                            <h3>University of Oxford</h3>
+                            <p>Graduated with First Class Honours in History, specializing in Early Medieval Britain.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2002-2004</div>
+                        <div class="timeline-content">
+                            <h3>Master's in Creative Writing</h3>
+                            <p>University of East Anglia, where she began work on what would become her first novel.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2005-2014</div>
+                        <div class="timeline-content">
+                            <h3>Research & Editing Career</h3>
+                            <p>Worked as a historical researcher for documentaries and as an editor for academic publications.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h3>Debut Novel Published</h3>
+                            <p><em>The Last Kingdom</em> (Book 1 of The Saxon Chronicles) released to critical acclaim.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-content">
+                            <h3>First Major Award</h3>
+                            <p>Won the Historical Novel Society's Best Debut Award.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h3>Elected Fellow</h3>
+                            <p>Elected Fellow of the Royal Historical Society for contributions to historical literature.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h3>12th Book Published</h3>
+                            <p>Celebrated a decade of writing with the release of her 12th novel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Philosophy -->
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="philosophy-grid">
+                    <div class="philosophy-text">
+                        <h2>Writing Philosophy</h2>
+                        <p class="philosophy-quote">"History is not just a record of what happened—it's a window into the human soul across time."</p>
+                        <p>My approach to writing historical fiction begins with deep research. I believe that authenticity matters—not just in dates and events, but in the small details: how people spoke, what they ate, how they loved and grieved. I spend months, sometimes years, immersed in primary sources, visiting locations, and consulting with historians before writing a single word.</p>
+                        <p>But research is only the foundation. At its heart, historical fiction is about people—their hopes, fears, and struggles. My goal is to make readers feel as though they're living alongside my characters, experiencing their world as vividly as if it were their own.</p>
+                        
+                        <div class="philosophy-stats">
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Years of Research</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Published Books</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Literary Awards</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Archives Visited</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="philosophy-image">
+                        <img src="assets/images/author/writing-desk.jpg" alt="Eleanor's Writing Desk" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'600\' viewBox=\'0 0 500 600\'%3E%3Crect width=\'500\' height=\'600\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'120\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3EWriting Desk%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspirations & Influences -->
+        <section class="inspirations-section">
+            <div class="container">
+                <h2 class="section-title">Inspirations & Influences</h2>
+                <div class="inspirations-grid">
+                    <div class="inspiration-card">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Historical Periods</h3>
+                        <p>Viking Age England, Tudor Court, Roman Britain, Medieval Scotland</p>
+                    </div>
+                    <div class="inspiration-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Historical Figures</h3>
+                        <p>Alfred the Great, Anne Boleyn, Boudica, Thomas Cromwell</p>
+                    </div>
+                    <div class="inspiration-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Literary Influences</h3>
+                        <p>Hilary Mantel, Bernard Cornwell, Philippa Gregory, Ken Follett</p>
+                    </div>
+                    <div class="inspiration-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Places</h3>
+                        <p>York, Oxford, Hadrian's Wall, Tower of London</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond Writing -->
+        <section class="beyond-section">
+            <div class="container">
+                <div class="beyond-content">
+                    <h2>Beyond Writing</h2>
+                    <p>When I'm not researching or writing, you might find me leading historical walking tours in York, giving talks at literary festivals, or curled up with a stack of history books. I'm also an avid supporter of historical preservation causes and donate a portion of my royalties to organizations working to protect heritage sites.</p>
+                    <p>I live in Oxfordshire with my family and two very demanding cats who believe they are the true authors of my books.</p>
+                    
+                    <div class="beyond-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Visiting Lecturer at Oxford</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-trees"></i>
+                            <span>Patron of Historic England</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-paw"></i>
+                            <span>Cat Parent to Jasper & Luna</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>

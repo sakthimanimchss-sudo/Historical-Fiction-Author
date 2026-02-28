@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards & Recognition - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/awards.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="books.html">All Series</a></li>
+                                    <li><a href="series-1.html">Series 1</a></li>
+                                    <li><a href="series-2.html">Series 2</a></li>
+                                    <li><a href="series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="research.html">Overview</a></li>
+                                    <li><a href="research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="research/timelines.html">Timelines</a></li>
+                                    <li><a href="research/maps.html">Maps</a></li>
+                                    <li><a href="research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="awards.html" class="active">Awards</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="awards.html" class="active"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - AWARDS ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Awards & Recognition</h1>
+                <p class="page-tagline">Honoring a decade of historical fiction</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Awards</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter -->
+        <section class="awards-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Total Awards</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">International Awards</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="8">0</span>
+                        <span class="stat-label">National Awards</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Nominations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Award -->
+        <section class="featured-award">
+            <div class="container">
+                <div class="featured-grid">
+                    <div class="featured-image">
+                        <img src="assets/images/awards/booker-prize.jpg" alt="International Book Award" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3EFeatured Award%3C/text%3E%3C/svg%3E'">
+                        <div class="featured-year">2023</div>
+                    </div>
+                    <div class="featured-content">
+                        <span class="featured-badge">International Recognition</span>
+                        <h2>Historical Novel Prize</h2>
+                        <p class="award-category">Best Series</p>
+                        <p class="award-description">The Saxon Chronicles received the prestigious Historical Novel Prize for its "meticulous research, compelling characters, and vivid portrayal of 9th century England." The judges praised the series for bringing the Viking Age to life with unprecedented authenticity.</p>
+                        <div class="award-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"A masterwork of historical fiction that sets a new standard for the genre."</p>
+                            <span>— Historical Novel Society</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Timeline -->
+        <section class="awards-timeline">
+            <div class="container">
+                <h2 class="section-title">Awards & Honors Timeline</h2>
+                
+                <div class="timeline-wrapper">
+                    <!-- 2016 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Best Debut Novel</h3>
+                                <p class="award-org">Historical Writers' Association</p>
+                                <p class="award-work">for <em>The Last Kingdom</em> (The Saxon Chronicles, Book 1)</p>
+                                <p class="award-citation">"A stunning debut that announces a major new voice in historical fiction."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2017 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Book of the Year</h3>
+                                <p class="award-org">Historical Novel Review</p>
+                                <p class="award-work">for <em>The Pale Horseman</em> (The Saxon Chronicles, Book 2)</p>
+                                <p class="award-citation">"Rarefied storytelling that combines scholarly depth with page-turning suspense."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2018 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Shortlisted: Walter Scott Prize</h3>
+                                <p class="award-org">Walter Scott Prize for Historical Fiction</p>
+                                <p class="award-work">for <em>The Pale Horseman</em></p>
+                                <p class="award-citation">"Finalist among an exceptional field of historical novels."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Gold Medal: Historical Fiction</h3>
+                                <p class="award-org">Independent Publisher Book Awards</p>
+                                <p class="award-work">for <em>Lords of the North</em> (The Saxon Chronicles, Book 3)</p>
+                                <p class="award-citation">"Excellence in independently published historical fiction."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2020 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Fellow of the Royal Historical Society</h3>
+                                <p class="award-org">Royal Historical Society</p>
+                                <p class="award-work">For contributions to historical literature</p>
+                                <p class="award-citation">"Elected in recognition of distinguished work in the field of history."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Winner: Historical Novel Prize</h3>
+                                <p class="award-org">Historical Novel Society</p>
+                                <p class="award-work">for <em>The Saxon Chronicles</em> (Complete Series)</p>
+                                <p class="award-citation">"A masterwork of historical fiction that sets a new standard for the genre."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2022 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Finalist: British Book Awards</h3>
+                                <p class="award-org">The British Book Awards</p>
+                                <p class="award-work">for <em>The Tudor Intrigue</em> series</p>
+                                <p class="award-citation">"Recognized among the best of British fiction."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Winner: Classical Fiction Award</h3>
+                                <p class="award-org">Classical Association</p>
+                                <p class="award-work">for <em>The Roman Eagle</em> series</p>
+                                <p class="award-citation">"Outstanding contribution to the understanding of Roman Britain through fiction."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="award-details">
+                                <h3>Lifetime Achievement Award</h3>
+                                <p class="award-org">Historical Fiction Writers' Guild</p>
+                                <p class="award-work">For a decade of excellence in historical fiction</p>
+                                <p class="award-citation">"In recognition of sustained excellence and contribution to the genre."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards by Series -->
+        <section class="awards-by-series">
+            <div class="container">
+                <h2 class="section-title">Awards by Series</h2>
+                
+                <div class="series-awards-grid">
+                    <!-- Saxon Chronicles -->
+                    <div class="series-card" data-series="saxon">
+                        <div class="series-header">
+                            <h3>The Saxon Chronicles</h3>
+                            <span class="series-count">6 Awards</span>
+                        </div>
+                        <div class="series-awards-list">
+                            <div class="series-award-item">
+                                <span class="award-year">2016</span>
+                                <span class="award-name">Best Debut Novel</span>
+                                <span class="award-org">Historical Writers' Association</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2017</span>
+                                <span class="award-name">Book of the Year</span>
+                                <span class="award-org">Historical Novel Review</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2018</span>
+                                <span class="award-name">Shortlisted: Walter Scott Prize</span>
+                                <span class="award-org">Walter Scott Prize</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2019</span>
+                                <span class="award-name">Gold Medal</span>
+                                <span class="award-org">Independent Publisher Book Awards</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2021</span>
+                                <span class="award-name">Historical Novel Prize</span>
+                                <span class="award-org">Historical Novel Society</span>
+                            </div>
+                        </div>
+                        <a href="series/series-1.html" class="series-link">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tudor Intrigue -->
+                    <div class="series-card" data-series="tudor">
+                        <div class="series-header">
+                            <h3>The Tudor Intrigue</h3>
+                            <span class="series-count">3 Awards</span>
+                        </div>
+                        <div class="series-awards-list">
+                            <div class="series-award-item">
+                                <span class="award-year">2020</span>
+                                <span class="award-name">Fellow of the Royal Historical Society</span>
+                                <span class="award-org">Royal Historical Society</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2022</span>
+                                <span class="award-name">Finalist: British Book Awards</span>
+                                <span class="award-org">The British Book Awards</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2022</span>
+                                <span class="award-name">Shortlisted: HWA Gold Crown</span>
+                                <span class="award-org">Historical Writers' Association</span>
+                            </div>
+                        </div>
+                        <a href="series/series-2.html" class="series-link">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Roman Eagle -->
+                    <div class="series-card" data-series="roman">
+                        <div class="series-header">
+                            <h3>The Roman Eagle</h3>
+                            <span class="series-count">3 Awards</span>
+                        </div>
+                        <div class="series-awards-list">
+                            <div class="series-award-item">
+                                <span class="award-year">2023</span>
+                                <span class="award-name">Winner: Classical Fiction Award</span>
+                                <span class="award-org">Classical Association</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2023</span>
+                                <span class="award-name">Best Historical Series</span>
+                                <span class="award-org">Roman Studies Society</span>
+                            </div>
+                            <div class="series-award-item">
+                                <span class="award-year">2024</span>
+                                <span class="award-name">Lifetime Achievement Award</span>
+                                <span class="award-org">Historical Fiction Writers' Guild</span>
+                            </div>
+                        </div>
+                        <a href="series/series-3.html" class="series-link">View Series <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Press & Media -->
+        <section class="press-section">
+            <div class="container">
+                <h2 class="section-title">Critical Acclaim</h2>
+                
+                <div class="press-grid">
+                    <div class="press-card">
+                        <div class="press-logo">The Times</div>
+                        <div class="press-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Hartwell doesn't just write about history—she transports you there. Her attention to detail and deep understanding of the human heart make every novel an unforgettable journey."</p>
+                        </div>
+                    </div>
+
+                    <div class="press-card">
+                        <div class="press-logo">The Guardian</div>
+                        <div class="press-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Richly detailed and utterly compelling. The Tudor Intrigue series is historical fiction at its finest."</p>
+                        </div>
+                    </div>
+
+                    <div class="press-card">
+                        <div class="press-logo">History Today</div>
+                        <div class="press-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Breathes new life into Roman Britain. Meticulously researched and brilliantly imagined."</p>
+                        </div>
+                    </div>
+
+                    <div class="press-card">
+                        <div class="press-logo">Publishers Weekly</div>
+                        <div class="press-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"A master storyteller who weaves fact and fiction into tapestries of breathtaking beauty."</p>
+                        </div>
+                    </div>
+
+                    <div class="press-card">
+                        <div class="press-logo">BBC History Magazine</div>
+                        <div class="press-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The Saxon Chronicles is a landmark achievement in historical fiction. Essential reading."</p>
+                        </div>
+                    </div>
+
+                    <div class="press-card">
+                        <div class="press-logo">The Telegraph</div>
+                        <div class="press-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Eleanor Hartwell has established herself as one of the premier historical novelists of her generation."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memberships & Affiliations -->
+        <section class="memberships-section">
+            <div class="container">
+                <h2 class="section-title">Professional Memberships</h2>
+                
+                <div class="memberships-grid">
+                    <div class="membership-card">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Royal Historical Society</h3>
+                        <p>Fellow (FRHistS)</p>
+                        <span class="membership-year">Elected 2020</span>
+                    </div>
+
+                    <div class="membership-card">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>Historical Writers' Association</h3>
+                        <p>Board Member</p>
+                        <span class="membership-year">2018 - Present</span>
+                    </div>
+
+                    <div class="membership-card">
+                        <i class="fas fa-scroll"></i>
+                        <h3>The Author's Guild</h3>
+                        <p>Member</p>
+                        <span class="membership-year">Since 2015</span>
+                    </div>
+
+                    <div class="membership-card">
+                        <i class="fas fa-university"></i>
+                        <h3>Classical Association</h3>
+                        <p>Honorary Member</p>
+                        <span class="membership-year">Since 2023</span>
+                    </div>
+
+                    <div class="membership-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>PEN International</h3>
+                        <p>Member</p>
+                        <span class="membership-year">Since 2016</span>
+                    </div>
+
+                    <div class="membership-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Society of Authors</h3>
+                        <p>Member</p>
+                        <span class="membership-year">Since 2015</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/awards.js"></script>
+</body>
+</html>

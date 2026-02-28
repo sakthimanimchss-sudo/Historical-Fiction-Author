@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader's Club Membership - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/membership.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="books.html">All Series</a></li>
+                                    <li><a href="series/series-1.html">Series 1</a></li>
+                                    <li><a href="series/series-2.html">Series 2</a></li>
+                                    <li><a href="series/series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="research.html">Overview</a></li>
+                                    <li><a href="research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="research/timelines.html">Timelines</a></li>
+                                    <li><a href="research/maps.html">Maps</a></li>
+                                    <li><a href="research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="series/series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="series/series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="series/series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="membership.html" class="active"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - MEMBERSHIP ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Reader's Club</h1>
+                <p class="page-tagline">Join a community of history enthusiasts</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Membership</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Intro -->
+        <section class="membership-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <i class="fas fa-users"></i>
+                    <h2>For Readers Who Love History</h2>
+                    <p>The Reader's Club is my way of connecting with those who love historical fiction as much as I do. Members receive exclusive content, behind-the-scenes research notes, advance reader copies, and invitations to special events. Join us and become part of the story.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Tiers -->
+        <section class="membership-tiers">
+            <div class="container">
+                <h2 class="section-title">Choose Your Membership</h2>
+                
+                <div class="tiers-grid">
+                    <!-- Free Tier -->
+                    <div class="tier-card" data-tier="free">
+                        <div class="tier-header">
+                            <h3>History Circle</h3>
+                            <div class="tier-price">Free</div>
+                        </div>
+                        <div class="tier-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Monthly newsletter</li>
+                                <li><i class="fas fa-check"></i> Exclusive blog posts</li>
+                                <li><i class="fas fa-check"></i> Behind-the-scenes updates</li>
+                                <li><i class="fas fa-check"></i> New release announcements</li>
+                                <li><i class="fas fa-check"></i> 10% off merchandise</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Advance reader copies</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Member-only events</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Signed bookplates</li>
+                            </ul>
+                        </div>
+                        <div class="tier-footer">
+                            <a href="#signup" class="btn-outline">Join Free</a>
+                        </div>
+                    </div>
+
+                    <!-- Silver Tier -->
+                    <div class="tier-card featured" data-tier="silver">
+                        <div class="tier-badge">Most Popular</div>
+                        <div class="tier-header">
+                            <h3>History Scholar</h3>
+                            <div class="tier-price">$25 <span>/year</span></div>
+                        </div>
+                        <div class="tier-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in History Circle</li>
+                                <li><i class="fas fa-check"></i> Quarterly research notes</li>
+                                <li><i class="fas fa-check"></i> Advance reader copies (2 per year)</li>
+                                <li><i class="fas fa-check"></i> Member-only Q&A sessions</li>
+                                <li><i class="fas fa-check"></i> Signed bookplate with next purchase</li>
+                                <li><i class="fas fa-check"></i> 20% off merchandise</li>
+                                <li><i class="fas fa-check"></i> Early access to event tickets</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Virtual coffee chats</li>
+                            </ul>
+                        </div>
+                        <div class="tier-footer">
+                            <a href="#signup" class="btn-primary">Join Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Gold Tier -->
+                    <div class="tier-card" data-tier="gold">
+                        <div class="tier-header">
+                            <h3>History Master</h3>
+                            <div class="tier-price">$50 <span>/year</span></div>
+                        </div>
+                        <div class="tier-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in History Scholar</li>
+                                <li><i class="fas fa-check"></i> All advance reader copies</li>
+                                <li><i class="fas fa-check"></i> Signed first editions</li>
+                                <li><i class="fas fa-check"></i> Virtual coffee chats (quarterly)</li>
+                                <li><i class="fas fa-check"></i> Name in acknowledgments*</li>
+                                <li><i class="fas fa-check"></i> 30% off merchandise</li>
+                                <li><i class="fas fa-check"></i> Exclusive research deep dives</li>
+                                <li><i class="fas fa-check"></i> Personalized book recommendations</li>
+                            </ul>
+                        </div>
+                        <div class="tier-footer">
+                            <a href="#signup" class="btn-outline">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="tier-note">*For members who join before manuscript submission</p>
+            </div>
+        </section>
+
+        <!-- Benefits Showcase -->
+        <section class="benefits-showcase">
+            <div class="container">
+                <h2 class="section-title">Member Benefits</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Exclusive Newsletter</h3>
+                        <p>Monthly updates with research discoveries, writing progress, and historical tidbits you won't find anywhere else.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Advance Reader Copies</h3>
+                        <p>Be among the first to read new books before publication. Silver members get 2 per year, Gold members get all.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Member Events</h3>
+                        <p>Quarterly Q&A sessions and virtual coffee chats where you can ask questions and discuss history.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Research Notes</h3>
+                        <p>Deep dives into the primary sources, archives, and discoveries behind each novel.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        <h3>Signed Bookplates</h3>
+                        <p>Personalized, signed bookplates for your collection or as gifts for fellow history lovers.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Merchandise Discounts</h3>
+                        <p>Save on maps, prints, and other historical merchandise in the shop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="member-testimonials">
+            <div class="container">
+                <h2 class="section-title">What Members Say</h2>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The research notes alone are worth the membership. Getting a behind-the-scenes look at how Eleanor brings history to life has deepened my appreciation for her books.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/member1.jpg" alt="Member" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'30\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'20\' y=\'40\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3ES%3C/text%3E%3C/svg%3E'">
+                                <div>
+                                    <h4>Sarah Mitchell</h4>
+                                    <p>History Scholar Member</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The virtual coffee chats are wonderful. It's amazing to discuss history with Eleanor and other members who share the same passion. I've discovered so many new books through the community.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/member2.jpg" alt="Member" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'30\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'20\' y=\'40\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3ED%3C/text%3E%3C/svg%3E'">
+                                <div>
+                                    <h4>David Chen</h4>
+                                    <p>History Master Member</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>Getting advance reader copies makes me feel like I'm part of the creative process. I love being able to share my thoughts before the book even launches!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/member3.jpg" alt="Member" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'30\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'20\' y=\'40\' fill=\'white\' font-family=\'Cinzel\' font-size=\'16\'%3EE%3C/text%3E%3C/svg%3E'">
+                                <div>
+                                    <h4>Emma Thompson</h4>
+                                    <p>History Scholar Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Preview -->
+        <section class="membership-faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I access member content?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>After joining, you'll receive a welcome email with login credentials. You can access all member content through the Member Portal, linked at the top of every page.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I upgrade my membership later?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! You can upgrade from History Circle to History Scholar or History Master at any time. The price difference will be prorated for the remainder of your membership year.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do advance reader copies work?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Several months before publication, members receive digital ARCs via email. You're encouraged (but not required) to share your honest reviews on Goodreads and retail sites.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I gift a membership?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Gift memberships make wonderful presents for fellow history lovers. Choose the tier and enter the recipient's email at checkout. They'll receive a welcome message with all the details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens to my signed bookplate?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Gold members receive a personalized, signed bookplate with their welcome package. Additional bookplates can be requested for special occasions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my membership auto-renewing?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, memberships renew annually. You'll receive a reminder email 30 days before renewal, and you can cancel at any time in your account settings.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-more">
+                    <a href="faq.html" class="btn-link">View All FAQs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Form -->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="signup-wrapper">
+                    <h2>Join the Reader's Club</h2>
+                    <p>Choose your membership tier and become part of our historical community.</p>
+                    
+                    <form class="membership-form" id="membershipForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tier">Membership Tier *</label>
+                            <select id="tier" required>
+                                <option value="">Select a tier</option>
+                                <option value="free">History Circle (Free)</option>
+                                <option value="silver">History Scholar ($25/year)</option>
+                                <option value="gold">History Master ($50/year)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a></label>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">I'd like to receive the free newsletter (members get it automatically)</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-large">Join Now</button>
+                    </form>
+                    
+                    <p class="secure-note"><i class="fas fa-lock"></i> Secure payment processing. Your information is never shared.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/membership.js"></script>
+</body>
+</html>

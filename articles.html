@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/articles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- ===== CONSOLIDATED HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (header) -->
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-scroll"></i>
+                    Eleanor Hartwell
+                </a>
+                <span>Historical Fiction Author</span>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <!-- COMBINED: Book Series + Historical Research -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="books.html">All Series</a></li>
+                                    <li><a href="series/series-1.html">Series 1</a></li>
+                                    <li><a href="series/series-2.html">Series 2</a></li>
+                                    <li><a href="series/series-3.html">Series 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#"><i class="fas fa-search"></i> Research</a>
+                                <ul class="dropdown-submenu-menu">
+                                    <li><a href="research.html">Overview</a></li>
+                                    <li><a href="research/real-figures.html">Real Figures</a></li>
+                                    <li><a href="research/timelines.html">Timelines</a></li>
+                                    <li><a href="research/maps.html">Maps</a></li>
+                                    <li><a href="research/sources.html">Sources</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- COMBINED: Articles + Blog -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html" class="active"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+            <div class="desktop-actions">
+                <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+        <div class="mobile-nav-wrapper" id="mobileNav">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                            <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                            <li><a href="series/series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                            <li><a href="series/series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                            <li><a href="series/series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                            <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                            <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                            <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                            <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html" class="active"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                            <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                            <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                            <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                    <!-- Mobile action items - Three buttons in same line -->
+                    <li class="mobile-action-item">
+                        <div class="mobile-theme-rtl">
+                            <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT - ARTICLES ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Articles & Essays</h1>
+                <p class="page-tagline">In-depth explorations of history, research, and the craft of writing</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Articles</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article">
+            <div class="container">
+                <div class="featured-wrapper">
+                    <span class="featured-badge">Featured Article</span>
+                    <div class="featured-grid">
+                        <div class="featured-image">
+                            <img src="assets/images/articles/featured-article.jpg" alt="Featured Article" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'200\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3EFeatured Article%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="featured-content">
+                            <div class="article-meta">
+                                <span class="article-category">Research Methods</span>
+                                <span class="article-date"><i class="far fa-calendar"></i> March 2025</span>
+                                <span class="article-read-time"><i class="far fa-clock"></i> 15 min read</span>
+                            </div>
+                            <h2>The Lost Libraries of the Viking World</h2>
+                            <p class="article-excerpt">New research reveals the surprising extent of literacy and book culture in Viking-age Scandinavia. Far from the illiterate barbarians of popular imagination, the Norse people had a rich tradition of runic writing, poetry, and perhaps even longer texts on perishable materials that have since been lost to time.</p>
+                            <div class="article-footer">
+                                <a href="articles/article-featured.html" class="btn-primary">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <div class="article-stats">
+                                    <span><i class="far fa-bookmark"></i> Save</span>
+                                    <span><i class="far fa-share-square"></i> Share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Filters -->
+        <section class="article-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filter-group">
+                        <label for="topic-filter">Filter by Topic:</label>
+                        <select id="topic-filter" class="filter-select">
+                            <option value="all">All Topics</option>
+                            <option value="research">Research Methods</option>
+                            <option value="history">Historical Analysis</option>
+                            <option value="writing">Writing Craft</option>
+                            <option value="sources">Primary Sources</option>
+                            <option value="interviews">Interviews</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="era-filter">Filter by Era:</label>
+                        <select id="era-filter" class="filter-select">
+                            <option value="all">All Eras</option>
+                            <option value="viking">Viking Age</option>
+                            <option value="tudor">Tudor Era</option>
+                            <option value="roman">Roman Britain</option>
+                            <option value="medieval">Medieval</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by" class="filter-select">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="title">Title A-Z</option>
+                            <option value="popular">Most Popular</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="articles-grid-section">
+            <div class="container">
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="article-card" data-topic="history" data-era="viking">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article1.jpg" alt="Viking Ships" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EViking Ships%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Historical Analysis</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Viking Ship Technology: Beyond the Longship</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> February 2025</span>
+                                <span><i class="far fa-clock"></i> 12 min read</span>
+                            </div>
+                            <p class="card-excerpt">An exploration of the sophisticated shipbuilding techniques that made Viking exploration possible, from knarrs to longships.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-1.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="article-card" data-topic="research" data-era="tudor">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article2.jpg" alt="Tudor Letters" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3ETudor Letters%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Research Methods</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Decoding Tudor Handwriting: A Researcher's Guide</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> January 2025</span>
+                                <span><i class="far fa-clock"></i> 20 min read</span>
+                            </div>
+                            <p class="card-excerpt">Practical tips for reading 16th-century script, understanding abbreviations, and navigating the National Archives.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-2.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="article-card" data-topic="writing" data-era="roman">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article3.jpg" alt="Writing Historical Dialogue" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'80\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EWriting Dialogue%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Writing Craft</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>The Art of Historical Dialogue</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> December 2024</span>
+                                <span><i class="far fa-clock"></i> 10 min read</span>
+                            </div>
+                            <p class="card-excerpt">How to make characters sound authentic without overwhelming readers with archaic language. Examples from Roman Britain.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-3.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="article-card" data-topic="sources" data-era="tudor">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article4.jpg" alt="Spanish Armada" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%23553838\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3ESpanish Armada%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Primary Sources</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>The Spanish Armada: Two Sides of the Story</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> November 2024</span>
+                                <span><i class="far fa-clock"></i> 18 min read</span>
+                            </div>
+                            <p class="card-excerpt">Comparing English and Spanish accounts of the 1588 invasion attempt reveals fascinating differences in perspective.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-4.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="article-card" data-topic="interviews" data-era="all">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article5.jpg" alt="Interview with Historian" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%234a3729\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EInterview%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Interviews</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>In Conversation: Dr. Sarah Reynolds on Viking Archaeology</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> October 2024</span>
+                                <span><i class="far fa-clock"></i> 25 min read</span>
+                            </div>
+                            <p class="card-excerpt">An interview with one of Britain's leading Viking archaeologists about recent discoveries at Jorvik.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-5.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="article-card" data-topic="history" data-era="roman">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article6.jpg" alt="Hadrian's Wall" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%233f6f3f\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EHadrian&apos;s Wall%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Historical Analysis</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Life on the Wall: Soldiers, Civilians, and Settlements</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> September 2024</span>
+                                <span><i class="far fa-clock"></i> 15 min read</span>
+                            </div>
+                            <p class="card-excerpt">What archaeological evidence reveals about daily life along Hadrian's Wall in the 2nd century.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-6.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 7 -->
+                    <article class="article-card" data-topic="research" data-era="viking">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article7.jpg" alt="Runic Inscriptions" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%232f4f4f\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3ERunic Inscriptions%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Research Methods</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Reading the Runes: An Introduction to Viking Epigraphy</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> August 2024</span>
+                                <span><i class="far fa-clock"></i> 22 min read</span>
+                            </div>
+                            <p class="card-excerpt">A beginner's guide to the Younger Futhark and the information runestones provide about Viking society.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-7.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 8 -->
+                    <article class="article-card" data-topic="writing" data-era="all">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article8.jpg" alt="Research to Fiction" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%234a4a4a\'/%3E%3Ctext x=\'80\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EResearch to Fiction%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Writing Craft</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>From Footnote to Narrative: Weaving Research into Story</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> July 2024</span>
+                                <span><i class="far fa-clock"></i> 14 min read</span>
+                            </div>
+                            <p class="card-excerpt">Techniques for incorporating historical detail without overwhelming the narrative or slowing the pace.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-8.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 9 -->
+                    <article class="article-card" data-topic="sources" data-era="tudor">
+                        <div class="card-image">
+                            <img src="assets/images/articles/article9.jpg" alt="Tudor Letters" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%238b5a2b\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3ETudor Letters%3C/text%3E%3C/svg%3E'">
+                            <div class="card-category">Primary Sources</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>The Lisle Letters: A Tudor Family Revealed</h3>
+                            <div class="card-meta">
+                                <span><i class="far fa-calendar"></i> June 2024</span>
+                                <span><i class="far fa-clock"></i> 16 min read</span>
+                            </div>
+                            <p class="card-excerpt">Exploring one of the richest collections of personal correspondence from the 1530s, offering intimate glimpses of Tudor life.</p>
+                            <div class="card-footer">
+                                <a href="articles/article-9.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="card-save"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Load More -->
+        <section class="load-more-section">
+            <div class="container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <span>Load More Articles</span>
+                    <i class="fas fa-spinner"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Article Topics -->
+        <section class="article-topics">
+            <div class="container">
+                <h2 class="section-title">Explore by Topic</h2>
+                <div class="topics-cloud">
+                    <a href="#" class="topic-tag" data-topic="research">Research Methods (12)</a>
+                    <a href="#" class="topic-tag" data-topic="history">Historical Analysis (18)</a>
+                    <a href="#" class="topic-tag" data-topic="writing">Writing Craft (9)</a>
+                    <a href="#" class="topic-tag" data-topic="sources">Primary Sources (7)</a>
+                    <a href="#" class="topic-tag" data-topic="interviews">Interviews (5)</a>
+                    <a href="#" class="topic-tag" data-topic="viking">Viking Age (15)</a>
+                    <a href="#" class="topic-tag" data-topic="tudor">Tudor Era (14)</a>
+                    <a href="#" class="topic-tag" data-topic="roman">Roman Britain (11)</a>
+                    <a href="#" class="topic-tag" data-topic="medieval">Medieval (8)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="articles-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h2>Get Articles in Your Inbox</h2>
+                    <p>Subscribe to receive new articles and essays directly.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                    <p class="privacy-note">I respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/articles.js"></script>
+</body>
+</html>

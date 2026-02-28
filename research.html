@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Research - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/research.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <!-- Logo (header) -->
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-scroll"></i>
+                Eleanor Hartwell
+            </a>
+            <span>Historical Fiction Author</span>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <!-- COMBINED: Book Series + Historical Research -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="books.html">All Series</a></li>
+                                <li><a href="series-1.html">Series 1</a></li>
+                                <li><a href="series-2.html">Series 2</a></li>
+                                <li><a href="series-3.html">Series 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-search"></i> Research</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="research.html">Overview</a></li>
+                                <li><a href="research/real-figures.html">Real Figures</a></li>
+                                <li><a href="research/timelines.html">Timelines</a></li>
+                                <li><a href="research/maps.html">Maps</a></li>
+                                <li><a href="research/sources.html">Sources</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- COMBINED: Articles + Blog -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+        <div class="desktop-actions">
+            <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                <i class="fas fa-globe"></i>
+            </button>
+            <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+    <div class="mobile-nav-wrapper" id="mobileNav">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                        <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                        <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                        <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                        <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                        <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                        <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                        <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                <!-- Mobile action items - Three buttons in same line -->
+                <li class="mobile-action-item">
+                    <div class="mobile-theme-rtl">
+                        <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- ===== MAIN CONTENT - HISTORICAL RESEARCH OVERVIEW ===== -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Historical Research</h1>
+                <p class="page-tagline">The real history behind the fiction</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Research Overview</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="research-intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-content">
+                        <h2>The Scholar's Journey</h2>
+                        <p class="intro-text">Every novel begins with a question. What was it really like to stand on Hadrian's Wall as a Roman legionary? How did it feel to walk the corridors of the Tudor court? My research is an attempt to answer these questions—to uncover not just the facts, but the lived experience of history.</p>
+                        <p>I believe that authenticity matters. Not just in dates and events, but in the small details: how people spoke, what they ate, how they loved and grieved. I spend months, sometimes years, immersed in primary sources, visiting locations, and consulting with historians before writing a single word.</p>
+                        <p>This section of my website is an invitation to join me on that journey. Explore the real figures, timelines, maps, and sources that bring my novels to life.</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="assets/images/research/archives.jpg" alt="Research Archives" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'400\' viewBox=\'0 0 500 400\'%3E%3Crect width=\'500\' height=\'400\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'150\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'20\'%3EResearch Archives%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Stats -->
+        <section class="research-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-scroll"></i>
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Archives Visited</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-book"></i>
+                        <span class="stat-number">1,200+</span>
+                        <span class="stat-label">Primary Sources</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Expert Consultants</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-globe"></i>
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Countries Researched</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Categories -->
+        <section class="research-categories">
+            <div class="container">
+                <h2 class="section-title">Explore the Research</h2>
+                <div class="categories-grid">
+                    <!-- Real Figures -->
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Real Historical Figures</h3>
+                        <p>Meet the kings, queens, warriors, and ordinary people who walk through my pages—their true stories, personalities, and legacies.</p>
+                        <ul class="category-list">
+                            <li>Alfred the Great</li>
+                            <li>Anne Boleyn</li>
+                            <li>Emperor Hadrian</li>
+                            <li>Thomas Cromwell</li>
+                            <li>Boudica</li>
+                        </ul>
+                        <a href="research/real-figures.html" class="category-link">Explore Figures <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Timelines -->
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Historical Timelines</h3>
+                        <p>Detailed chronological frameworks showing the key events, battles, and reigns that form the backdrop of each series.</p>
+                        <ul class="category-list">
+                            <li>Viking Age (793-1066)</li>
+                            <li>Tudor Period (1485-1603)</li>
+                            <li>Roman Britain (43-410 AD)</li>
+                            <li>Key Battles & Treaties</li>
+                        </ul>
+                        <a href="research/timelines.html" class="category-link">View Timelines <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Maps -->
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Historical Maps</h3>
+                        <p>Interactive and static maps showing battlefields, trade routes, kingdoms, and settlements as they existed in each era.</p>
+                        <ul class="category-list">
+                            <li>Viking England</li>
+                            <li>Tudor London</li>
+                            <li>Roman Britain</li>
+                            <li>Trade Routes & Borders</li>
+                        </ul>
+                        <a href="research/maps.html" class="category-link">Explore Maps <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Primary Sources -->
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <h3>Primary Sources</h3>
+                        <p>The original documents, chronicles, and archaeological evidence that form the foundation of my research.</p>
+                        <ul class="category-list">
+                            <li>Anglo-Saxon Chronicle</li>
+                            <li>State Papers of Henry VIII</li>
+                            <li>Tacitus' Agricola</li>
+                            <li>Archaeological Reports</li>
+                        </ul>
+                        <a href="research/sources.html" class="category-link">View Sources <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Research: By Series -->
+        <section class="series-research">
+            <div class="container">
+                <h2 class="section-title">Research by Series</h2>
+                <div class="series-tabs">
+                    <button class="tab-btn active" data-series="saxon">The Saxon Chronicles</button>
+                    <button class="tab-btn" data-series="tudor">The Tudor Intrigue</button>
+                    <button class="tab-btn" data-series="roman">The Roman Eagle</button>
+                </div>
+
+                <!-- Saxon Research -->
+                <div class="series-research-content active" id="saxon-research">
+                    <div class="research-showcase">
+                        <div class="showcase-image">
+                            <img src="assets/images/research/viking-ship.jpg" alt="Viking Ship Reconstruction" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3EViking Research%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="showcase-content">
+                            <h3>The Saxon Chronicles: Research Highlights</h3>
+                            <p>For this series, I spent three months in York and Northumbria, working with archaeologists at Jorvik and walking the routes of the Viking armies. Key research areas included:</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Anglo-Saxon burial practices and grave goods</li>
+                                <li><i class="fas fa-check"></i> Viking ship construction and navigation</li>
+                                <li><i class="fas fa-check"></i> The Great Heathen Army's campaign routes</li>
+                                <li><i class="fas fa-check"></i> Alfred's defensive strategies and burh system</li>
+                                <li><i class="fas fa-check"></i> Old English language and naming conventions</li>
+                            </ul>
+                            <a href="series/series-1.html" class="btn-outline">Visit Series Page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tudor Research -->
+                <div class="series-research-content" id="tudor-research">
+                    <div class="research-showcase">
+                        <div class="showcase-image">
+                            <img src="assets/images/research/tudor-palace.jpg" alt="Hampton Court Palace" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3ETudor Research%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="showcase-content">
+                            <h3>The Tudor Intrigue: Research Highlights</h3>
+                            <p>Research for this series took me to the National Archives at Kew, Hampton Court Palace, and the Tower of London. Key areas of study included:</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Tudor court hierarchy and daily life</li>
+                                <li><i class="fas fa-check"></i> The Reformation's political and social impact</li>
+                                <li><i class="fas fa-check"></i> Anne Boleyn's letters and trial records</li>
+                                <li><i class="fas fa-check"></i> 16th century fashion, food, and medicine</li>
+                                <li><i class="fas fa-check"></i> The role of women in Tudor society</li>
+                            </ul>
+                            <a href="series/series-2.html" class="btn-outline">Visit Series Page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roman Research -->
+                <div class="series-research-content" id="roman-research">
+                    <div class="research-showcase">
+                        <div class="showcase-image">
+                            <img src="assets/images/research/hadrians-wall.jpg" alt="Hadrian's Wall" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'100\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'18\'%3ERoman Research%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="showcase-content">
+                            <h3>The Roman Eagle: Research Highlights</h3>
+                            <p>For this series, I walked Hadrian's Wall, visited Vindolanda, and studied Roman military records. Key research areas included:</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Roman legion organization and daily life</li>
+                                <li><i class="fas fa-check"></i> The mystery of the Ninth Legion</li>
+                                <li><i class="fas fa-check"></i> Hadrian's Wall construction and purpose</li>
+                                <li><i class="fas fa-check"></i> Roman-British relations and trade</li>
+                                <li><i class="fas fa-check"></i> Vindolanda tablets and personal letters</li>
+                            </ul>
+                            <a href="series/series-3.html" class="btn-outline">Visit Series Page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Process -->
+        <section class="research-process">
+            <div class="container">
+                <h2 class="section-title">My Research Process</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Primary Source Immersion</h3>
+                            <p>I begin with original documents—chronicles, letters, legal records—to understand the period from the inside out.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Site Visits & Archaeology</h3>
+                            <p>Walking the ground where history happened is essential. I visit battlefields, ruins, and museums whenever possible.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Expert Consultation</h3>
+                            <p>I work with historians, archaeologists, and specialists to verify details and uncover new perspectives.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Material Culture</h3>
+                            <p>Understanding how people lived—what they wore, ate, and used—brings authenticity to every scene.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bibliography Preview -->
+        <section class="bibliography-preview">
+            <div class="container">
+                <div class="preview-grid">
+                    <div class="preview-text">
+                        <h2>Selected Bibliography</h2>
+                        <p>A glimpse into the key works that have shaped my understanding of each period.</p>
+                        <div class="book-list">
+                            <div class="book-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>The Anglo-Saxon World</h4>
+                                    <p>Nicholas Higham & Martin Ryan</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>The Tudors: The Complete Story</h4>
+                                    <p>G.J. Meyer</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>Roman Britain: A New History</h4>
+                                    <p>Guy de la Bédoyère</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>The Viking Way</h4>
+                                    <p>Neil Price</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="research/sources.html" class="btn-primary">View Complete Sources <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="preview-image">
+                        <img src="assets/images/research/library.jpg" alt="Research Library" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'400\' viewBox=\'0 0 500 400\'%3E%3Crect width=\'500\' height=\'400\' fill=\'%234a3729\'/%3E%3Ctext x=\'150\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'20\'%3EResearch Library%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="research-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h2>Join the Research Journey</h2>
+                    <p>Subscribe to receive behind-the-scenes research notes, exclusive historical content, and updates on new discoveries.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                    <p class="privacy-note">I respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/research.js"></script>
+</body>
+</html>

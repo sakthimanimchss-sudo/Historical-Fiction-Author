@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Saxon Chronicles - Eleanor Hartwell</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/series.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon - Comprehensive set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232c3e4f'/%3E%3Cpath d='M20 30 L80 30 L75 70 L50 85 L25 70 L20 30' fill='%23b85c3a'/%3E%3Cpath d='M35 40 L45 40 L45 60 L35 60 Z' fill='%23f0e9de'/%3E%3Cpath d='M55 40 L65 40 L65 60 L55 60 Z' fill='%23f0e9de'/%3E%3Ctext x='42' y='80' fill='%23f0e9de' font-size='12' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232c3e4f'/%3E%3Cpath d='M3 5 L13 5 L12 11 L8 13 L4 11 L3 5' fill='%23b85c3a'/%3E%3Ctext x='4.5' y='12' fill='%23f0e9de' font-size='5' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e4f">
+    <meta name="theme-color" content="#b85c3a">
+    
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <!-- Logo (header) -->
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-scroll"></i>
+                Eleanor Hartwell
+            </a>
+            <span>Historical Fiction Author</span>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- DESKTOP NAVIGATION - COMBINED FOR BETTER SPACING -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <!-- COMBINED: Book Series + Historical Research -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Books & Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-book"></i> Book Series</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="books.html">All Series</a></li>
+                                <li><a href="series-1.html">Series 1</a></li>
+                                <li><a href="series-2.html">Series 2</a></li>
+                                <li><a href="series-3.html">Series 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fas fa-search"></i> Research</a>
+                            <ul class="dropdown-submenu-menu">
+                                <li><a href="research.html">Overview</a></li>
+                                <li><a href="research/real-figures.html">Real Figures</a></li>
+                                <li><a href="research/timelines.html">Timelines</a></li>
+                                <li><a href="research/maps.html">Maps</a></li>
+                                <li><a href="research/sources.html">Sources</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- COMBINED: Articles + Blog -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles & Blog <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Header Actions - ICON ONLY with TOOLTIPS -->
+        <div class="desktop-actions">
+            <button class="theme-toggle" id="themeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="rtl-toggle" id="rtlToggle" data-tooltip="LTR / RTL" aria-label="Toggle RTL">
+                <i class="fas fa-globe"></i>
+            </button>
+            <a href="member-login.html" class="member-login-btn" data-tooltip="Member Login" aria-label="Member Login">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION (Full menu for mobile) -->
+    <div class="mobile-nav-wrapper" id="mobileNav">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home 1 (Main)</a></li>
+                        <li><a href="home2.html"><i class="fas fa-home"></i> Home 2 (Alternate)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Book Series <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="books.html"><i class="fas fa-book"></i> All Series</a></li>
+                        <li><a href="series-1.html"><i class="fas fa-book-open"></i> Series 1</a></li>
+                        <li><a href="series-2.html"><i class="fas fa-book-open"></i> Series 2</a></li>
+                        <li><a href="series-3.html"><i class="fas fa-book-open"></i> Series 3</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Historical Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html"><i class="fas fa-search"></i> Research Overview</a></li>
+                        <li><a href="research/real-figures.html"><i class="fas fa-user"></i> Real Figures</a></li>
+                        <li><a href="research/timelines.html"><i class="fas fa-clock"></i> Timelines</a></li>
+                        <li><a href="research/maps.html"><i class="fas fa-map"></i> Maps</a></li>
+                        <li><a href="research/sources.html"><i class="fas fa-bookmark"></i> Sources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Articles <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="articles.html"><i class="fas fa-newspaper"></i> All Articles</a></li>
+                        <li><a href="articles/article-1.html"><i class="fas fa-file-alt"></i> Article 1</a></li>
+                        <li><a href="articles/article-2.html"><i class="fas fa-file-alt"></i> Article 2</a></li>
+                        <li><a href="articles/article-3.html"><i class="fas fa-file-alt"></i> Article 3</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                <!-- Mobile action items - Three buttons in same line -->
+                <li class="mobile-action-item">
+                    <div class="mobile-theme-rtl">
+                        <button class="theme-toggle-mobile" id="mobileThemeToggle" data-tooltip="Theme" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="rtl-toggle-mobile" id="mobileRtlToggle" data-tooltip="LTR/RTL" aria-label="Toggle RTL">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <a href="member-login.html" class="member-login-link" data-tooltip="Member Login" aria-label="Member Login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- ===== MAIN CONTENT - SERIES 1 ===== -->
+    <main>
+        <!-- Series Header -->
+        <section class="series-header">
+            <div class="container">
+                <div class="series-header-content">
+                    <h1>The Saxon Chronicles</h1>
+                    <p class="series-tagline">A saga of blood, honor, and the birth of England</p>
+                    <div class="series-meta">
+                        <span><i class="fas fa-book"></i> 4 Books</span>
+                        <span><i class="fas fa-clock"></i> 9th Century England</span>
+                        <span><i class="fas fa-star"></i> 4.8 (2,500+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series Overview -->
+        <section class="series-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-image">
+                        <img src="../assets/images/covers/series1-collection.jpg" alt="The Saxon Chronicles Collection" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'600\' viewBox=\'0 0 500 600\'%3E%3Crect width=\'500\' height=\'600\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'150\' y=\'300\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'24\'%3ESaxon Chronicles%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <div class="overview-content">
+                        <h2>About the Series</h2>
+                        <p class="intro">Set against the backdrop of Viking invasions and the birth of England, The Saxon Chronicles follows the journey of a young Saxon nobleman caught between loyalty to his people and an unexpected destiny.</p>
+                        <p>The year is 865 AD. The Great Heathen Army has landed on English shores, and the kingdoms of Northumbria, East Anglia, and Mercia are falling one by one. Only Wessex stands against the Viking tide. In these turbulent times, a young thegn named Eadric finds himself thrust into a world of shifting alliances, bloody battles, and impossible choices.</p>
+                        <p>Over the course of four novels, we follow Eadric from a reluctant warrior to a legendary figure whose actions will help shape the future of England. The series weaves together historical figures like Alfred the Great and Guthrum the Viking with fictional characters, creating a rich tapestry of life in the Dark Ages.</p>
+                        
+                        <div class="series-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-trophy"></i>
+                                <span>Winner, Historical Novel Prize 2021</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-newspaper"></i>
+                                <span>"A masterpiece of historical fiction" - The Times</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-users"></i>
+                                <span>200,000+ copies sold worldwide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books in Series -->
+        <section class="books-in-series">
+            <div class="container">
+                <h2 class="section-title">Books in the Series</h2>
+                <div class="books-grid">
+                    <!-- Book 1 -->
+                    <div class="book-item">
+                        <div class="book-number">I</div>
+                        <div class="book-cover">
+                            <img src="../assets/images/covers/series1-book1.jpg" alt="The Last Kingdom" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'300\' viewBox=\'0 0 200 300\'%3E%3Crect width=\'200\' height=\'300\' fill=\'%232c3e4f\'/%3E%3Ctext x=\'50\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'16\'%3EBook 1%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="book-details">
+                            <h3>The Last Kingdom</h3>
+                            <p class="book-year">2015</p>
+                            <p class="book-description">Eadric's world is shattered when Viking raiders destroy his village. Forced to grow up fast, he must navigate the treacherous politics of rival kingdoms while seeking vengeance and a place to call home.</p>
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (850 reviews)</span>
+                            </div>
+                            <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="book-item">
+                        <div class="book-number">II</div>
+                        <div class="book-cover">
+                            <img src="../assets/images/covers/series1-book2.jpg" alt="The Pale Horseman" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'300\' viewBox=\'0 0 200 300\'%3E%3Crect width=\'200\' height=\'300\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'50\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'16\'%3EBook 2%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="book-details">
+                            <h3>The Pale Horseman</h3>
+                            <p class="book-year">2017</p>
+                            <p class="book-description">As the Viking army marches on Wessex, Eadric finds himself serving King Alfred. But loyalty is tested when he falls for a woman with secrets that could doom them all.</p>
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (720 reviews)</span>
+                            </div>
+                            <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 3 -->
+                    <div class="book-item">
+                        <div class="book-number">III</div>
+                        <div class="book-cover">
+                            <img src="../assets/images/covers/series1-book3.jpg" alt="Lords of the North" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'300\' viewBox=\'0 0 200 300\'%3E%3Crect width=\'200\' height=\'300\' fill=\'%232f4f2f\'/%3E%3Ctext x=\'50\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'16\'%3EBook 3%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="book-details">
+                            <h3>Lords of the North</h3>
+                            <p class="book-year">2019</p>
+                            <p class="book-description">Venturing into the Dane-ridden north, Eadric seeks to reclaim his birthright. But the north is a wild place where oaths are broken as easily as they're sworn.</p>
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (650 reviews)</span>
+                            </div>
+                            <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 4 -->
+                    <div class="book-item">
+                        <div class="book-number">IV</div>
+                        <div class="book-cover">
+                            <img src="../assets/images/covers/series1-book4.jpg" alt="Sword of Kings" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'300\' viewBox=\'0 0 200 300\'%3E%3Crect width=\'200\' height=\'300\' fill=\'%234a3729\'/%3E%3Ctext x=\'50\' y=\'150\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'16\'%3EBook 4%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="book-details">
+                            <h3>Sword of Kings</h3>
+                            <p class="book-year">2022</p>
+                            <p class="book-description">The final confrontation. As an aging Alfred lies dying, the fate of England hangs in the balance. Eadric must make one last stand for the land he's come to love.</p>
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (580 reviews)</span>
+                            </div>
+                            <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historical Context -->
+        <section class="historical-context">
+            <div class="container">
+                <div class="context-grid">
+                    <div class="context-content">
+                        <h2>The Real History</h2>
+                        <p class="intro">The Saxon Chronicles is rooted in meticulous research of 9th century England.</p>
+                        <p>The series draws on the Anglo-Saxon Chronicle, Asser's Life of King Alfred, and archaeological evidence from Viking-age settlements. Key historical figures include:</p>
+                        <ul class="context-list">
+                            <li><i class="fas fa-user"></i> <strong>Alfred the Great:</strong> King of Wessex who defended England against Viking conquest</li>
+                            <li><i class="fas fa-user"></i> <strong>Guthrum:</strong> Viking leader who fought against and was later baptized by Alfred</li>
+                            <li><i class="fas fa-user"></i> <strong>Ubba Ragnarsson:</strong> Legendary Viking chieftain and son of Ragnar Lothbrok</li>
+                            <li><i class="fas fa-user"></i> <strong>Æthelred:</strong> Alfred's brother and predecessor as King of Wessex</li>
+                        </ul>
+                        <a href="../research/timelines.html" class="btn btn-outline">Explore the Timeline <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="context-image">
+                        <img src="../assets/images/maps/viking-england.jpg" alt="Viking Age England Map" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'400\' viewBox=\'0 0 500 400\'%3E%3Crect width=\'500\' height=\'400\' fill=\'%233f2c2c\'/%3E%3Ctext x=\'150\' y=\'200\' fill=\'%23e6d9c8\' font-family=\'Cinzel\' font-size=\'20\'%3EHistorical Map%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reading Order -->
+        <section class="reading-order">
+            <div class="container">
+                <div class="order-content">
+                    <i class="fas fa-book-open"></i>
+                    <h2>Reading Order</h2>
+                    <p>The Saxon Chronicles is best read in chronological order to follow Eadric's journey from youth to legend.</p>
+                    <div class="order-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <span class="step-title">The Last Kingdom</span>
+                        </div>
+                        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-title">The Pale Horseman</span>
+                        </div>
+                        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-title">Lords of the North</span>
+                        </div>
+                        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <span class="step-title">Sword of Kings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Author Logo + Bio -->
+        <div class="footer-col footer-col-main">
+            <div class="footer-logo">
+                <a>
+                    <i class="fas fa-scroll"></i> Eleanor Hartwell
+                </a>
+            </div>
+            <p class="footer-tagline">Award-winning author of historical fiction. Bringing the past to life with every page.</p>
+            <div class="footer-social">
+                <a aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                <a aria-label="BookBub"><i class="fas fa-bookmark"></i></a>
+            </div>
+            <p class="footer-contact"><i class="fas fa-envelope"></i> contact@eleanorhartwell.com</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a>About Eleanor</a></li>
+                <li><a>Books & Series</a></li>
+                <li><a>Historical Research</a></li>
+                <li><a>Articles</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Awards</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Research Resources -->
+        <div class="footer-col">
+            <h4>Research Deep Dives</h4>
+            <ul>
+                <li><a>Real Figures</a></li>
+                <li><a>Timelines</a></li>
+                <li><a>Historical Maps</a></li>
+                <li><a>Key Events</a></li>
+                <li><a>Primary Sources</a></li>
+                <li><a>Newsletter Archive</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Reader Resources -->
+        <div class="footer-col">
+            <h4>Reader Resources</h4>
+            <ul>
+                <li><a>Reader's Club</a></li>
+                <li><a>Member Login</a></li>
+                <li><a>Contact & Events</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Reading Guides</a></li>
+                <li><a>Book Club Kits</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: Policies & Badges -->
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Cookie Policy</a></li>
+                <li><a>Accessibility</a></li>
+                <li><a>Sitemap</a></li>
+            </ul>
+            <div class="footer-badges">
+                <span><i class="fas fa-shield-alt"></i> Secure site</span>
+                <span><i class="fas fa-recycle"></i> Eco‑hosting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2015–2025 Eleanor Hartwell. All rights reserved. | <a>Eleanor Hartwell</a></p>
+            <p class="footer-credit"><i class="fas fa-scroll"></i> Meticulously researched fiction for the curious mind.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/series.js"></script>
+</body>
+</html>
