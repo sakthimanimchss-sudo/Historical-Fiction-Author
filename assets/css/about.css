@@ -89,15 +89,16 @@
 
 .bio-image {
     position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bio-image img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 12px 12px 0 0;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -106,21 +107,45 @@
 }
 
 .image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
     padding: 1rem;
     font-size: 0.9rem;
     font-style: italic;
     font-family: 'Cormorant Garamond', serif;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 0 12px 12px;
 }
 
 .image-caption i {
     margin-right: 0.3rem;
     color: var(--accent-primary);
+}
+
+/* Signature placed below author image */
+.bio-signature {
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.bio-signature img {
+    max-width: 180px;
+    height: auto;
+    opacity: 0.9;
+    display: inline-block;
+    filter: brightness(0.8) sepia(0.2);
+    transition: all 0.3s ease;
+    border-radius: 0; /* Remove border radius from signature */
+}
+
+.bio-signature img:hover {
+    opacity: 1;
+    filter: brightness(1) sepia(0);
+    transform: scale(1.02);
 }
 
 .bio-content h2 {
@@ -161,14 +186,23 @@
     font-family: 'Cormorant Garamond', serif;
 }
 
-.bio-signature {
-    margin-top: 2rem;
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .bio-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .bio-image { 
+        max-width: 500px; 
+        margin: 0 auto; 
+    }
 }
 
-.bio-signature img {
-    max-width: 200px;
-    height: auto;
-    opacity: 0.8;
+@media (max-width: 768px) {
+    .bio-signature img {
+        max-width: 150px;
+    }
 }
 
 /* ===== TIMELINE SECTION ===== */
