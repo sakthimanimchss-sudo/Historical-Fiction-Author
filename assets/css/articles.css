@@ -74,6 +74,118 @@
     color: var(--accent-primary);
     font-weight: 600;
 }
+/* ===== QUICK ARTICLE LINKS SECTION ===== */
+.quick-article-links {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
+    margin-top: -2rem;
+    position: relative;
+    z-index: 5;
+}
+
+.quick-links-wrapper {
+    text-align: center;
+}
+
+.quick-links-title {
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.quick-links-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+}
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quick-link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    height: 100%;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--shadow-hover);
+    border-color: var(--accent-primary);
+}
+
+.quick-link-card i {
+    font-size: 2.2rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.8rem;
+}
+
+.quick-link-card span {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.quick-link-card small {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.quick-link-card.highlight {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+}
+
+.quick-link-card.highlight i {
+    color: white;
+}
+
+.quick-link-card.highlight small {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .quick-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-links-title {
+        font-size: 1.5rem;
+    }
+}
 
 /* ===== FEATURED ARTICLE SECTION ===== */
 .featured-article {
