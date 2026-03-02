@@ -345,60 +345,126 @@
 
 /* ===== FIGURES CTA SECTION ===== */
 .figures-cta {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    padding: 4rem 0; /* Slightly reduced from 5rem */
+    background: url('https://images.unsplash.com/photo-1461360228754-6e81c478b882?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+    position: relative;
     color: white;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Dark overlay on background image for better text readability */
+.figures-cta:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(44, 62, 79, 0.75), rgba(30, 43, 54, 0.85));
+    z-index: 1;
+}
+
+/* Decorative scroll icon (left) */
+.figures-cta:after {
+    content: '📜';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    font-size: 10rem;
+    opacity: 0.12;
+    transform: rotate(-15deg);
+    animation: float 20s ease-in-out infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Right decorative icon - add this element in HTML */
+.figures-cta-icon-right {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    font-size: 10rem;
+    opacity: 0.12;
+    transform: rotate(15deg);
+    animation: float 25s ease-in-out infinite reverse;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .cta-content {
-    max-width: 600px;
+    max-width: 550px; /* Slightly reduced from 600px */
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    animation: fadeInScale 0.8s ease-out;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for text container */
+    padding: 2.2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .cta-content i {
-    font-size: 4rem;
+    font-size: 3.5rem; /* Slightly reduced from 4rem */
     margin-bottom: 1rem;
     background: rgba(255,255,255,0.2);
-    padding: 1rem;
+    padding: 0.9rem;
     border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .cta-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem; /* Slightly reduced from 2.5rem */
     font-family: 'Cinzel', serif;
     margin-bottom: 1rem;
     line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .cta-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.15rem; /* Slightly reduced from 1.2rem */
+    margin-bottom: 1.8rem; /* Slightly reduced from 2rem */
     opacity: 0.95;
     font-family: 'Cormorant Garamond', serif;
-    line-height: 1.8;
+    line-height: 1.7;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .cta-content .btn-primary {
     background: white;
-    color: var(--accent-primary);
+    color: #b85c3a; /* Changed from var(--accent-primary) to specific color */
     border: none;
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
+    padding: 0.9rem 2.2rem; /* Slightly reduced from 1rem 2.5rem */
+    font-size: 1rem; /* Slightly reduced from 1.1rem */
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .cta-content .btn-primary:hover {
-    background: var(--text-primary);
+    background: #2c3e4f; /* Dark blue instead of var(--text-primary) */
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
 }
 
+/* Base .btn-primary styles (keeping for other buttons) */
 .btn-primary {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 2rem;
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    background: linear-gradient(135deg, #b85c3a, #9e4b2f);
     color: white;
     border-radius: 40px;
     font-weight: 600;
@@ -412,7 +478,112 @@
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px var(--shadow-hover);
+    box-shadow: 0 10px 20px rgba(184, 92, 58, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .figures-cta {
+        padding: 3rem 1rem;
+    }
+    
+    .cta-content {
+        padding: 1.8rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-content .btn-primary {
+        padding: 0.8rem 2rem;
+        font-size: 0.95rem;
+    }
+    
+    .cta-content i {
+        font-size: 3rem;
+    }
+    
+    .figures-cta:after,
+    .figures-cta-icon-right {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .figures-cta {
+        padding: 2.5rem 0.75rem;
+    }
+    
+    .cta-content {
+        padding: 1.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .cta-content i {
+        font-size: 2.8rem;
+        padding: 0.7rem;
+    }
+    
+    .figures-cta:after,
+    .figures-cta-icon-right {
+        font-size: 6rem;
+        top: -20px;
+        left: -20px;
+        bottom: -20px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-content .btn-primary {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* ===== RESPONSIVE STYLES ===== */
