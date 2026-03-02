@@ -1,6 +1,6 @@
 /* ===== HOME2 PAGE SPECIFIC STYLES ===== */
 /* Alternate Homepage Layout for Eleanor Hartwell */
-/* Hero Section Only - Split Layout */
+/* Fully Responsive - Mobile, Tablet, Desktop */
 
 /* ===== SPLIT HERO SECTION ===== */
 .hero-split {
@@ -263,182 +263,6 @@
 .scroll-down:hover {
     color: var(--accent-primary);
     transform: translateY(5px);
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
-/* ===== RESPONSIVE STYLES ===== */
-@media (max-width: 1200px) {
-    .split-left h1 {
-        font-size: 3.5rem;
-    }
-    
-    .hero-stats {
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .split-container {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
-    
-    .split-left {
-        padding: 3rem;
-        order: 2;
-    }
-    
-    .split-right {
-        padding: 3rem;
-        order: 1;
-    }
-    
-    .hero-image-wrapper {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
-    .hero-quote {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        margin-top: 2rem;
-    }
-    
-    .hero-scroll-indicator {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .split-left {
-        padding: 2rem;
-    }
-    
-    .split-left h1 {
-        font-size: 2.8rem;
-    }
-    
-    .hero-tagline {
-        font-size: 1.3rem;
-    }
-    
-    .hero-description p {
-        font-size: 1.1rem;
-    }
-    
-    .hero-stats {
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-    
-    .stat-number {
-        font-size: 2rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .btn-primary,
-    .btn-outline {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .split-left h1 {
-        font-size: 2.2rem;
-    }
-    
-    .hero-tagline {
-        font-size: 1.2rem;
-    }
-    
-    .hero-description p {
-        font-size: 1rem;
-    }
-    
-    .hero-stats {
-        gap: 1.5rem;
-        justify-content: center;
-    }
-    
-    .stat-item {
-        align-items: center;
-    }
-    
-    .hero-quote {
-        padding: 1.5rem;
-    }
-    
-    .hero-quote p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .split-left h1 {
-        font-size: 1.8rem;
-    }
-    
-    .hero-tagline {
-        font-size: 1.1rem;
-    }
-    
-    .stat-number {
-        font-size: 1.8rem;
-    }
-    
-    .hero-quote {
-        padding: 1.2rem;
-    }
-}
-
-/* ===== DARK MODE ADJUSTMENTS ===== */
-[data-theme="dark"] .hero-split {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-}
-
-[data-theme="dark"] .hero-quote {
-    background: #2d2d2d;
 }
 
 /* ===== FEATURED WORK SECTION ===== */
@@ -959,7 +783,7 @@
 
 /* ===== NEWSLETTER SIMPLE SECTION ===== */
 .newsletter-simple {
-    padding: 4rem 2rem; /* Reduced from 6rem */
+    padding: 4rem 2rem;
     background: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
     background-size: cover;
     position: relative;
@@ -968,7 +792,6 @@
     overflow: hidden;
 }
 
-/* Dark overlay on background image */
 .newsletter-simple:before {
     content: '';
     position: absolute;
@@ -980,7 +803,6 @@
     z-index: 1;
 }
 
-/* Decorative envelope icon - left */
 .newsletter-simple .decorative-icon-left {
     position: absolute;
     top: -50px;
@@ -993,7 +815,6 @@
     pointer-events: none;
 }
 
-/* Decorative mail icon - right */
 .newsletter-simple .decorative-icon-right {
     position: absolute;
     bottom: -50px;
@@ -1021,7 +842,7 @@
 }
 
 .newsletter-simple-content h2 {
-    font-size: 2.5rem; /* Reduced from 2.8rem */
+    font-size: 2.5rem;
     font-family: 'Cinzel', serif;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -1029,7 +850,7 @@
 }
 
 .newsletter-simple-content p {
-    font-size: 1.1rem; /* Reduced from 1.2rem */
+    font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.95;
     font-family: 'Cormorant Garamond', serif;
@@ -1093,77 +914,7 @@
     margin-top: 1rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .newsletter-simple {
-        padding: 3.5rem 1.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .newsletter-simple {
-        padding: 3rem 1rem;
-    }
-    
-    .newsletter-simple-content {
-        padding: 2rem;
-    }
-    
-    .newsletter-simple-content h2 {
-        font-size: 2rem;
-    }
-    
-    .newsletter-simple-content p {
-        font-size: 1rem;
-    }
-    
-    .newsletter-simple-form {
-        flex-direction: column;
-        background: transparent;
-        padding: 0;
-    }
-    
-    .newsletter-simple-form input {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .newsletter-simple .decorative-icon-left,
-    .newsletter-simple .decorative-icon-right {
-        font-size: 12rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .newsletter-simple {
-        padding: 2.5rem 0.75rem;
-    }
-    
-    .newsletter-simple-content {
-        padding: 1.5rem;
-    }
-    
-    .newsletter-simple-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .newsletter-simple .decorative-icon-left,
-    .newsletter-simple .decorative-icon-right {
-        font-size: 8rem;
-        top: -30px;
-        left: -30px;
-        bottom: -30px;
-        right: -30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .newsletter-simple-content h2 {
-        font-size: 1.6rem;
-    }
-}
-
-/* Animations */
+/* ===== ANIMATIONS ===== */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
@@ -1202,6 +953,12 @@
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0) rotate(0deg);
@@ -1230,4 +987,455 @@
 
 [data-theme="dark"] .event-card {
     background: #2d2d2d;
+}
+
+/* ===== RESPONSIVE STYLES - COMPLETE ===== */
+
+/* Large Desktop (1200px and above) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Desktop (992px to 1199px) */
+@media (max-width: 1199px) {
+    .split-left h1 {
+        font-size: 4rem;
+    }
+    
+    .work-grid {
+        gap: 3rem;
+    }
+    
+    .journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+}
+
+/* Small Desktop / Large Tablet (992px to 1024px) */
+@media (max-width: 1024px) {
+    .split-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .split-left {
+        padding: 3rem;
+        order: 2;
+    }
+    
+    .split-right {
+        padding: 3rem;
+        order: 1;
+    }
+    
+    .hero-image-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .hero-quote {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: 2rem;
+    }
+    
+    .hero-scroll-indicator {
+        display: none;
+    }
+    
+    .work-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .work-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet (768px to 991px) */
+@media (max-width: 991px) {
+    .split-left h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-stats {
+        gap: 2.5rem;
+    }
+    
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+    
+    .journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+    
+    .featured-work {
+        padding: 5rem 1.5rem;
+    }
+    
+    .research-journey {
+        padding: 5rem 1.5rem;
+    }
+    
+    .testimonials {
+        padding: 5rem 1.5rem;
+    }
+    
+    .upcoming-events {
+        padding: 5rem 1.5rem;
+    }
+}
+
+/* Tablet / Mobile Landscape (768px) */
+@media (max-width: 768px) {
+    .split-left {
+        padding: 2rem;
+    }
+    
+    .split-left h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.3rem;
+    }
+    
+    .hero-description p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-stats {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .stat-item {
+        align-items: center;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .section-header {
+        margin-bottom: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .work-info h3 {
+        font-size: 2rem;
+    }
+    
+    .journey-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .events-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .event-date {
+        margin: 0 auto 1rem;
+    }
+    
+    .newsletter-simple {
+        padding: 3rem 1rem;
+    }
+    
+    .newsletter-simple-content {
+        padding: 2rem;
+    }
+    
+    .newsletter-simple-content h2 {
+        font-size: 2rem;
+    }
+    
+    .newsletter-simple-content p {
+        font-size: 1rem;
+    }
+    
+    .newsletter-simple-form {
+        flex-direction: column;
+        background: transparent;
+        padding: 0;
+    }
+    
+    .newsletter-simple-form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-simple .decorative-icon-left,
+    .newsletter-simple .decorative-icon-right {
+        font-size: 12rem;
+    }
+}
+
+/* Mobile (576px) */
+@media (max-width: 576px) {
+    .split-left h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description p {
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .hero-quote {
+        padding: 1.5rem;
+    }
+    
+    .hero-quote p {
+        font-size: 1rem;
+    }
+    
+    .work-tabs {
+        flex-direction: column;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .tab-btn {
+        width: 100%;
+    }
+    
+    .work-info h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .work-era {
+        text-align: center;
+    }
+    
+    .work-rating {
+        justify-content: center;
+    }
+    
+    .highlight {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+    }
+    
+    .journey-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .journey-header p {
+        font-size: 1rem;
+    }
+    
+    .testimonials-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .newsletter-simple {
+        padding: 2.5rem 0.75rem;
+    }
+    
+    .newsletter-simple-content {
+        padding: 1.5rem;
+    }
+    
+    .newsletter-simple-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .newsletter-simple .decorative-icon-left,
+    .newsletter-simple .decorative-icon-right {
+        font-size: 8rem;
+        top: -30px;
+        left: -30px;
+        bottom: -30px;
+        right: -30px;
+    }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+    .split-left h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description p {
+        font-size: 0.95rem;
+    }
+    
+    .stat-number {
+        font-size: 1.6rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .hero-quote {
+        padding: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .work-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .work-era {
+        font-size: 0.95rem;
+    }
+    
+    .work-description {
+        font-size: 0.95rem;
+    }
+    
+    .journey-header h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonials-header h2 {
+        font-size: 2rem;
+    }
+    
+    .events-header h2 {
+        font-size: 2rem;
+    }
+    
+    .event-date .day {
+        font-size: 2rem;
+    }
+    
+    .event-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    .newsletter-simple-content h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Extra Small Mobile (below 480px) */
+@media (max-width: 380px) {
+    .split-left h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.4rem;
+    }
+    
+    .btn-primary,
+    .btn-outline {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .work-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .journey-card {
+        padding: 2rem 1rem;
+    }
+    
+    .journey-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .journey-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-split {
+        min-height: 120vh;
+    }
+    
+    .split-left {
+        padding: 2rem;
+    }
+    
+    .hero-stats {
+        margin-bottom: 1.5rem;
+    }
 }
