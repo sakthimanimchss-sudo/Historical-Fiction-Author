@@ -176,7 +176,6 @@
     </nav>
 </div>
 </header>
-
 <main>
     <!-- ===== SECTION 1: HERO ===== -->
     <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
@@ -255,44 +254,37 @@
     </div>
 </section>
 
-    <!-- ===== SECTION 4: AUTHOR NOTE & EVENTS ===== -->
-    <section class="author-note">
-        <div class="container">
-            <div class="author-grid">
-                <!-- Author Image -->
-                <div class="author-image">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Eleanor Hartwell portrait">    
-                </div>
-
-                <!-- Author Message -->
-                <div class="author-text">
-                    <i class="fas fa-quote-right"></i>
-                    <h2>A Word from Eleanor</h2>
-                    <p>
-                        "History is not just a collection of dates — it is the echo of human lives. 
-                        My mission is to make those echoes resonate today."
-                    </p>
-                    <span class="author-signature">— Eleanor Hartwell</span>
-                    <a href="about.html" class="btn-link">
-                        Meet Eleanor <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Events Preview -->
-                <div class="events-preview">
-                    <h3>Upcoming Events</h3>
-                    <ul>
-                        <li><i class="fas fa-calendar-alt"></i> Mar 15: Oxford Book Fair</li>
-                        <li><i class="fas fa-calendar-alt"></i> Apr 2: Virtual Q&A Session</li>
-                        <li><i class="fas fa-calendar-alt"></i> May 10: London Book Signing</li>
-                    </ul>
-                    <a href="contact.html" class="btn-link">
-                        All Events <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+<!-- ===== AUTHOR NOTE & EVENTS SECTION ===== -->
+<section class="author-note">
+    <div class="container">
+        <div class="author-grid">
+            <!-- Author Image -->
+            <div class="author-image">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Eleanor Hartwell" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'280\' height=\'280\' viewBox=\'0 0 280 280\'%3E%3Ccircle cx=\'140\' cy=\'140\' r=\'140\' fill=\'%23b85c3a\'/%3E%3Ctext x=\'70\' y=\'160\' fill=\'white\' font-family=\'Cinzel\' font-size=\'24\'%3EEH%3C/text%3E%3C/svg%3E'">
+            </div>
+            
+            <!-- Author Quote -->
+            <div class="author-text">
+                <i class="fas fa-quote-right"></i>
+                <h2>A Word from Eleanor</h2>
+                <p>"History is not just a collection of dates — it is the echo of human lives. My mission is to make those echoes resonate today."</p>
+                <span class="author-signature">— Eleanor Hartwell</span>
+                <a href="about.html" class="btn-link">Meet Eleanor <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <!-- Upcoming Events -->
+            <div class="events-preview">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li><i class="fas fa-calendar-alt"></i> <strong>Mar 15:</strong> Oxford Book Fair</li>
+                    <li><i class="fas fa-calendar-alt"></i> <strong>Apr 2:</strong> Virtual Q&A Session</li>
+                    <li><i class="fas fa-calendar-alt"></i> <strong>May 10:</strong> London Book Signing</li>
+                </ul>
+                <a href="events.html" class="events-link">View All Events <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== SECTION 5: LATEST ARTICLES & BLOG ===== -->
     <section class="latest-articles">
@@ -328,21 +320,22 @@
     </section>
 
     <!-- ===== SECTION 6: READER'S CLUB ===== -->
-    <section class="readers-club" style="background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="club-content">
-                <i class="fas fa-users"></i>
-                <h2>Eleanor's Historical Reader's Club</h2>
-                <p>Join free for exclusive behind‑the‑scenes material, research deep dives, and a community of history lovers.</p>
-                <div class="benefits">
-                    <span><i class="fas fa-check-circle"></i> Monthly newsletter</span>
-                    <span><i class="fas fa-check-circle"></i> Members‑only Q&A</span>
-                    <span><i class="fas fa-check-circle"></i> Early access to events</span>
-                </div>
-                <a href="membership.html" class="btn btn-primary">Become a Member</a>
+<!-- ===== READER'S CLUB SECTION ===== -->
+<section class="readers-club">
+    <div class="container">
+        <div class="club-content">
+            <i class="fas fa-users"></i>
+            <h2>Eleanor's Historical Reader's Club</h2>
+            <p>Join free for exclusive behind-the-scenes material, research deep dives, and a community of history lovers.</p>
+            <div class="benefits">
+                <span><i class="fas fa-envelope"></i> Monthly newsletter</span>
+                <span><i class="fas fa-comments"></i> Members-only Q&A</span>
+                <span><i class="fas fa-calendar-check"></i> Early access to events</span>
             </div>
+            <a href="membership.html" class="club-btn">Join Free Today</a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== SECTION 7: AWARDS & ACCOLADES ===== -->
     <section class="awards-showcase">
@@ -374,21 +367,20 @@
         </div>
     </section>
 
-    <!-- ===== SECTION 8: NEWSLETTER SIGNUP ===== -->
-    <section class="newsletter-signup" style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Join the History Circle</h2>
-                <p>Subscribe for exclusive historical content, research notes, and new releases.</p>
-                <form class="signup-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-                <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
-            </div>
+<!-- ===== SECTION 8: NEWSLETTER SIGNUP ===== -->
+<section class="newsletter-signup" style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Join the History Circle</h2>
+            <p>Subscribe for exclusive historical content, research notes, and new releases.</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
@@ -476,10 +468,9 @@
     </div>
 </footer>
 
-<!-- JavaScript -->
+    <!-- JavaScript -->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
 
 
