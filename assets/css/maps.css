@@ -651,77 +651,221 @@
 
 /* ===== MAP CTA SECTION ===== */
 .map-cta {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    padding: 3rem 0;
+    background: url('https://images.unsplash.com/photo-1524661135-423995f77d5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+    position: relative;
     color: white;
     text-align: center;
-    position: relative;
     overflow: hidden;
 }
 
+/* Dark overlay on the background image for better text readability */
 .map-cta:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(44, 62, 79, 0.7), rgba(30, 43, 54, 0.8));
+    z-index: 1;
+}
+
+/* Decorative map icons */
+.map-cta:after {
     content: '🗺️';
     position: absolute;
-    top: -50px;
-    left: -50px;
-    font-size: 15rem;
-    opacity: 0.1;
+    top: -30px;
+    left: -30px;
+    font-size: 10rem;
+    opacity: 0.15;
     transform: rotate(-15deg);
     animation: float 20s ease-in-out infinite;
+    z-index: 2;
+    pointer-events: none;
 }
 
-.map-cta:after {
-    content: '📍';
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    font-size: 15rem;
-    opacity: 0.1;
-    transform: rotate(15deg);
-    animation: float 25s ease-in-out infinite reverse;
-}
+/* Second decorative icon - using pseudo-element for second icon is not possible, so we need to add an HTML element */
+/* Add this in your HTML: <div class="map-cta-icon-right">📍</div> */
 
 .cta-content {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     animation: fadeInScale 0.8s ease-out;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for text container */
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .cta-content i {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
     background: rgba(255,255,255,0.2);
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 50%;
     animation: pulse 2s infinite;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .cta-content h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Cinzel', serif;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .cta-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
     opacity: 0.95;
     font-family: 'Cormorant Garamond', serif;
-    line-height: 1.8;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .cta-content .btn-primary {
     background: white;
-    color: var(--accent-primary);
+    color: #2c3e4f;
     border: none;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .cta-content .btn-primary:hover {
-    background: var(--text-primary);
+    background: #b85c3a;
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Right decorative icon - add this element in HTML */
+.map-cta-icon-right {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    font-size: 10rem;
+    opacity: 0.15;
+    transform: rotate(15deg);
+    animation: float 25s ease-in-out infinite reverse;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .map-cta {
+        padding: 2.5rem 1rem;
+    }
+    
+    .cta-content {
+        padding: 1.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .cta-content .btn-primary {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .map-cta:after,
+    .map-cta-icon-right {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-cta {
+        padding: 2rem 0.75rem;
+    }
+    
+    .cta-content {
+        padding: 1.2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-content i {
+        font-size: 2.5rem;
+        padding: 0.6rem;
+    }
+    
+    .map-cta:after,
+    .map-cta-icon-right {
+        font-size: 5rem;
+        top: -20px;
+        left: -20px;
+        bottom: -20px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .cta-content .btn-primary {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg); /* Reduced from -20px */
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* ===== MAP MODAL ===== */
