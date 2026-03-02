@@ -752,150 +752,286 @@
     font-family: 'Cormorant Garamond', serif;
 }
 
-/* ===== CITE MODAL ===== */
-.cite-modal {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.cite-modal.show {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-}
-
-.cite-modal .modal-content {
-    background: var(--card-bg);
-    max-width: 500px;
-    width: 90%;
-    padding: 2rem;
-    border-radius: 16px;
+/* ===== CITATION GUIDE SECTION ===== */
+.citation-guide {
+    padding: 4rem 0;
+    background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
     position: relative;
-    animation: zoomIn 0.3s ease;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
-}
-
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    color: var(--text-secondary);
-    font-size: 2rem;
-    cursor: pointer;
-    transition: color 0.3s;
-    line-height: 1;
-}
-
-.modal-close:hover {
-    color: var(--accent-primary);
-}
-
-.cite-modal h3 {
-    font-size: 1.8rem;
-    font-family: 'Cinzel', serif;
-    color: var(--text-primary);
-    margin-bottom: 1.5rem;
-    padding-right: 2rem;
-}
-
-.cite-format {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-    position: relative;
-}
-
-.cite-label {
-    font-weight: 600;
-    color: var(--accent-primary);
-    margin-bottom: 0.5rem;
-    font-family: 'Cinzel', serif;
-}
-
-.cite-text {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 1.6;
-    margin-bottom: 0.5rem;
-}
-
-.copy-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background: var(--accent-primary);
     color: white;
-    border: none;
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
+    overflow: hidden;
+}
+
+/* Dark overlay on background image */
+.citation-guide:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(74, 107, 138, 0.85), rgba(44, 74, 106, 0.9));
+    z-index: 1;
+}
+
+/* Decorative quote marks (left) */
+.citation-guide:after {
+    content: '“ ”';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    font-size: 20rem;
+    opacity: 0.15;
+    font-family: 'Cinzel', serif;
+    transform: rotate(15deg);
+    animation: float 20s ease-in-out infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Right decorative icon - add this in HTML */
+.citation-guide-icon {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    font-size: 15rem;
+    opacity: 0.15;
+    transform: rotate(-15deg);
+    animation: float 25s ease-in-out infinite reverse;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.guide-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    animation: fadeInScale 0.8s ease-out;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    border-radius: 24px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.guide-content i {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.guide-content h2 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.guide-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.guide-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.guide-tab {
+    padding: 0.7rem 2rem;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.4);
+    color: white;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
     font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(2px);
 }
 
-.copy-btn:hover {
-    background: var(--accent-hover);
+.guide-tab:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: white;
     transform: translateY(-2px);
 }
 
-/* ===== SCROLL-TRIGGERED ANIMATION CLASSES ===== */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+.guide-tab.active {
+    background: white;
+    color: #2c4a6a;
+    border-color: white;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.guide-example {
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
-.fade-in-left {
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+.guide-example.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
 }
 
-.fade-in-left.visible {
-    opacity: 1;
-    transform: translateX(0);
+.guide-example p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-.fade-in-right {
-    opacity: 0;
-    transform: translateX(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+.guide-example p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
-.fade-in-right.visible {
-    opacity: 1;
-    transform: translateX(0);
+.guide-example p em {
+    font-style: italic;
+    color: #e6d9c8;
 }
 
-.scale-in {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .citation-guide {
+        padding: 3rem 1rem;
+    }
+    
+    .guide-content {
+        padding: 1.8rem;
+    }
+    
+    .guide-content h2 {
+        font-size: 2rem;
+    }
+    
+    .guide-content p {
+        font-size: 1rem;
+    }
+    
+    .guide-tabs {
+        flex-direction: column;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .guide-tab {
+        width: 100%;
+    }
+    
+    .guide-example {
+        padding: 1.5rem;
+    }
+    
+    .guide-example p {
+        font-size: 0.95rem;
+    }
+    
+    .citation-guide:after,
+    .citation-guide-icon {
+        font-size: 12rem;
+    }
 }
 
-.scale-in.visible {
-    opacity: 1;
-    transform: scale(1);
+@media (max-width: 576px) {
+    .guide-content {
+        padding: 1.5rem;
+    }
+    
+    .guide-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .guide-content i {
+        font-size: 3rem;
+        padding: 0.8rem;
+    }
+    
+    .guide-example p {
+        font-size: 0.9rem;
+    }
+    
+    .citation-guide:after,
+    .citation-guide-icon {
+        font-size: 8rem;
+        top: -30px;
+        left: -30px;
+        bottom: -30px;
+        right: -30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-content h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* ===== RESPONSIVE STYLES ===== */
