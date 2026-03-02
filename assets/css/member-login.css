@@ -2,96 +2,18 @@
 /* Eleanor Hartwell - Readers Club Login */
 /* Font styles matching home2.css - Cinzel headings, Cormorant Garamond body */
 
-/* ===== LOGIN HERO SECTION ===== */
+/* ===== HIDE HERO SECTION ===== */
 .login-hero {
-    position: relative;
-    min-height: 35vh;
-    background: linear-gradient(135deg, #2c5a5a, #1a3a3a);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-}
-
-.login-hero:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" opacity="0.1"><path d="M50,50 L100,20 L150,50 L150,120 L100,150 L50,120 Z" stroke="white" fill="none" stroke-width="2"/><circle cx="100" cy="85" r="20" stroke="white" fill="none" stroke-width="2"/></svg>');
-    background-size: 300px;
-    opacity: 0.15;
-    animation: floatBackground 40s linear infinite;
-}
-
-.login-hero .container {
-    position: relative;
-    z-index: 2;
-    padding: 4rem 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* ===== LOGIN LOGO ===== */
-.login-logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: 'Cinzel', serif;
-    margin-bottom: 2rem;
-    padding: 0.5rem 1.5rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255,255,255,0.2);
-    transition: all 0.3s;
-}
-
-.login-logo:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.login-logo i {
-    font-size: 1.8rem;
-    color: #9ec9c9;
-}
-
-.login-logo span {
-    font-weight: 600;
-}
-
-.login-hero-content h1 {
-    font-size: 3rem;
-    font-family: 'Cinzel', serif;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    animation: fadeInUp 1.2s ease-out;
-}
-
-.login-hero-content p {
-    font-size: 1.2rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    color: #9ec9c9;
-    margin-bottom: 1.5rem;
-    opacity: 0.95;
-    animation: fadeInUp 1.2s ease-out 0.1s both;
+    display: none;
 }
 
 /* ===== LOGIN SECTION ===== */
 .login-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -118,13 +40,44 @@
     background: var(--card-bg);
 }
 
+/* ===== CARD LOGO STYLES ===== */
+.card-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.card-logo a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.card-logo a:hover {
+    color: #9ec9c9;
+    transform: scale(1.02);
+}
+
+.card-logo i {
+    color: #9ec9c9;
+    font-size: 2rem;
+}
+
+/* ===== LOGIN HEADER ===== */
 .login-header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .login-header i {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #9ec9c9;
     margin-bottom: 1rem;
     background: rgba(158, 201, 201, 0.1);
@@ -498,92 +451,9 @@
     font-weight: 600;
 }
 
-/* ===== MEMBER ACTIVITY SECTION ===== */
+/* ===== HIDE MEMBER ACTIVITY SECTION ===== */
 .member-activity {
-    padding: 5rem 0;
-    background-color: var(--bg-primary);
-}
-
-.section-title {
-    font-size: 2.5rem;
-    font-family: 'Cinzel', serif;
-    color: var(--text-primary);
-    margin-bottom: 2rem;
-    text-align: center;
-    position: relative;
-}
-
-.section-title:after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #9ec9c9, transparent);
-    margin: 1rem auto;
-}
-
-.activity-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.activity-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: var(--card-bg);
-    border-radius: 12px;
-    box-shadow: 0 10px 20px var(--shadow-color);
-    transition: all 0.3s;
-    border: 1px solid var(--border-color);
-    cursor: pointer;
-}
-
-.activity-card:hover {
-    transform: translateY(-3px);
-    border-color: #9ec9c9;
-    box-shadow: 0 15px 30px rgba(158, 201, 201, 0.15);
-}
-
-.activity-icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(158, 201, 201, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9ec9c9;
-    font-size: 1.2rem;
-    transition: all 0.3s;
-}
-
-.activity-card:hover .activity-icon {
-    background: #9ec9c9;
-    color: white;
-    transform: scale(1.1) rotate(5deg);
-}
-
-.activity-content {
-    flex: 1;
-}
-
-.activity-text {
-    color: var(--text-primary);
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 1.4;
-}
-
-.activity-meta {
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-family: 'Cormorant Garamond', serif;
+    display: none;
 }
 
 /* ===== FAQ NOTE SECTION ===== */
@@ -767,31 +637,20 @@
     .login-benefits {
         display: none;
     }
-    
-    .activity-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-    }
 }
 
 @media (max-width: 768px) {
-    .login-hero { min-height: 30vh; }
-    .login-hero-content h1 { font-size: 2.2rem; }
-    .login-hero-content p { font-size: 1.1rem; }
-    
     .login-form-container {
         padding: 2rem;
     }
     
-    .login-header h2 { font-size: 1.8rem; }
+    .login-header h2 {
+        font-size: 1.8rem;
+    }
     
     .form-options {
         flex-direction: column;
         align-items: flex-start;
-    }
-    
-    .activity-grid {
-        gap: 1rem;
     }
     
     .note-content {
@@ -802,15 +661,25 @@
 }
 
 @media (max-width: 576px) {
-    .login-hero-content h1 { font-size: 1.8rem; }
-    .login-hero-content p { font-size: 1rem; }
-    
     .login-form-container {
         padding: 1.5rem;
     }
     
-    .login-header h2 { font-size: 1.5rem; }
-    .login-header p { font-size: 0.95rem; }
+    .card-logo a {
+        font-size: 1.4rem;
+    }
+    
+    .card-logo i {
+        font-size: 1.6rem;
+    }
+    
+    .login-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .login-header p {
+        font-size: 0.95rem;
+    }
     
     .social-buttons {
         gap: 0.5rem;
@@ -820,10 +689,6 @@
         width: 40px;
         height: 40px;
         font-size: 1rem;
-    }
-    
-    .activity-card {
-        padding: 1rem;
     }
     
     .modal-content {
@@ -910,10 +775,6 @@
 [data-theme="dark"] .social-btn {
     background: #3d3d3d;
     border-color: #505050;
-}
-
-[data-theme="dark"] .activity-card {
-    background: #2d2d2d;
 }
 
 [data-theme="dark"] .note-content {
