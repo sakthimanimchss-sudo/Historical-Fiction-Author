@@ -100,9 +100,9 @@
     color: #b0d9d9;
 }
 
-/* ===== ARTICLE FEATURED IMAGE ===== */
+/* ===== ARTICLE FEATURED IMAGE - FIXED SIZE ===== */
 .article-featured-image {
-    padding: 3rem 0 2rem;
+    padding: 2rem 0 1.5rem; /* Reduced padding */
     background-color: var(--bg-primary);
 }
 
@@ -115,22 +115,25 @@
 .featured-figure {
     margin: 0;
     position: relative;
-    border-radius: 20px;
+    border-radius: 16px; /* Slightly smaller radius */
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25); /* Lighter shadow */
     animation: fadeInScale 0.8s ease-out;
     border: 1px solid rgba(107, 158, 158, 0.3);
+    max-height: 450px; /* Limit maximum height */
 }
 
 .featured-figure img {
     width: 100%;
     height: auto;
+    max-height: 450px; /* Limit image height */
+    object-fit: cover; /* Crop image to fit */
     display: block;
     transition: transform 0.8s;
 }
 
 .featured-figure:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02); /* Reduced zoom effect */
 }
 
 .featured-figure figcaption {
@@ -138,10 +141,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
-    padding: 2rem 1.5rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 1.2rem 1rem 0.8rem; /* Reduced padding */
+    font-size: 0.85rem; /* Smaller font */
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     letter-spacing: 0.5px;
@@ -580,30 +583,33 @@
     margin-top: 2rem;
 }
 
-/* ===== INLINE FIGURE ===== */
+/* ===== INLINE FIGURE - FIXED SIZE ===== */
 .inline-figure {
-    margin: 3rem 0;
-    border-radius: 16px;
+    margin: 2rem 0; /* Reduced margin */
+    border-radius: 12px; /* Smaller radius */
     overflow: hidden;
-    box-shadow: 0 20px 40px var(--shadow-color);
+    box-shadow: 0 15px 30px var(--shadow-color);
     border: 1px solid var(--border-color);
+    max-height: 350px; /* Limit height */
 }
 
 .inline-figure img {
     width: 100%;
     height: auto;
+    max-height: 350px; /* Limit image height */
+    object-fit: cover; /* Crop to fit */
     display: block;
-    transition: transform 0.6s;
+    transition: transform 0.5s;
 }
 
 .inline-figure:hover img {
-    transform: scale(1.02);
+    transform: scale(1.01); /* Minimal zoom */
 }
 
 .inline-figure figcaption {
     background: var(--bg-secondary);
-    padding: 1.2rem;
-    font-size: 1rem;
+    padding: 0.8rem; /* Reduced padding */
+    font-size: 0.9rem; /* Smaller font */
     color: var(--text-secondary);
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -611,16 +617,16 @@
     border-top: 1px solid var(--border-color);
 }
 
-/* ===== BLOCKQUOTE ===== */
+/* ===== BLOCKQUOTE STYLES - LIGHT BLUE BACKGROUND ===== */
 blockquote {
     margin: 3rem 0;
     padding: 2.5rem;
-    background: linear-gradient(135deg, #2d5a5a, #1a3a3a);
-    border-left: 6px solid #b0d9d9;
+    background: linear-gradient(135deg, #e6f0f5, #d0e4f0);
+    border-left: 6px solid var(--accent-primary);
     border-radius: 0 20px 20px 0;
-    color: white;
+    color: #2c3e4f; /* Dark blue text for contrast */
     position: relative;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 blockquote:before {
@@ -629,47 +635,59 @@ blockquote:before {
     top: -20px;
     left: 20px;
     font-size: 8rem;
-    color: rgba(255,255,255,0.1);
+    color: rgba(44, 62, 79, 0.1);
     font-family: 'Cinzel', serif;
 }
 
 blockquote p {
     font-size: 1.3rem;
-    color: white;
+    color: #2c3e4f; /* Dark blue text */
     margin-bottom: 1.2rem;
     font-style: italic;
     position: relative;
     z-index: 1;
+    line-height: 1.6;
 }
 
 blockquote footer {
-    color: #b0d9d9;
+    color: #b85c3a; /* Accent color for attribution */
     font-size: 1.1rem;
     font-weight: 600;
     position: relative;
     z-index: 1;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-/* ===== AUTHOR BIO ===== */
+/* Dark mode adjustments for blockquote - still light blue but adjusted */
+[data-theme="dark"] blockquote {
+    background: linear-gradient(135deg, #c9dde8, #b8d2e0);
+    border-left: 6px solid var(--accent-primary);
+}
+
+[data-theme="dark"] blockquote p {
+    color: #1a2a36; /* Slightly darker text for dark mode */
+}
+
+/* ===== AUTHOR BIO - FIXED IMAGE SIZE ===== */
 .author-bio {
     display: flex;
-    gap: 2.5rem;
-    padding: 2.5rem;
+    gap: 2rem;
+    padding: 2rem;
     background: linear-gradient(135deg, #2d5a5a, #1a3a3a);
-    border-radius: 20px;
-    margin: 4rem 0;
+    border-radius: 16px; /* Smaller radius */
+    margin: 3rem 0; /* Reduced margin */
     align-items: center;
     color: white;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .author-bio img {
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Fixed width - reduced from 120px */
+    height: 100px; /* Fixed height - reduced from 120px */
     border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #b0d9d9;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    object-fit: cover; /* Ensure image covers circle */
+    border: 3px solid #b0d9d9; /* Thinner border */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .author-info h4 {
@@ -887,11 +905,11 @@ blockquote footer {
 }
 
 .comment-avatar img {
-    width: 60px;
-    height: 60px;
+    width: 50px; /* Reduced from 60px */
+    height: 50px; /* Reduced from 60px */
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #6b9e9e;
+    border: 2px solid #6b9e9e; /* Thinner border */
 }
 
 .comment-content {
@@ -994,7 +1012,7 @@ blockquote footer {
     box-shadow: 0 10px 20px rgba(107, 158, 158, 0.3);
 }
 
-/* ===== RELATED ARTICLES ===== */
+/* ===== RELATED ARTICLES - FIXED IMAGE SIZE ===== */
 .related-articles {
     padding: 5rem 0;
     background-color: var(--bg-primary);
@@ -1010,11 +1028,11 @@ blockquote footer {
 
 .related-card {
     background: var(--card-bg);
-    border-radius: 16px;
+    border-radius: 12px; /* Smaller radius */
     overflow: hidden;
-    box-shadow: 0 15px 35px var(--shadow-color);
-    transition: all 0.4s;
-    padding: 1.8rem;
+    box-shadow: 0 12px 25px var(--shadow-color);
+    transition: all 0.3s;
+    padding: 1.2rem; /* Reduced padding */
     border: 1px solid var(--border-color);
 }
 
@@ -1026,15 +1044,15 @@ blockquote footer {
 
 .related-card img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1.2rem;
-    transition: transform 0.4s;
+    height: 140px; /* Fixed height - reduced from 160px */
+    object-fit: cover; /* Crop to fit */
+    border-radius: 8px; /* Smaller radius */
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
 }
 
 .related-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03); /* Minimal zoom */
 }
 
 .related-card h4 {
@@ -1122,6 +1140,14 @@ blockquote footer {
     
     .article-category-badge { font-size: 0.9rem; padding: 0.5rem 1.5rem; }
     
+    .featured-figure {
+        max-height: 350px;
+    }
+    
+    .featured-figure img {
+        max-height: 350px;
+    }
+    
     .featured-figure figcaption {
         position: relative;
         background: var(--bg-secondary);
@@ -1134,6 +1160,14 @@ blockquote footer {
     .article-intro { 
         font-size: 1.2rem; 
         padding: 1.5rem;
+    }
+    
+    .inline-figure {
+        max-height: 280px;
+    }
+    
+    .inline-figure img {
+        max-height: 280px;
     }
     
     .comment { 
@@ -1149,6 +1183,10 @@ blockquote footer {
     .related-grid {
         grid-template-columns: 1fr;
         max-width: 450px;
+    }
+    
+    .related-card img {
+        height: 130px; /* Smaller on mobile */
     }
     
     .article-footer {
@@ -1178,6 +1216,27 @@ blockquote footer {
         font-size: 1rem;
     }
     
+    .featured-figure {
+        max-height: 280px;
+    }
+    
+    .featured-figure img {
+        max-height: 280px;
+    }
+    
+    .inline-figure {
+        max-height: 220px;
+    }
+    
+    .inline-figure img {
+        max-height: 220px;
+    }
+    
+    .featured-figure figcaption {
+        font-size: 0.75rem;
+        padding: 0.8rem;
+    }
+    
     .article-text h2 { font-size: 1.8rem; }
     .article-text h3 { font-size: 1.4rem; }
     .article-text p,
@@ -1197,8 +1256,8 @@ blockquote footer {
     }
     
     .author-bio img {
-        width: 100px;
-        height: 100px;
+        width: 80px; /* Smaller on mobile */
+        height: 80px;
     }
     
     .author-info h4 {
@@ -1207,6 +1266,11 @@ blockquote footer {
     
     .author-info p {
         font-size: 1rem;
+    }
+    
+    .comment-avatar img {
+        width: 45px;
+        height: 45px;
     }
     
     .exercise-card {
@@ -1220,6 +1284,10 @@ blockquote footer {
     .article-text h3 { font-size: 1.3rem; }
     .section-title { font-size: 2rem; }
     
+    .related-card img {
+        height: 120px;
+    }
+    
     .article-actions {
         flex-direction: column;
         gap: 0.8rem;
@@ -1228,11 +1296,6 @@ blockquote footer {
     .action-btn {
         width: 100%;
         justify-content: center;
-    }
-    
-    .comment-avatar img {
-        width: 50px;
-        height: 50px;
     }
 }
 
