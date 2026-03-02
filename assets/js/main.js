@@ -218,3 +218,95 @@ function closeMobileMenu() {
     // ===== INITIALIZATION =====
     console.log('Eleanor Hartwell website initialized');
 });
+
+
+/**
+ * UNIVERSAL ACTIVE MENU HANDLER
+ * Works for all pages, dropdowns, submenus, local & live servers
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // ================================
+    // GET CURRENT PAGE SAFELY
+    // ================================
+    const currentURL = window.location.href;
+    let currentPage = currentURL.split("/").pop().split("?")[0];
+
+    if (currentPage === "" || currentPage === "/") {
+        currentPage = "index.html";
+    }
+
+    console.log("Current Page:", currentPage);
+
+    // ================================
+    // REMOVE OLD ACTIVE CLASSES
+    // ================================
+    document.querySelectorAll("nav a").forEach(link => {
+        link.classList.remove("active");
+    });
+
+    document.querySelectorAll(".dropdown, .dropdown-submenu").forEach(item => {
+        item.classList.remove("has-active-child");
+    });
+
+    // ================================
+    // ACTIVATE MATCHING LINKS
+    // ================================
+    document.querySelectorAll("nav a").forEach(link => {
+
+        const href = link.getAttribute("href");
+        if (!href || href === "#") return;
+
+        let cleanHref = href.split("/").pop();
+
+        if (cleanHref === currentPage) {
+
+            // Activate link
+            link.classList.add("active");
+
+            // Activate parent dropdown
+            const dropdownParent = link.closest(".dropdown, .dropdown-submenu");
+            if (dropdownParent) {
+                dropdownParent.classList.add("has-active-child");
+
+                const mainParent = dropdownParent.closest(".dropdown");
+                if (mainParent) {
+                    mainParent.classList.add("has-active-child");
+                }
+            }
+        }
+    });
+
+    // ================================
+    // SPECIAL SECTION MATCHING
+    // ================================
+
+    // Research subpages
+    if (currentURL.includes("/research/")) {
+        activateParent("research.html");
+    }
+
+    // Articles subpages
+    if (currentURL.includes("/articles/")) {
+        activateParent("articles.html");
+    }
+
+    // Series pages
+    if (currentURL.includes("/series/")) {
+        activateParent("books.html");
+    }
+
+    function activateParent(fileName) {
+        document.querySelectorAll(`nav a[href="${fileName}"]`).forEach(link => {
+            link.classList.add("active");
+
+            const dropdownParent = link.closest(".dropdown");
+            if (dropdownParent) {
+                dropdownParent.classList.add("has-active-child");
+            }
+        });
+    }
+
+    console.log("Active menu applied successfully");
+});
