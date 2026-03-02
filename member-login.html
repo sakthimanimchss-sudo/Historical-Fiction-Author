@@ -24,33 +24,26 @@
     <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e4f'/%3E%3Cpath d='M6 10 L26 10 L24 22 L16 27 L8 22 L6 10' fill='%23b85c3a'/%3E%3Ctext x='9' y='24' fill='%23f0e9de' font-size='10' font-family='Georgia'%3EEH%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-    <!-- ===== LOGIN PAGE - NO HEADER, NO FOOTER ===== -->
+    <!-- ===== LOGIN PAGE - NO HEADER, NO FOOTER, NO BANNER ===== -->
     <main>
-        <!-- Login Hero Section -->
-        <section class="login-hero">
-            <div class="container">
-                <div class="login-hero-content">
-                    <!-- Logo with link to home -->
-                    <a href="index.html" class="login-logo">
-                        <i class="fas fa-scroll"></i>
-                        <span>Eleanor Hartwell</span>
-                    </a>
-                    <h1>Reader's Club Login</h1>
-                    <p>Welcome back, fellow history enthusiast</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Login Section -->
+        <!-- Login Section - Centered, No Banner -->
         <section class="login-section">
             <div class="container">
                 <div class="login-wrapper">
-                    <!-- Login Form -->
+                    <!-- Login Form Card with Logo Inside -->
                     <div class="login-form-container">
+                        <!-- Logo inside the card -->
+                        <div class="card-logo">
+                            <a href="index.html">
+                                <i class="fas fa-scroll"></i>
+                                <span>Eleanor Hartwell</span>
+                            </a>
+                        </div>
+                        
                         <div class="login-header">
                             <i class="fas fa-user-circle"></i>
-                            <h2>Sign In to Your Account</h2>
-                            <p>Access exclusive content, advance reader copies, and member events</p>
+                            <h2>Member Login</h2>
+                            <p>Welcome back! Sign in to access exclusive content.</p>
                         </div>
 
                         <form class="login-form" id="loginForm">
@@ -114,7 +107,7 @@
                         </div>
                     </div>
 
-                    <!-- Login Benefits -->
+                    <!-- Login Benefits (Kept as is) -->
                     <div class="login-benefits">
                         <h3>Member Benefits</h3>
                         <div class="benefits-list">
@@ -172,55 +165,7 @@
             </div>
         </section>
 
-        <!-- Recent Member Activity (Optional Section) -->
-        <section class="member-activity">
-            <div class="container">
-                <h2 class="section-title">Recent Club Activity</h2>
-                <div class="activity-grid">
-                    <div class="activity-card">
-                        <div class="activity-icon">
-                            <i class="fas fa-comment"></i>
-                        </div>
-                        <div class="activity-content">
-                            <p class="activity-text">New discussion: "The portrayal of Anne Boleyn in historical fiction"</p>
-                            <span class="activity-meta">24 comments · 2 hours ago</span>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card">
-                        <div class="activity-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <div class="activity-content">
-                            <p class="activity-text">Advance reader copies of "Hadrian's Wall" have been sent to Gold members</p>
-                            <span class="activity-meta">5 hours ago</span>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card">
-                        <div class="activity-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="activity-content">
-                            <p class="activity-text">Virtual coffee chat: "Researching the Viking Age" - March 25th</p>
-                            <span class="activity-meta">15 spots remaining</span>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card">
-                        <div class="activity-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="activity-content">
-                            <p class="activity-text">Member of the Month: Congratulations to David Chen!</p>
-                            <span class="activity-meta">Featured member · 1 day ago</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Note -->
+        <!-- FAQ Note (Kept) -->
         <section class="login-faq-note">
             <div class="container">
                 <div class="note-content">
