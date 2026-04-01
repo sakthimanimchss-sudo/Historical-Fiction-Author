@@ -1,11 +1,10 @@
 /* ===== MEMBERSHIP PAGE SPECIFIC STYLES ===== */
-/* Eleanor Hartwell - Reader's Club Membership */
-/* Font styles matching home2.css - Cinzel headings, Cormorant Garamond body */
+/* Eleanor Hartwell - Reader's Club Membership - COMPACT VERSION */
 
 /* ===== PAGE HEADER ===== */
 .page-header {
     position: relative;
-    min-height: 50vh;
+    min-height: 30vh;
     background: linear-gradient(135deg, #4a3f2b, #2e261a);
     color: white;
     display: flex;
@@ -31,34 +30,34 @@
 .page-header .container {
     position: relative;
     z-index: 2;
-    padding: 5rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .page-header h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: 'Cinzel', serif;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    animation: fadeInUp 1.2s ease-out;
+    animation: fadeInUp 1s ease-out;
     font-weight: 700;
 }
 
 .page-tagline {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     color: #d4b68a;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     opacity: 0.95;
-    animation: fadeInUp 1.2s ease-out 0.1s both;
+    animation: fadeInUp 1s ease-out 0.1s both;
 }
 
 .breadcrumbs {
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: rgba(255,255,255,0.8);
     font-family: 'Cormorant Garamond', serif;
-    animation: fadeInUp 1.2s ease-out 0.2s both;
+    animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .breadcrumbs a {
@@ -78,7 +77,7 @@
 
 /* ===== MEMBERSHIP INTRO SECTION ===== */
 .membership-intro {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
     text-align: center;
 }
@@ -95,32 +94,32 @@
 }
 
 .intro-content i {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: #d4b68a;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     background: rgba(212, 182, 138, 0.1);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 50%;
     animation: float 6s ease-in-out infinite;
 }
 
 .intro-content h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: 'Cinzel', serif;
     color: var(--text-primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .intro-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.6;
     font-family: 'Cormorant Garamond', serif;
 }
 
 /* ===== MEMBERSHIP TIERS SECTION ===== */
 .membership-tiers {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background-color: var(--bg-primary);
     position: relative;
     overflow: hidden;
@@ -131,17 +130,17 @@
     position: absolute;
     top: -50px;
     right: -50px;
-    font-size: 15rem;
+    font-size: 10rem;
     opacity: 0.03;
     transform: rotate(15deg);
     animation: rotateSlow 30s linear infinite;
 }
 
 .section-title {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-family: 'Cinzel', serif;
     color: var(--text-primary);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     position: relative;
 }
@@ -149,26 +148,26 @@
 .section-title:after {
     content: '';
     display: block;
-    width: 120px;
-    height: 4px;
+    width: 80px;
+    height: 2px;
     background: linear-gradient(90deg, transparent, #d4b68a, transparent);
-    margin: 1.2rem auto;
+    margin: 0.8rem auto;
 }
 
 .tiers-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .tier-card {
     background: var(--card-bg);
-    border-radius: 24px;
-    padding: 2.5rem 2rem;
-    box-shadow: 0 20px 40px var(--shadow-color);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px var(--shadow-color);
+    transition: all 0.3s ease;
     border: 1px solid var(--border-color);
     position: relative;
     display: flex;
@@ -177,68 +176,68 @@
 }
 
 .tier-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 30px 60px var(--shadow-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px var(--shadow-hover);
     border-color: #d4b68a;
 }
 
 .tier-card.featured {
     border: 2px solid #d4b68a;
-    box-shadow: 0 25px 50px rgba(212, 182, 138, 0.2);
-    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(212, 182, 138, 0.15);
+    transform: scale(1.02);
     z-index: 2;
 }
 
 .tier-card.featured:hover {
-    transform: scale(1.05) translateY(-10px);
+    transform: scale(1.02) translateY(-5px);
 }
 
 .tier-badge {
     position: absolute;
-    top: -12px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, #d4b68a, #b89a7a);
     color: white;
-    padding: 0.5rem 2rem;
-    border-radius: 40px;
-    font-size: 0.9rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
     font-weight: 600;
     font-family: 'Cinzel', serif;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     white-space: nowrap;
 }
 
 .tier-header {
     text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px dashed var(--border-color);
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color);
 }
 
 .tier-header h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-family: 'Cinzel', serif;
     color: var(--text-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .tier-price {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #d4b68a;
     font-family: 'Cinzel', serif;
 }
 
 .tier-price span {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
     font-weight: 400;
 }
 
 .tier-features {
     flex: 1;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 .tier-features ul {
@@ -247,18 +246,18 @@
 }
 
 .tier-features li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     color: var(--text-secondary);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: 0.85rem;
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.6rem;
 }
 
 .tier-features li i {
-    width: 20px;
-    font-size: 1rem;
+    width: 18px;
+    font-size: 0.8rem;
 }
 
 .tier-features li i.fa-check {
@@ -279,12 +278,12 @@
 
 .btn-primary {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.2rem;
     background: linear-gradient(135deg, #d4b68a, #b89a7a);
     color: white;
     border: none;
     border-radius: 40px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
@@ -295,17 +294,17 @@
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(212, 182, 138, 0.3);
+    box-shadow: 0 5px 15px rgba(212, 182, 138, 0.3);
 }
 
 .btn-outline {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.2rem;
     background: transparent;
     border: 2px solid #d4b68a;
     color: #d4b68a;
     border-radius: 40px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
@@ -323,78 +322,78 @@
 .tier-note {
     text-align: center;
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
 }
 
 /* ===== BENEFITS SHOWCASE SECTION ===== */
 .benefits-showcase {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .benefit-card {
     background: var(--card-bg);
-    border-radius: 20px;
-    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    padding: 1.5rem;
     text-align: center;
-    box-shadow: 0 15px 30px var(--shadow-color);
-    transition: all 0.4s;
+    box-shadow: 0 8px 20px var(--shadow-color);
+    transition: all 0.3s;
     border: 1px solid var(--border-color);
 }
 
 .benefit-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 45px var(--shadow-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--shadow-hover);
     border-color: #d4b68a;
 }
 
 .benefit-icon {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .benefit-icon i {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #d4b68a;
     background: rgba(212, 182, 138, 0.1);
-    padding: 1.2rem;
+    padding: 0.8rem;
     border-radius: 50%;
     transition: all 0.3s;
 }
 
 .benefit-card:hover .benefit-icon i {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.05);
     background: linear-gradient(135deg, #d4b68a, #b89a7a);
     color: white;
 }
 
 .benefit-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Cinzel', serif;
     color: var(--text-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .benefit-card p {
     color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 0.85rem;
     font-family: 'Cormorant Garamond', serif;
 }
 
 /* ===== TESTIMONIALS SECTION ===== */
 .member-testimonials {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background-color: var(--bg-primary);
     position: relative;
     overflow: hidden;
@@ -413,30 +412,30 @@
 
 .testimonial-card {
     flex: 0 0 100%;
-    padding: 2rem;
+    padding: 1.2rem;
     background: var(--card-bg);
-    border-radius: 20px;
-    box-shadow: 0 20px 40px var(--shadow-color);
-    margin: 1rem 0;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px var(--shadow-color);
+    margin: 0.5rem 0;
     border: 1px solid var(--border-color);
 }
 
 .testimonial-content {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
 .testimonial-content i {
     color: #d4b68a;
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 0.3;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .testimonial-content p {
     color: var(--text-secondary);
-    line-height: 1.8;
-    font-size: 1.1rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
 }
@@ -444,42 +443,42 @@
 .testimonial-author {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     border-top: 1px solid var(--border-color);
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 
 .testimonial-author img {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #d4b68a;
+    border: 2px solid #d4b68a;
 }
 
 .testimonial-author h4 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-family: 'Cinzel', serif;
     color: var(--text-primary);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
 }
 
 .testimonial-author p {
     color: #d4b68a;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-family: 'Cormorant Garamond', serif;
 }
 
 .testimonial-dots {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    margin-top: 2rem;
+    gap: 0.4rem;
+    margin-top: 1rem;
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--border-color);
     cursor: pointer;
@@ -488,41 +487,40 @@
 
 .dot.active {
     background: #d4b68a;
-    width: 30px;
+    width: 20px;
     border-radius: 10px;
 }
 
 /* ===== FAQ SECTION ===== */
 .membership-faq {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
 }
 
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     max-width: 1000px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
 }
 
 .faq-item {
     background: var(--card-bg);
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 20px var(--shadow-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
     border: 1px solid var(--border-color);
     transition: all 0.3s;
 }
 
 .faq-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 30px var(--shadow-hover);
+    transform: translateY(-2px);
     border-color: #d4b68a;
 }
 
 .faq-question {
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -530,7 +528,7 @@
 }
 
 .faq-question h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-family: 'Cinzel', serif;
     color: var(--text-primary);
     margin: 0;
@@ -538,6 +536,7 @@
 
 .faq-question i {
     color: #d4b68a;
+    font-size: 0.8rem;
     transition: transform 0.3s;
 }
 
@@ -546,21 +545,21 @@
 }
 
 .faq-answer {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .faq-item.active .faq-answer {
-    padding: 0 1.5rem 1.5rem;
-    max-height: 200px;
+    padding: 0 1rem 1rem;
+    max-height: 150px;
 }
 
 .faq-answer p {
     color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 0.95rem;
+    line-height: 1.5;
+    font-size: 0.8rem;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -571,84 +570,85 @@
 .btn-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     color: #d4b68a;
     text-decoration: none;
     font-weight: 600;
     transition: gap 0.3s;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .btn-link:hover {
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 /* ===== SIGNUP FORM SECTION ===== */
 .signup-section {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background: linear-gradient(135deg, #4a3f2b, #2e261a);
     color: white;
 }
 
 .signup-wrapper {
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
     background: rgba(255,255,255,0.05);
-    padding: 3rem;
-    border-radius: 30px;
+    padding: 2rem;
+    border-radius: 24px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(212, 182, 138, 0.3);
 }
 
 .signup-wrapper h2 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-family: 'Cinzel', serif;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .signup-wrapper p {
     text-align: center;
     color: rgba(255,255,255,0.9);
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .membership-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.3rem;
 }
 
 .form-group label {
     font-family: 'Cormorant Garamond', serif;
     color: #d4b68a;
     font-weight: 600;
+    font-size: 0.8rem;
 }
 
 .form-group input,
 .form-group select {
-    padding: 1rem;
-    border: 2px solid rgba(212, 182, 138, 0.3);
+    padding: 0.7rem;
+    border: 1px solid rgba(212, 182, 138, 0.3);
     border-radius: 8px;
     background: rgba(255,255,255,0.1);
     color: white;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: 0.85rem;
     transition: all 0.3s;
 }
 
@@ -675,18 +675,18 @@
 .form-group.checkbox {
     flex-direction: row;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.5rem;
 }
 
 .form-group.checkbox input {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
 }
 
 .form-group.checkbox label {
     color: rgba(255,255,255,0.9);
-    font-size: 0.95rem;
+    font-size: 0.8rem;
 }
 
 .form-group.checkbox a {
@@ -699,16 +699,16 @@
 }
 
 .btn-large {
-    padding: 1.2rem;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 .secure-note {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     color: rgba(255,255,255,0.7);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -718,17 +718,17 @@
 
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1200px) {
-    .page-header h1 { font-size: 3.5rem; }
-    .tiers-grid { gap: 1.5rem; }
+    .page-header h1 { font-size: 2.2rem; }
+    .tiers-grid { gap: 1rem; }
 }
 
 @media (max-width: 1024px) {
-    .page-header { min-height: 40vh; }
-    .page-header h1 { font-size: 3rem; }
+    .page-header { min-height: 25vh; }
+    .page-header h1 { font-size: 2rem; }
     
     .tiers-grid {
         grid-template-columns: 1fr;
-        max-width: 500px;
+        max-width: 450px;
     }
     
     .tier-card.featured {
@@ -736,7 +736,7 @@
     }
     
     .tier-card.featured:hover {
-        transform: scale(1) translateY(-10px);
+        transform: scale(1) translateY(-5px);
     }
     
     .benefits-grid {
@@ -749,23 +749,23 @@
 }
 
 @media (max-width: 992px) {
-    .page-tagline { font-size: 1.2rem; }
-    .intro-content h2 { font-size: 2.2rem; }
-    .section-title { font-size: 2.5rem; }
+    .page-tagline { font-size: 0.9rem; }
+    .intro-content h2 { font-size: 1.6rem; }
+    .section-title { font-size: 1.8rem; }
 }
 
 @media (max-width: 768px) {
-    .page-header { min-height: 35vh; }
-    .page-header h1 { font-size: 2.5rem; }
-    .page-tagline { font-size: 1.1rem; }
+    .page-header { min-height: 20vh; }
+    .page-header h1 { font-size: 1.8rem; }
+    .page-tagline { font-size: 0.9rem; }
     
-    .intro-content i { font-size: 3rem; }
-    .intro-content h2 { font-size: 2rem; }
-    .intro-content p { font-size: 1.1rem; }
+    .intro-content i { font-size: 2rem; padding: 0.8rem; }
+    .intro-content h2 { font-size: 1.5rem; }
+    .intro-content p { font-size: 0.9rem; }
     
     .benefits-grid {
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 350px;
     }
     
     .form-row {
@@ -773,7 +773,7 @@
     }
     
     .signup-wrapper {
-        padding: 2rem;
+        padding: 1.5rem;
     }
     
     .testimonial-author {
@@ -783,33 +783,35 @@
 }
 
 @media (max-width: 576px) {
-    .page-header h1 { font-size: 2rem; }
-    .page-tagline { font-size: 1rem; }
+    .page-header h1 { font-size: 1.5rem; }
+    .page-tagline { font-size: 0.85rem; }
     
-    .intro-content h2 { font-size: 1.8rem; }
-    .intro-content p { font-size: 1rem; }
+    .intro-content h2 { font-size: 1.3rem; }
+    .intro-content p { font-size: 0.85rem; }
     
-    .section-title { font-size: 2rem; }
+    .section-title { font-size: 1.5rem; }
     
-    .tier-header h3 { font-size: 1.5rem; }
-    .tier-price { font-size: 2rem; }
+    .tier-header h3 { font-size: 1.2rem; }
+    .tier-price { font-size: 1.5rem; }
     
-    .signup-wrapper h2 { font-size: 1.8rem; }
-    .signup-wrapper p { font-size: 1rem; }
+    .signup-wrapper h2 { font-size: 1.4rem; }
+    .signup-wrapper p { font-size: 0.85rem; }
+    
+    .benefit-card { padding: 1rem; }
 }
 
 @media (max-width: 480px) {
-    .page-header h1 { font-size: 1.8rem; }
-    .intro-content h2 { font-size: 1.6rem; }
-    .section-title { font-size: 1.8rem; }
-    .signup-wrapper h2 { font-size: 1.6rem; }
+    .page-header h1 { font-size: 1.3rem; }
+    .intro-content h2 { font-size: 1.2rem; }
+    .section-title { font-size: 1.3rem; }
+    .signup-wrapper h2 { font-size: 1.2rem; }
 }
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(25px);
     }
     to {
         opacity: 1;
@@ -832,7 +834,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
 }
 
@@ -854,10 +856,10 @@
 }
 
 [data-theme="dark"] .signup-wrapper {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
 }
 
 [data-theme="dark"] .form-group input,
 [data-theme="dark"] .form-group select {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
 }
